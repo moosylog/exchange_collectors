@@ -1,5 +1,6 @@
 # Bittrex API v3 Authentication
-Bittrex provides a simple and powerful API consisting of REST endpoints for transactional operations .
+Bittrex provides a simple and powerful API consisting of REST endpoints for transactional operations.
+https://bittrex.github.io/api/v3
 
 # Sample code to list balances
 Sign an API v3 authenticated request
