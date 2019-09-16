@@ -10,7 +10,9 @@ Returns a Balance entry for each currency for which there is either a balance or
 
 # Exchange Collectors
 Binance v3 - HMACSHA256HEX
+
 Bittrex v3 - SHA512HEX | HMACSHA512HEX
+
 Huobi v1 - HMACSHA256B64
 
 # To document
