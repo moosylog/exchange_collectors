@@ -24,4 +24,8 @@ Paradex - ECSIGN
 
 This is some sample Google Apps Script GAS code and can be used in Google Sheets
 
+
+
+
 moosylog@gmail.com
+https://sites.google.com/site/moosyresearch/projects/cryptos
