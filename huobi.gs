@@ -3,7 +3,6 @@
 // https://github.com/huobiapi/API_Docs_en
 // Google Apps Script GAS
 
-
 function HUO_GetBalance() {  
   var huorequest =  {
   'apikey'   : '•••••••••',
