@@ -20,6 +20,7 @@ Liquid - HMACSHA256 + JWT
 
 # Wishlist 
 Bitpay - ECDSA signature 
+
 Paradex - ECSIGN 
 
 
