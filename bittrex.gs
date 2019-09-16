@@ -1,6 +1,7 @@
 // Bittrex API v3 Private Request Example by Moosy Research
 // REST endpoints Authentication  SHA512
 // https://bittrex.github.io/api/v3
+// Google Apps Script GAS
 
 function BTX_GetBalance() {  
   var btxrequest =  {
