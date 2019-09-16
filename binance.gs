@@ -1,6 +1,7 @@
 // Binance API v3 Private Request Example by Moosy Research
 // REST endpoints Authentication HMACSHA256
 // https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
+// Google Apps Script GAS
 
 function BIN_GetBalance() {  
   var binrequest =  {
