@@ -2,7 +2,9 @@
 
 Made a start to publish some Exchange Collectors (EC).
 
-All Exchange REST API have some sort of authentication.
+To access any of the exchange REST APIs, you require an API key and secret.
+
+First, you must establish authentication and then you can submit requests to the API.
 
 # Sample code snippets to list balances
 Authenticate to the API 
@@ -15,8 +17,6 @@ Bittrex v3 - SHA512HEX | HMACSHA512HEX
 
 Huobi v1 - HMACSHA256B64
 
-# To document
-Liquid - HMACSHA256 + JWT
 
 # Wishlist 
 Bitpay - ECDSA signature 
