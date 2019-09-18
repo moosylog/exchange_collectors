@@ -8,9 +8,8 @@ In order to authenticate to an Exchange API requires a valid API Key and a secre
 Many APIs require a signature during authentication that is calculated based on an algorithm like SHA.
 This is a collection of Google App Script (GAS) functions for Signed / Private Requests to request a balance.
 
-These sample code snippets to list balances
-Authenticate to the API 
-Returns a Balance entry for each currency for which there is either a balance or an address.
+These sample code snippets authenticate to the API and will list your balance.
+
 
 # Available
 
