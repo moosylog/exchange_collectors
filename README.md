@@ -15,10 +15,10 @@ Returns a Balance entry for each currency for which there is either a balance or
 Exchange   | API| Signature      
 ---------- | ---| ---------     
 Binance    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX 
-Bitfinex   | v2 | HMACSHA384HEX 
-Bitmex     | v1 | HMACSHA256HEX 
-Bittrex    | v3 | HMACSHA512HEX 
-Huobi Pro  | v1 | HMACSHA256B64 
+Bitfinex   | [v2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
+Bitmex     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
+Bittrex    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
+Huobi Pro  | [v1](https://github.com/huobiapi/API_Docs_en) | HMACSHA256B64 
 
 # Wishlist
 
