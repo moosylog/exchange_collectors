@@ -35,4 +35,4 @@ https://sites.google.com/site/moosyresearch/projects/cryptos
 
 ***
 
-###### H6 Bittrex API v3 Google Script Google Sheets GAS Huobi Pro Binance Moosy Research signature hmac sha
+###### H6 Bittrex API v3 Google Script Google Sheets GAS Huobi Pro Binance Moosy Research signature signature hmac sha cryptos cryptocurrency cryptocurrencies 
