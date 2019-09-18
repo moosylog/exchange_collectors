@@ -1,9 +1,10 @@
 # Moosy Research Exchange Collectors
 
-Made a start publishing some Exchange Collectors (EC).
-These Google App Script (GAS) are private requests to exchanges.
-To access any of the exchange REST APIs, you require an API key and secret.
-First, you must establish authentication and then you can submit requests to the API.
+Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints for transactional operations.
+In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
+
+Many APIs require a signature during authentication that is calculated based on an algorithm like SHA.
+This is a collection of Google App Script (GAS) functions for Signed / Private Requests to request a balance.
 
 These sample code snippets to list balances
 Authenticate to the API 
