@@ -10,6 +10,12 @@ First, you must establish authentication and then you can submit requests to the
 Authenticate to the API 
 Returns a Balance entry for each currency for which there is either a balance or an address.
 
+
+Exchange | Second Header
+------------ | -------------
+Binance v3  | HMACSHA256HEX
+Bitmex v1  | HMACSHA256HEX
+
 # Exchange Collectors
 * Binance v3 - HMACSHA256HEX
 * Bitmex v1 - HMACSHA256HEX
@@ -27,10 +33,7 @@ Returns a Balance entry for each currency for which there is either a balance or
 ***
 moosylog@gmail.com
 
-Moosy Research Cool Cryptocurrency Sheets
-[GitHub](https://sites.google.com/site/moosyresearch/projects/cryptos)
-
-https://sites.google.com/site/moosyresearch/projects/cryptos
+[Moosy Research Cool Cryptocurrency Sheets](https://sites.google.com/site/moosyresearch/projects/cryptos)
 
 ***
 
