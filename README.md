@@ -1,5 +1,6 @@
 # Moosy Research Exchange Collectors
 
+[Moosy Research Cool Cryptocurrency Sheets](https://sites.google.com/site/moosyresearch/projects/cryptos)
 Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints for transactional operations.
 In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
 
@@ -31,9 +32,8 @@ Paradex      | ECSIGN
 
 ***
 
-[Moosy Research Cool Cryptocurrency Sheets](https://sites.google.com/site/moosyresearch/projects/cryptos)
-
 moosylog@gmail.com
+
 ***
 
 ###### Google Sheets GAS Huobi Pro  hmac sha cryptos cryptocurrency cryptocurrencies 
