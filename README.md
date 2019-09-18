@@ -12,7 +12,7 @@ Returns a Balance entry for each currency for which there is either a balance or
 
 # Available
 
-Exchange     | Signature
+Exchange | Signature
 ------------ | -------------
 Binance v3   | HMACSHA256HEX
 Bitmex v1    | HMACSHA256HEX
