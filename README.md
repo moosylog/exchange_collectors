@@ -14,7 +14,7 @@ Returns a Balance entry for each currency for which there is either a balance or
 
 Exchange   | API| Signature      
 ---------- | ---| ---------     
-Binance    | v3 | HMACSHA256HEX 
+Binance    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX 
 Bitfinex   | v2 | HMACSHA384HEX 
 Bitmex     | v1 | HMACSHA256HEX 
 Bittrex    | v3 | HMACSHA512HEX 
