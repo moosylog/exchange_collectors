@@ -12,13 +12,13 @@ Returns a Balance entry for each currency for which there is either a balance or
 
 # Available
 
-Exchange | Signature
------------- | -------------
-Binance v3   | HMACSHA256HEX
-Bitfinex v2  | HMACSHA384HEX
-Bitmex v1    | HMACSHA256HEX
-Bittrex v3   | HMACSHA512HEX
-Huobi Pro v1 | HMACSHA256B64
+Exchange   | API| Signature
+---------- | -------------
+Binance    | v3 | HMACSHA256HEX
+Bitfinex   | V2 | HMACSHA384HEX
+Bitmex     | v1 | HMACSHA256HEX
+Bittrex    | v3 | HMACSHA512HEX
+Huobi Pro  | v1 | HMACSHA256B64
 
 # Wishlist
 
