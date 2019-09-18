@@ -2,8 +2,6 @@
 
 Moosy Research is known for their [Cool Cryptocurrency Sheets](https://sites.google.com/site/moosyresearch/projects/cryptos).
 
-This is where we will publish some of our work:
-
 Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints for transactional operations.
 In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
 
