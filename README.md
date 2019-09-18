@@ -27,6 +27,9 @@ Returns a Balance entry for each currency for which there is either a balance or
 ***
 moosylog@gmail.com
 
+Moosy Research Cool Cryptocurrency Sheets
+[GitHub](https://sites.google.com/site/moosyresearch/projects/cryptos)
+
 https://sites.google.com/site/moosyresearch/projects/cryptos
 
 ***
