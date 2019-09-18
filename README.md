@@ -12,7 +12,7 @@ Returns a Balance entry for each currency for which there is either a balance or
 
 # Available
 
-Exchange   | API| Signature     |
+Exchange   | API| Signature     | link
 ---------- | ---| ---------     | ---------
 Binance    | v3 | HMACSHA256HEX | [>](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md)
 Bitfinex   | V2 | HMACSHA384HEX | ---------
