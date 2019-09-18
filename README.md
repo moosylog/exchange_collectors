@@ -11,21 +11,19 @@ Authenticate to the API
 Returns a Balance entry for each currency for which there is either a balance or an address.
 
 
-Exchange | Second Header
+Exchange | Signature
 ------------ | -------------
-Binance v3  | HMACSHA256HEX
-Bitmex v1  | HMACSHA256HEX
+Binance v3   | HMACSHA256HEX
+Bitmex v1    | HMACSHA256HEX
+Bittrex v3   | HMACSHA512HEX
+Huobi v1     | HMACSHA256B64
 
-# Exchange Collectors
-* Binance v3 - HMACSHA256HEX
-* Bitmex v1 - HMACSHA256HEX
-* Bittrex v3 - SHA512HEX | HMACSHA512HEX
-* Huobi v1 - HMACSHA256B64
+# Wishlist
 
-
-# Wishlist 
-* Bitpay - ECDSA signature 
-* Paradex - ECSIGN 
+Exchange | Signature
+------------ | -------------
+Bitpay       | ECDSA  
+Paradex      | ECSIGN 
 
 
 
