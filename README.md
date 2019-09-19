@@ -39,4 +39,4 @@ moosylog@gmail.com
 
 ***
 
-###### Google Sheets GAS Huobi Pro  hmac sha cryptos cryptocurrency cryptocurrencies 
+###### index: Google Sheets hmac sha cryptos cryptocurrency cryptocurrencies sign sample 
