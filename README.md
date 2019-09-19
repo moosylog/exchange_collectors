@@ -20,7 +20,7 @@ Exchange   | API| Signature
 [Bitmex](https://github.com/moosylog/exchange_collectors/blob/master/bitmex.gs)     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
 [Bittrex](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
 [Huobi Pro](https://github.com/moosylog/exchange_collectors/blob/master/huobi.gs)  | [v1](https://github.com/huobiapi/API_Docs_en) | HMACSHA256B64 
-[Poloniex](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [v1](https://docs.poloniex.com) | HMACSHA512HEX 
+[Poloniex](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [--](https://docs.poloniex.com) | HMACSHA512HEX 
 
 
 
