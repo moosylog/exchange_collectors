@@ -15,11 +15,11 @@ These sample code snippets authenticate to the API and will list your balance.
 
 Exchange   | API| Signature      
 ---------- | ---| ---------     
-Binance    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX 
-Bitfinex   | [v2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
-Bitmex     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
-Bittrex    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
-Huobi Pro  | [v1](https://github.com/huobiapi/API_Docs_en) | HMACSHA256B64 
+[Binance](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX | 
+[Bitfinex](https://github.com/moosylog/exchange_collectors/blob/master/bitfinex.gs)   | [v2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
+[Bitmex](https://github.com/moosylog/exchange_collectors/blob/master/bitmex.gs)     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
+[Bittrex](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
+[Huobi Pro](https://github.com/moosylog/exchange_collectors/blob/master/huobi.gs)  | [v1](https://github.com/huobiapi/API_Docs_en) | HMACSHA256B64 
 
 # Wishlist
 
