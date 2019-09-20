@@ -40,4 +40,4 @@ moosylog@gmail.com
 
 ***
 
-###### index: Google Sheets hmac sha cryptos cryptocurrency cryptocurrencies sign sample 
+###### index: hmac sha cryptos cryptocurrency cryptocurrencies sign sample jwt 
