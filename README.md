@@ -29,8 +29,8 @@ POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/bl
 
 Exchange     | Signature
 ------------ | -------------
-Bitpay       | ECDSA  
-Paradex      | ECSIGN 
+Bitpay       | ECDSA  [secp256k1](https://github.com/cryptocoinjs/secp256k1-node/)
+Paradex      | ECSIGN ethereumjs with utils.ecsign
 
 
 
