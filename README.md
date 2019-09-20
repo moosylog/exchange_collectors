@@ -30,6 +30,8 @@ POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/bl
 Exchange     | Signature
 ------------ | -------------
 Bitpay       | ECDSA  [secp256k1](https://github.com/cryptocoinjs/secp256k1-node/)
+             | Elliptic Curve Digital Signature Algorithm (ECDSA) 
+             | secp256k1 refers to the parameters of the elliptic curve used in Bitcoin's public-key cryptography, and is defined in Standards for Efficient Cryptography (SEC) 
 Paradex      | ECSIGN ethereumjs with utils.ecsign
 
 
