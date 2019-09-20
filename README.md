@@ -1,6 +1,7 @@
 # Exchange Collectors
 
-Moosy Research is known for a variety of Cool Cryptocurrency Sheets, like [Cointrexer, CtrXL and BotMon](https://sites.google.com/site/moosyresearch/projects/cryptos).
+![Moosy Research](https://sites.google.com/site/moosyresearch/_/rsrc/1511269486745/projects/cryptos/doc/logo.png)
+Format: ![Alt Text](url)Moosy Research is known for a variety of Cool Cryptocurrency Sheets, like [Cointrexer, CtrXL and BotMon](https://sites.google.com/site/moosyresearch/projects/cryptos).
 
 Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints for transactional operations.
 In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
