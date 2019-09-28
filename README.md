@@ -1,7 +1,8 @@
 # Exchange Collectors
 
+
 ![Moosy Research](https://sites.google.com/site/moosyresearch/_/rsrc/1511269486745/projects/cryptos/doc/logo.png)
-Moosy Research tools like [Cointrexer, CtrXL and BotMon](https://sites.google.com/site/moosyresearch/projects/cryptos) use Exchange Collectors to collect data from different sources.
+Moosy Research cryptocurrency sheet, like [Cointrexer, CtrXL and BotMon](https://sites.google.com/site/moosyresearch/projects/cryptos) use Exchange Collectors to fetch data from Exchanges.
 
 Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints for transactional operations.
 In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
