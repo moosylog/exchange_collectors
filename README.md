@@ -34,4 +34,4 @@ moosylog@gmail.com
 
 ***
 
-###### index: hmac sha cryptos cryptocurrency cryptocurrencies sign sample jwt private request authentication authenticate exchange
+###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate
