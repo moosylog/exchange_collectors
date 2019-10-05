@@ -28,16 +28,6 @@ POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/bl
 
 
 
-# Wishlist
-
-Exchange     | Signature
------------- | -------------
-Bitpay       | ECDSA  [secp256k1](https://github.com/cryptocoinjs/secp256k1-node/)
- ..          | Elliptic Curve Digital Signature Algorithm (ECDSA) 
-Paradex      | ECSIGN ethereumjs with utils.ecsign
-
-
-
 ***
 
 moosylog@gmail.com
