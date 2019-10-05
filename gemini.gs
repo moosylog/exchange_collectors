@@ -1,0 +1,40 @@
+// Gemini API Private Request Example by Moosy Research
+// REST endpoints Authentication HMACSHA384HEX
+// https://docs.gemini.com/rest-api/
+// Google Apps Script GAS
+
+function GEM_GetBalance() {  
+  var gemrequest =  {
+  'apikey'   : '•••••••••',
+  'secret'   : '•••••••••',
+  'uri'      : 'https://api.sandbox.gemini.com',
+  'version'  : '/v1/',
+  'command'  : 'balances',
+  'method'   : 'post',
+  'payload'  : ''
+  };
+
+ var response = GEM_PrivateRequest(gemrequest);
+ Logger.log( JSON.parse(UrlFetchApp.fetch(response.uri, response.params)) );
+}
+
+
+function GEM_PrivateRequest(gemrequest) {
+  function HMACSHA384HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_384, s, secret)).toString(); }
+  function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
+  function stringToBase64(s) { return (Utilities.base64Encode(s)); }
+  
+  gemrequest.payload = {"request": gemrequest.version+gemrequest.command, "nonce": new Date().getTime() };
+  var params = {
+    'method'               : gemrequest.method,
+    'muteHttpExceptions'   : true,
+    'Content-Type'         : "text/plain",
+    'headers': {
+      "X-GEMINI-APIKEY"    : gemrequest.apikey,
+      "X-GEMINI-PAYLOAD"   : stringToBase64(JSON.stringify(gemrequest.payload)),
+      "X-GEMINI-SIGNATURE" : HMACSHA384HEX(stringToBase64(JSON.stringify(gemrequest.payload)), gemrequest.secret),
+      "Cache-Control"      : "no-cache"
+     }
+  }
+  return  { uri: gemrequest.uri + gemrequest.version + gemrequest.command  , params: params};
+}
