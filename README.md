@@ -13,6 +13,8 @@ This is a collection of Google App Script (GAS) functions for Signed / Private R
 
 These sample code snippets authenticate to the API and will list your balance.
 
+Please 'Star' on the top of this page if you like this
+
 
 # Available
 
