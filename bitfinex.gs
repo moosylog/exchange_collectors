@@ -1,7 +1,5 @@
-// Bitfinex API v2 Private Request Example by Moosy Research
-// REST endpoints Authentication  HMACSHA384HEX
-// https://docs.bitfinex.com/docs/introduction
-// Google Apps Script GAS
+// Bitfinex API v2 Private Request in Google Apps Script (GAS).
+// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function BFX_GetBalance() {  
   var bfxrequest =  {
