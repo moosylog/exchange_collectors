@@ -1,7 +1,5 @@
-// Gemini API Private Request Example by Moosy Research
-// REST endpoints Authentication HMACSHA384HEX
-// https://docs.gemini.com/rest-api/
-// Google Apps Script GAS
+// Gemini API Private Request in Google Apps Script (GAS).
+// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function GEM_GetBalance() {  
   var gemrequest =  {
