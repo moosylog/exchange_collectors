@@ -1,7 +1,6 @@
 // Huobi Pro API v1 Private Request in Google Apps Script (GAS). 
 // By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
-
 function HUO_GetBalance() {  
   var huorequest =  {
   'apikey'   : '•••••••••',
@@ -15,7 +14,6 @@ function HUO_GetBalance() {
  var response = HUO_PrivateRequest(huorequest);
  Logger.log( JSON.parse(UrlFetchApp.fetch(response.uri, response.params)) );
 }
-
 
 
 function HUO_PrivateRequest(huorequest) {
