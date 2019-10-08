@@ -1,7 +1,5 @@
-// OKEX API Private Request Example by Moosy Research
-// REST endpoints Authentication HMACSHA384HEX
-// https://www.okex.com/docs/en/
-// Google Apps Script GAS
+// OKEX API Private Request in Google Apps Script (GAS).
+// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function OKX_GetBalance() {  
   var okxrequest =  {
