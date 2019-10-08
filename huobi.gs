@@ -1,7 +1,6 @@
-// Huobi Pro API Private Request Example by Moosy Research
-// REST endpoints Authentication HMACSHA256
-// https://github.com/huobiapi/API_Docs_en
-// Google Apps Script GAS
+// Huobi Pro API v1 Private Request in Google Apps Script (GAS). 
+// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
+
 
 function HUO_GetBalance() {  
   var huorequest =  {
