@@ -1,7 +1,5 @@
-// BitMEX | Bitcoin Mercantile Exchange API Private Request Example by Moosy Research
-// REST endpoints Authentication HMACSHA256HEX
-// https://www.bitmex.com/app/restAPI
-// Google Apps Script GAS
+// BitMEX | Bitcoin Mercantile Exchange API Private Request in Google Apps Script (GAS).
+// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function BMX_GetBalance() {  
   var bmxrequest =  {
