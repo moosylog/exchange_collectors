@@ -29,7 +29,7 @@ HUB |Huobi Pro | [huobi.gs](https://github.com/moosylog/exchange_collectors/blob
 OKX |Okex | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs)  | [v3](https://www.okex.com/docs/en/) | HMACSHA256B64 
 POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [v1](https://docs.poloniex.com) | HMACSHA512HEX 
 
-
+If you are looking for a Google sheet that is ready to go, check [CtrXL](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  
 
 ***
 
