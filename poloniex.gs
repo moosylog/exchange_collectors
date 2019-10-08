@@ -1,7 +1,5 @@
-// Poloniex API Private Request Example by Moosy Research
-// REST endpoints Authentication  HMACSHA512HEX
-// https://docs.poloniex.com/
-// Google Apps Script GAS
+// Poloniex API Private Request in Google Apps Script (GAS).
+// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function POL_GetBalance() {  
   var POLrequest =  {
