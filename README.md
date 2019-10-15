@@ -32,7 +32,7 @@ POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/bl
 If you are looking for a Google sheet template that is ready to go, check [CtrXL](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  
 
 ***
-
+If you don't tell me, how will I know?
 moosylog@gmail.com
 
 ***
