@@ -9,7 +9,7 @@ Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints 
 In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
 
 Many APIs require a signature during authentication that is calculated based on an algorithm like SHA.
-This is a collection of Google App Script (GAS) functions for Signed / Private Requests to request a balance.
+On this pageyou find a collection of Google App Script (GAS) functions for Signed / Private Requests to several exchanges.
 
 These sample code snippets authenticate to the API and will list your balance.
 
