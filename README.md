@@ -30,9 +30,8 @@ OKX |Okex | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/maste
 POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [v1](https://docs.poloniex.com) | HMACSHA512HEX 
 
 ***
-If you don't tell me, how will I know?
-moosylog@gmail.com
-
+feedback: moosylog@gmail.com
+If you don't tell me, how can I know?
 ***
 
 ###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate
