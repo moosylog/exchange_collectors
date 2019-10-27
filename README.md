@@ -34,4 +34,4 @@ feedback: moosylog@gmail.com
 If you don't tell me, how can I know?
 ***
 
-###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate
+###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate google sheets google script
