@@ -15,6 +15,8 @@ These sample code snippets authenticate to the API and will list your balance in
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
+To explore some of the APIs, you can try [ReX](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/rex)
+
 
 # Available
 
