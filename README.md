@@ -17,6 +17,8 @@ Please **★ Star** on the top of this page if you like this page and you want t
 
 To explore some of these APIs from Google Sheets, you can try [ReX](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/rex). It's an interactive API explorer in Sheets that allows you to see the request and the response data.
 
+Donations: ETH 0x4a15c8a7aeb99ae02c0a4fae53a34ae34aa9b438 
+
 
 # Available
 
