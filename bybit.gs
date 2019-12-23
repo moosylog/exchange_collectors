@@ -3,7 +3,7 @@
 // By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function BYB_GetBalance() {  
-   var bybrequest = {
+  var bybrequest = {
    "id"         : "BYB",
    "name"       : "Bybit",
    "apikey"     : '•••••••••',
