@@ -15,7 +15,7 @@ These sample code snippets authenticate to the API and will list your balance in
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
-To explore some of these APIs from Google Sheets, you can try [ReX](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/rex). It's an interactive API explorer in Sheets that allows you to see the request and the response data.
+To explore some of these APIs from Google Script, you can try [ReX](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/rex). It's an interactive API explorer in Sheets that allows you to see the request and the response data. **Rex** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response.
 
 Donations: ETH 0x4a15c8a7aeb99ae02c0a4fae53a34ae34aa9b438 
 
