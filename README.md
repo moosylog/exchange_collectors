@@ -38,6 +38,7 @@ POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/bl
 
 ***
 feedback: moosylog@gmail.com
+
 If you don't tell me, how can I know?
 ***
 
