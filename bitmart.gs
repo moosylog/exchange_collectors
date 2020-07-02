@@ -6,9 +6,9 @@ function MRT_GetBalances() {
   const mrtrequest = {
    "id"         : "MRT",
    "name"       : "BitMart",
-   "apikey"     : EXKEY,
-   "secret"     : EXSECRET,
-   "thirdattrib": ADATTRIB,
+   "apikey"     : '•••••••••',
+   "secret"     : '•••••••••',
+   "memo"       : '•••••••••',
    "command"    : "/v1/wallet",   
    "uri"        : "https://api-cloud.bitmart.com/spot",
    "method"     : "GET",
@@ -31,7 +31,7 @@ function MRT_PrivateRequest(mrtrequest) {
           'headers': {        
             'Content-Type'       : 'application/json',
             'X-BM-KEY'           : mrtrequest.apikey,
-            'X-BM-SIGN'          : HMACSHA256HEX(timestamp+'#'+mrtrequest.thirdattrib+'#'+mrtrequest.payload, mrtrequest.secret),
+            'X-BM-SIGN'          : HMACSHA256HEX(timestamp+'#'+mrtrequest.memo+'#'+mrtrequest.payload, mrtrequest.secret),
             'X-BM-TIMESTAMP'     : timestamp
           } 
         }; 
