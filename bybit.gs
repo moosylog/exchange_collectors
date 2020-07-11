@@ -1,6 +1,6 @@
 
 // Bybit | Bybit.com Crypto Exchange | Lightning Fast Matching Engine‎ API Private Request in Google Apps Script (GAS).
-// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
+// By Moosy Research, check our cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function BYB_GetBalance() {  
   var bybrequest = {
