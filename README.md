@@ -38,7 +38,7 @@ OKX |Okex | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/maste
 POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [v1](https://docs.poloniex.com) | HMACSHA512HEX 
 
 ***
-feedback: moosylog@gmail.com
+feedback or requests: moosylog@gmail.com
 
 If you don't tell me, how can I know?
 ***
