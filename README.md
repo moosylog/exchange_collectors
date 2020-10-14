@@ -17,9 +17,11 @@ Please **★ Star** on the top of this page if you like this page and you want t
 
 To explore some of these APIs from Google Script, you can try [ReX](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/rex). It's an interactive API explorer in Sheets that allows you to see the request and the response data. **ReX** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs  
 
-Enjoy
+Enjoy,
 
-Sponsor our Research => ETH 0x4a15c8a7aeb99ae02c0a4fae53a34ae34aa9b438 
+Moosy
+
+Your donation is highly appreciated => ETH 0x4a15c8a7aeb99ae02c0a4fae53a34ae34aa9b438 
 
 
 # Available
