@@ -20,7 +20,6 @@ To explore some of these APIs from Google Script, you can try [ReX](https://site
 Enjoy,
 
 Moosy
-
 <sub>Your donation is highly appreciated => ETH 0x4a15c8a7aeb99ae02c0a4fae53a34ae34aa9b438 </sub>
 
 
