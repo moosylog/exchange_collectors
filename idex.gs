@@ -33,7 +33,6 @@ function IDX_PrivateRequest(IDXrequest) {
       params    = {
        'method'                    : IDXrequest.method,  
        'muteHttpExceptions'        : true,
-       'payload'                   : IDXrequest.qry, 
        'validateHttpsCertificates' : false,
        headers: {
          'IDEX-API-KEY'              : IDXrequest.apikey,
