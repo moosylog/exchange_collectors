@@ -49,3 +49,8 @@ If you don't tell me, how can I know?
 ***
 
 ###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate google sheets google script
+
+*** All CtrxL Connectors: Bibox Binance Bit2C Bitfinex bitFlyer BitForex BitMart BitMEX Bitpanda Bitpanda Global Exchange Bitsane Bitstamp Bittrex Bitso BKEX BtcTurk Bybit CEX.IO CoinAll Coinbase Coinbase Pro / GDAX CoinDCX Crex24 Cryptopia Currency.com Deribit Etherscan.io FTX Gate.IO Gemini Gopax HitBTC Huobi IDEX 2 Indodax Kraken Kucoin Liquid Luno (formerly BitX) MXC OKEx Poloniex Upbit ***
+
+
+
