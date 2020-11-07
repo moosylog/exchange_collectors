@@ -1,0 +1,57 @@
+// DRAFT v0
+
+function DEL_GetBalances(){
+  
+  var DELrequest = {
+   "id"         : "DEL",
+   "name"       : "DeltaExchange",
+   "apikey"     : '•••••••••',
+   "secret"     : '•••••••••',
+   "command"    : "/wallet/balances",
+   "uri"        : "https://api.delta.exchange/v2",
+   "method"     : "GET",
+   "payload"    : ""
+  };
+    var request  = DEL_PrivateRequest(DELrequest);
+    Logger.log(request.uri); 
+  
+    var response = UrlFetchApp.fetch(request.uri,request.params);
+    Logger.log(response);
+    response = JSON.parse(response);
+    Logger.log(response);
+}
+  
+
+function DEL_PrivateRequest(DELrequest) {      
+  function HMACSHA256HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret)).toString(); }
+  function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
+  
+  var payload        = '',
+      method         = DELrequest.method,
+      timestamp      = Math.floor(new Date().getTime() / 1000);
+      path           = DELrequest.command,
+      query_string   = '',
+      signature_data = method + timestamp + path + query_string + payload;
+      
+  
+  var signature      = HMACSHA256HEX(signature_data, DELrequest.secret),   
+      params         = {       
+        method             : DELrequest.method,      
+        muteHttpExceptions : true,
+        headers            : {
+                               'Accept'                : 'application/json',
+                               'api-key'               : DELrequest.apikey,                     
+                               'signature'             : signature,
+                               'timestamp'             : timestamp
+                               //'User-Agent'            : 'rest-client',
+                               //'Content-Type'          : 'application/json'
+                             },
+        
+      };
+
+  Logger.log("signature_data:"+signature_data);
+  Logger.log("signature:"+signature);
+  
+  return  { uri: DELrequest.uri + DELrequest.command  , params: params};
+}
+
