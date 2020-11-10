@@ -25,7 +25,7 @@ function DEL_PrivateRequest(DELrequest) {
   
   var timestamp      = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
       signature_data = DELrequest.method + timestamp + DELrequest.command + '' + '',
-      params      = {       
+      params         = {       
         method             : DELrequest.method,      
         muteHttpExceptions : true,
         headers            : {
