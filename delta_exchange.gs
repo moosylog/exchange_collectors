@@ -13,7 +13,6 @@ function DEL_GetBalances(){
    "method"     : "GET",
    "payload"    : ""
   }
-  
   var response = DEL_PrivateRequest(DELrequest);
   Logger.log( JSON.parse(UrlFetchApp.fetch(response.uri, response.params)) );
 }
