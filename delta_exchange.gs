@@ -3,7 +3,6 @@
 // By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
 
 function DEL_GetBalances(){
-
   var DELrequest = {
    "id"         : "DEL",
    "name"       : "DeltaExchange",
