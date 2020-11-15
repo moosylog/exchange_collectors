@@ -3,7 +3,7 @@
 
 ![Moosy Research](https://sites.google.com/site/moosyresearch/_/rsrc/1511269486745/projects/cryptos/doc/logo.png)
 
-Moosy Research is recognized for it's high quality cryptocurrency sheets, [Cointrexer, BotMon and ReX](https://sites.google.com/site/moosyresearch/projects/cryptos).
+Moosy Research is recognized for it's high quality, excel like cryptocurrency sheets, [Cointrexer, BotMon and ReX](https://sites.google.com/site/moosyresearch/projects/cryptos).
 
 Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints for transactional operations.
 In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
@@ -92,7 +92,8 @@ If you don't tell me, how can I know?
 
 ###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate google sheets google script
 
-*** All CtrxL Connectors: Bibox Binance Bit2C Bitfinex bitFlyer BitForex BitMart BitMEX Bitpanda Bitpanda Global Exchange Bitsane Bitstamp Bittrex Bitso BKEX BtcTurk Bybit CEX.IO CoinAll Coinbase Coinbase Pro / GDAX CoinDCX Crex24 Cryptopia Currency.com Deribit Etherscan.io FTX Gate.IO Gemini Gopax HitBTC Huobi IDEX 2 Indodax Kraken Kucoin Liquid Luno (formerly BitX) MXC OKEx Poloniex Upbit ***
+*** Moosy Research: Cool Cryptocurrency Sheets
+Because nothing is as flexible and easy to work with as a spreadsheet. ***
 
 
 
