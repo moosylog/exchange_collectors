@@ -30,15 +30,20 @@ Symbol   | Exchange | Code   | API| Signature
 ---------| -------- |------- | ---| ---------     
 BBX | Bibox | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 BIN | Binance | [binance.gs](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX | 
-BFX |Bitfinex | [bitfinex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitfinex.gs)   | [v2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
+B2C | Bit2C | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+BFX |Bitfinex | [bitfinex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitfinex.gs)   | [v
+2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
 FLY |Bitflyer | [bitflyer.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitflyer.gs)   | [v1](https://lightning.bitflyer.com/docs?lang=en) | HMACSHA256HEX 
 MRT |Bitmart | [bitmart.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmart.gs)     | [v1](https://developer-pro.bitmart.com/en/part1/start/overview.html) | HMACSHA256HEX 
+MRT | Bitmart | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 BMX |Bitmex | [bitmex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmex.gs)     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
 BTX |Bittrex | [bittrex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
+VAV | Bitvavo | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 BYB |Bybit | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs)    | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX 
 CNB |Coinbase | [coinbase.gs](https://github.com/moosylog/exchange_collectors/blob/master/coinbase.gs)    | [v2](https://developers.coinbase.com/) | HMACSHA256HEX 
 CRA |Crypto APIs | [cryptoapis.gs](https://github.com/moosylog/exchange_collectors/blob/master/cryptoapis.gs)    | [v1](https://docs.cryptoapis.io/) | none 
 DEL |Delta-Exchange | [delta_exchange.gs](https://github.com/moosylog/exchange_collectors/blob/master/delta_exchange.gs)    | [v2](https://docs.delta.exchange/) | HMACSHA256HEX 
+FOR | Forex | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 GEM |Gemini | [gemini.gs](https://github.com/moosylog/exchange_collectors/blob/master/gemini.gs)  | [v1](https://docs.gemini.com/rest-api/) | HMACSHA384HEX 
 HUB |Huobi Pro | [huobi.gs](https://github.com/moosylog/exchange_collectors/blob/master/huobi.gs)  | [v1](https://github.com/huobiapi/API_Docs_en) | HMACSHA256B64 
 KRK |Kraken | [kraken.gs](https://github.com/moosylog/exchange_collectors/blob/master/kraken.gs)  | [v1](https://www.kraken.com/features/api#private-user-data) | HMACSHA512++
