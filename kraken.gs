@@ -7,7 +7,7 @@ function KRK_GetBalances() {
    'secret'     : '•••••••••',
    'command'    : '/0/private/Balance',
    'uri'        : 'https://api.kraken.com',
-   'method'     : 'POST',
+   'method'     : 'post',
    'payload'    : ''
   }; 
   
