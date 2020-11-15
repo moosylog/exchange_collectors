@@ -36,9 +36,17 @@ FLY |Bitflyer | [bitflyer.gs](https://github.com/moosylog/exchange_collectors/bl
 MRT |Bitmart | [bitmart.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmart.gs)     | [v1](https://developer-pro.bitmart.com/en/part1/start/overview.html) | HMACSHA256HEX 
 MRT | Bitmart | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 BMX |Bitmex | [bitmex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmex.gs)     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
-BTX |Bittrex | [bittrex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
+PAM | Bitpanda | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+PGE | Bitpanda GE | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+BSN | Bitpanda | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+BTX |Bitsane | [bittrex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
+BSO | Bitso | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+KEX | BKex | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+BTS | Bitstamp | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 VAV | Bitvavo | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+BTK | BtcTurk | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 BYB |Bybit | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs)    | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX 
+CEX |Cex.io | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 CNB |Coinbase | [coinbase.gs](https://github.com/moosylog/exchange_collectors/blob/master/coinbase.gs)    | [v2](https://developers.coinbase.com/) | HMACSHA256HEX 
 CRA |Crypto APIs | [cryptoapis.gs](https://github.com/moosylog/exchange_collectors/blob/master/cryptoapis.gs)    | [v1](https://docs.cryptoapis.io/) | none 
 DEL |Delta-Exchange | [delta_exchange.gs](https://github.com/moosylog/exchange_collectors/blob/master/delta_exchange.gs)    | [v2](https://docs.delta.exchange/) | HMACSHA256HEX 
