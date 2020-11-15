@@ -55,6 +55,7 @@ CRA |Crypto APIs | [cryptoapis.gs](https://github.com/moosylog/exchange_collecto
 CUR |Currency | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 DEL |Delta-Exchange | [delta_exchange.gs](https://github.com/moosylog/exchange_collectors/blob/master/delta_exchange.gs)    | [v2](https://docs.delta.exchange/) | HMACSHA256HEX 
 DRB |Deribit | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
+DSF |DeversiFi | [N/A](https://github.com/DeversiFi/api-documentation/blob/master/trading/js/GetBalance.js)  | [x]() | x | 
 FOR |Forex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 FTX |FTX | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 GAT |Gate.io | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
