@@ -15,7 +15,7 @@ These sample code snippets authenticate to the API and will list your balance in
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
-To explore some of these APIs from Google Script, you can try [ReX](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/rex). It's an interactive API explorer in Sheets that allows you to see the request and the response data. **ReX** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs  
+To explore some of these APIs from Google Apps Script (GAS), you can try [ReX](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/rex). It's an interactive API explorer in Sheets that allows you to see the request and the response data. **ReX** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs  
 
 Enjoy,
 
@@ -90,7 +90,7 @@ feedback or requests: moosylog@gmail.com
 If you don't tell me, how can I know?
 ***
 
-###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate google sheets google script
+###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate google sheets google script javascript gas
 
 *** Moosy Research: Cool Cryptocurrency Sheets
 Because nothing is as flexible and easy to work with as a spreadsheet. ***
