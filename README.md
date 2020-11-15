@@ -70,7 +70,6 @@ Liq |Liquid | [ctrxl](https://sites.google.com/site/moosyresearch/projects/crypt
 LUN |Luno | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 MXC |MXC | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 NOM |Nominex | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
-
 OKX |Okex | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs)  | [v3](https://www.okex.com/docs/en/) | HMACSHA256B64 
 PAX |Gopax | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
 PMX |Phemex | [ctrxl](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [x]() | x | 
