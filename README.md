@@ -40,7 +40,7 @@ PAN | Bitpanda | [See Cointrexer](https://sites.google.com/site/moosyresearch/pr
 PGE | Bitpanda GE | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 BSN | Bitsane | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]()  | HMACSHA384HEX 
 BTX | Bittrex | [bittrex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
-BSO | Bitso | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
+BSO | Bitso | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 xxx | ByteTrade | [Todo](https://docs.byte-trade.com/#get-account-balance)  | [v2](https://docs.byte-trade.com) | HMACSHA256HEX | 
 KEX | BKex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 BTS | Bitstamp | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
