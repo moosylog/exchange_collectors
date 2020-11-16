@@ -38,14 +38,16 @@ MRT |Bitmart | [bitmart.gs](https://github.com/moosylog/exchange_collectors/blob
 BMX |Bitmex | [bitmex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmex.gs)     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
 PAN | Bitpanda | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 PGE | Bitpanda GE | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
-BSN | Bitsane | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]()  | HMACSHA284HEX 
+BSN | Bitsane | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]()  | HMACSHA384HEX 
 BTX | Bittrex | [bittrex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
 BSO | Bitso | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 xxx | ByteTrade | [Todo](https://docs.byte-trade.com/#get-account-balance)  | [v2](https://docs.byte-trade.com) | HMACSHA256HEX | 
 KEX | BKex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 BTS | Bitstamp | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 VAV | Bitvavo | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
+xxx | Bitz | [todo](https://apidocv2.bitz.ai/en/#signature-authentication)  | [ ]() | MD5 32b | 
 BTK | BtcTurk | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256B64enc
+xxx | BTSE | [todo](https://www.btse.com/apiexplorer/spot/#authentication)  | [ ]() | HMACSHA384xxx
 BYB | Bybit | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs)    | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX 
 CEX |Cex.io | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 ALL |Coinall | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
@@ -66,6 +68,7 @@ FOR |Forex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projec
 FTX |FTX | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 GAT |Gate.io | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 GEM |Gemini | [gemini.gs](https://github.com/moosylog/exchange_collectors/blob/master/gemini.gs)  | [v1](https://docs.gemini.com/rest-api/) | HMACSHA384HEX 
+xxx |Globitex | [todo](https://globitex.com/api/#restAuthentication)  | [v?](https://globitex.com/api/#restAuthentication) | HMACSHA512HEX 
 HIT |BitBTC | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 HUB |Huobi Pro | [huobi.gs](https://github.com/moosylog/exchange_collectors/blob/master/huobi.gs)  | [v1](https://github.com/huobiapi/API_Docs_en) | HMACSHA256B64 
 IDX |Idex | [idex.gs](https://github.com/moosylog/exchange_collectors/blob/master/idex.gs)  | [v2](https://docs.idex.io) | HMACSHA256HEX
