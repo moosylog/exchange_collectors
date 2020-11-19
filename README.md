@@ -84,6 +84,7 @@ PAX |Gopax | [See Cointrexer](https://sites.google.com/site/moosyresearch/projec
 PMX |Phemex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [v1](https://docs.poloniex.com) | HMACSHA512HEX 
 PRB |Probit | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
+SMP |SimpleFX | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 xxx |Redot | [Todo:](https://api.redot.com/v1/private/Accounts)  | [v1](https://docs.redot.com/?shell#message-structure) | [Fin FIX API](https://globitex.com/api/) | 
 xxx |Ukex | [Todo:](https://api.redot.com/v1/private/Accounts)  | [v?](https://www.ukex.com/en-us/article/api) | HMACSHA512??? | 
 UPB |Upbit | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
