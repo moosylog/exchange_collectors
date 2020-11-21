@@ -33,7 +33,7 @@ BIN | Binance | [binance.gs](https://github.com/moosylog/exchange_collectors/blo
 B2C | Bit2C | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA512B64
 BFX |Bitfinex | [bitfinex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitfinex.gs)   | [v2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
 FLY |Bitflyer | [bitflyer.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitflyer.gs)   | [v1](https://lightning.bitflyer.com/docs?lang=en) | HMACSHA256HEX 
-[]  |Bitget | [todo](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature)   | [v1](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature) | HMACSHA256B64 
+.   |Bitget | [todo](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature)   | [v1](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature) | HMACSHA256B64 
 MRT |Bitmart | [bitmart.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmart.gs)     | [v1](https://developer-pro.bitmart.com/en/part1/start/overview.html) | HMACSHA256HEX 
 BMX |Bitmex | [bitmex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmex.gs)     | [v1](https://www.bitmex.com/app/apiOverview) | HMACSHA256HEX 
 PAN | Bitpanda | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
@@ -41,7 +41,7 @@ PGE | Bitpanda GE | [See Cointrexer](https://sites.google.com/site/moosyresearch
 BSN | Bitsane | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]()  | HMACSHA384HEX 
 BTX | Bittrex | [bittrex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs)    | [v3](https://bittrex.github.io/api) | HMACSHA512HEX 
 BSO | Bitso | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
-xxx | ByteTrade | [Todo](https://docs.byte-trade.com/#get-account-balance)  | [v2](https://docs.byte-trade.com) | HMACSHA256HEX | 
+.   | ByteTrade | [Todo](https://docs.byte-trade.com/#get-account-balance)  | [v2](https://docs.byte-trade.com) | HMACSHA256HEX | 
 KEX | BKex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 BTS | Bitstamp | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 VAV | Bitvavo | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
