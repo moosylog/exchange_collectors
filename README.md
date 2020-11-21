@@ -98,8 +98,8 @@ If you don't tell me, how can I know?
 
 ###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate google sheets google script javascript gas
 
-*** Moosy Research: Cool Cryptocurrency Sheets
-Because nothing is as flexible and easy to work with as a spreadsheet. ***
+*** Moosy Research: Cool Cryptocurrency Sheets ***
+Because nothing is as flexible and easy to work with as a spreadsheet!
 
 
 
