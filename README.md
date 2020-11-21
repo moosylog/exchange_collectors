@@ -47,7 +47,7 @@ BTS | Bitstamp | [See Cointrexer](https://sites.google.com/site/moosyresearch/pr
 VAV | Bitvavo | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 xxx | Bitz | [todo](https://apidocv2.bitz.ai/en/#signature-authentication)  | [ ]() | MD5 32b | 
 BTK | BtcTurk | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256B64enc
-xxx | BTSE | [todo](https://www.btse.com/apiexplorer/spot/#authentication)  | [ ]() | HMACSHA384xxx
+xxx | BTSE | [todo](https://www.btse.com/apiexplorer/spot/#generating-api-key) | [v3](https://github.com/btsecom/api-sample/blob/master/python/spot/btseauth_spot.py) | HMACSHA384HEX
 BYB | Bybit | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs)    | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX 
 CEX |Cex.io | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 ALL |Coinall | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
