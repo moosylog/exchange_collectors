@@ -45,7 +45,7 @@ xxx | ByteTrade | [Todo](https://docs.byte-trade.com/#get-account-balance)  | [v
 KEX | BKex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 BTS | Bitstamp | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 VAV | Bitvavo | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
-xxx | Bitz | [todo](https://apidocv2.bitz.ai/en/#signature-authentication)  | [ ]() | MD5 32b | 
+xxx | Bitz | [todo](https://apidocv2.bitz.ai/en/#signature-authentication)  | [ ]() | HMACSHA256B64 | 
 BTK | BtcTurk | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256B64enc
 xxx | BTSE | [todo](https://www.btse.com/apiexplorer/spot/#generating-api-key) | [v3](https://github.com/btsecom/api-sample/blob/master/python/spot/btseauth_spot.py) | HMACSHA384HEX
 BYB | Bybit | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs)    | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX 
