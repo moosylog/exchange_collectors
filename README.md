@@ -45,30 +45,30 @@ BSO | Bitso | [See Cointrexer](https://sites.google.com/site/moosyresearch/proje
 KEX | BKex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 BTS | Bitstamp | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
 VAV | Bitvavo | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX | 
-xxx | Bitz | [todo](https://apidocv2.bitz.ai/en/#signature-authentication)  | [ ]() | HMACSHA256B64 | 
+.   | Bitz | [todo](https://apidocv2.bitz.ai/en/#signature-authentication)  | [ ]() | HMACSHA256B64 | 
 BTK | BtcTurk | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256B64enc
-xxx | BTSE | [todo](https://www.btse.com/apiexplorer/spot/#generating-api-key) | [v3](https://github.com/btsecom/api-sample/blob/master/python/spot/btseauth_spot.py) | HMACSHA384HEX
+.   | BTSE | [todo](https://www.btse.com/apiexplorer/spot/#generating-api-key) | [v3](https://github.com/btsecom/api-sample/blob/master/python/spot/btseauth_spot.py) | HMACSHA384HEX
 BYB | Bybit | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs)    | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX 
 CEX |Cex.io | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 ALL |Coinall | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 CNB |Coinbase | [coinbase.gs](https://github.com/moosylog/exchange_collectors/blob/master/coinbase.gs)    | [v2](https://developers.coinbase.com/) | HMACSHA256HEX 
 GDX |Coinbase Pro | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 DCX |CoinDCX | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
-xxx |CoinONE | [Todo](https://doc.coinone.co.kr/)  | [v2](https://doc.coinone.co.kr/#tag/Account-V2) | HMACSHA512HEX | 
+.   |CoinONE | [Todo](https://doc.coinone.co.kr/)  | [v2](https://doc.coinone.co.kr/#tag/Account-V2) | HMACSHA512HEX | 
 C24 |Crex24 | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256B64 
 CRA |Crypto APIs | [cryptoapis.gs](https://github.com/moosylog/exchange_collectors/blob/master/cryptoapis.gs)    | [v1](https://docs.cryptoapis.io/) | none 
 CUR |Currency | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL]
 DCX |DCX | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACSHA256HEX 
 DEL |Delta-Exchange | [delta_exchange.gs](https://github.com/moosylog/exchange_collectors/blob/master/delta_exchange.gs)    | [v2](https://docs.delta.exchange/) | HMACSHA256HEX 
 DRB |Deribit | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
-xxx |DeversiFi | [Todo](https://github.com/DeversiFi/api-documentation/blob/master/trading/js/GetBalance.js)  | [v1](https://docs.deversifi.com/docs#postV1TradingRGetbalance) | ? | 
-xxx |eToro | [Todo](https://doc.coinone.co.kr/)  | [?]() | none | 
-xxx |eToroX | [ReX works](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/exchanges#TOC-eToroX)  | [v2](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/exchanges#TOC-eToroX) | RSA | 
+.   |DeversiFi | [Todo](https://github.com/DeversiFi/api-documentation/blob/master/trading/js/GetBalance.js)  | [v1](https://docs.deversifi.com/docs#postV1TradingRGetbalance) | ? | 
+.   |eToro | [Todo](https://doc.coinone.co.kr/)  | [?]() | none | 
+.   |eToroX | [ReX works](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/exchanges#TOC-eToroX)  | [v2](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/exchanges#TOC-eToroX) | RSA | 
 FOR |Forex | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 FTX |FTX | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 GAT |Gate.io | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 GEM |Gemini | [gemini.gs](https://github.com/moosylog/exchange_collectors/blob/master/gemini.gs)  | [v1](https://docs.gemini.com/rest-api/) | HMACSHA384HEX 
-xxx |Globitex | [todo](https://globitex.com/api/#restAuthentication)  | [v?](https://globitex.com/api/#restAuthentication) | HMACSHA512HEX 
+.   |Globitex | [todo](https://globitex.com/api/#restAuthentication)  | [v?](https://globitex.com/api/#restAuthentication) | HMACSHA512HEX 
 HIT |BitBTC | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 HUB |Huobi Pro | [huobi.gs](https://github.com/moosylog/exchange_collectors/blob/master/huobi.gs)  | [v1](https://github.com/huobiapi/API_Docs_en) | HMACSHA256B64 
 IDX |Idex | [idex.gs](https://github.com/moosylog/exchange_collectors/blob/master/idex.gs)  | [v2](https://docs.idex.io) | HMACSHA256HEX
@@ -85,8 +85,8 @@ PMX |Phemex | [See Cointrexer](https://sites.google.com/site/moosyresearch/proje
 POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [v1](https://docs.poloniex.com) | HMACSHA512HEX 
 PRB |Probit | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 SMP |SimpleFX | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
-xxx |Redot | [Todo:](https://api.redot.com/v1/private/Accounts)  | [v1](https://docs.redot.com/?shell#message-structure) | [Fin FIX API](https://globitex.com/api/) | 
-xxx |Ukex | [Todo:](https://api.redot.com/v1/private/Accounts)  | [v?](https://www.ukex.com/en-us/article/api) | HMACSHA512??? | 
+.   |Redot | [Todo:](https://api.redot.com/v1/private/Accounts)  | [v1](https://docs.redot.com/?shell#message-structure) | [Fin FIX API](https://globitex.com/api/) | 
+.   |Ukex | [Todo:](https://api.redot.com/v1/private/Accounts)  | [v?](https://www.ukex.com/en-us/article/api) | HMACSHA512??? | 
 UPB |Upbit | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 VNX |Vinex Network | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
 YBT |Yobit | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() [See CtrXL] 
