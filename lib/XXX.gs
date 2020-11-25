@@ -11,5 +11,5 @@ function XXX_PublicRequest(request) {
             'Content-Type'       : 'application/json',
           } 
         }; 
-   return  { uri: request.uri + request.version + request.command , params: params };
+   return  { uri: request.uri + request.version + request.command + request.payload, params: params };
 }
