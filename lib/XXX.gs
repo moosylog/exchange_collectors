@@ -3,7 +3,7 @@ function XXX_PrivateRequest(request) {   MRT_PublicRequest(request) }
 function XXX_PublicRequest(request) {    
   if (request.version != undefined) request.version = "";
   if (request.payload != undefined && request.payload != null)
-    if (stn.payload[0] != "?")  stn.payload =CreateURIQueryString(stn.payload,"?");
+    if (request.payload[0] != "?")  request.payload =CreateURIQueryString(request.payload,"?");
   const params    = {
           'method'              : request.method,  
           'muteHttpExceptions'  : true,
