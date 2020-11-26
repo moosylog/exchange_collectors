@@ -182,7 +182,7 @@ function BTX_PrivateRequest(stn) {
   function HMACSHA512HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_512, s, secret)).toString(); }
   function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
   var nonce    = new Date().getTime().toString();
-  try { if ( stn.payload != null)  stn.payload=JSON.stringify(stn.payload); } catch (e) {Logger.log('BTX_PrivateRequest: can not stringify'); }
+  // try { if ( stn.payload != null)  stn.payload=JSON.stringify(stn.payload); } catch (e) {Logger.log('BTX_PrivateRequest: can not stringify'); }
   contentHash  = SHA512HEX(stn.payload),
   params       = {
     'method'            : stn.method,
