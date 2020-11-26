@@ -1,1 +1,228 @@
-var _0x2db5=['Buy','fetch','secret','askRate','lastIndexOf','payload','uri','marketSymbol','CryptoAddress','toString','completedAt','BTX_Getdeposithistory','Sell','Amount','length','push','SELL','method','map','direction','currencySymbol','apikey','GET','https://api.bittrex.com','BTX_Getorderhistory','Exchange','Currency','cryptoAddress','Bittrex','Error:\x20Is\x20this\x20a\x20Bittrex\x20file?\x20Can\x20not\x20find\x20[CommissionPaid]','indexOf','total','MacAlgorithm','stringify','SHA_512','computeHmacSignature','CommissionPaid','LastUpdated','application/json','txId','LIMIT_SELL','Type','/orders/closed','/withdrawals/closed','log','closedAt','Closed','quoteCurrencySymbol','toUpperCase','command','version','BUY','BTC','params','Pushed\x20to\x20Sheet:\x5cn\x5cn','DigestAlgorithm','fillQuantity','Bittrex:\x20Pushed\x20to\x20Sheet','BTX_Import','/balances','Empty','LTC-BTC','BTX_Getwithdrawhistory','replace','BTX_PrivateFetch','HMAC_SHA_512','/markets/','bidRate','Quantity','/deposits/closed','quantity','limit','baseCurrencySymbol','/ticker','computeDigest','substring','symbol','parse','getTime','Raw\x20data\x20received\x20from\x20API:\x5cn\x5cn','slice','debug'];(function(_0x2846ff,_0x48753f){var _0x2db5ae=function(_0x433418){while(--_0x433418){_0x2846ff['push'](_0x2846ff['shift']());}};_0x2db5ae(++_0x48753f);}(_0x2db5,0x169));var _0x4334=function(_0x2846ff,_0x48753f){_0x2846ff=_0x2846ff-0x119;var _0x2db5ae=_0x2db5[_0x2846ff];return _0x2db5ae;};function BTX_Settings(){var _0x23d495=_0x4334,_0x38790f={'exchange':_0x23d495(0x166),'apikey':EXKEY,'secret':EXSECRET,'uri':_0x23d495(0x161),'version':'/v3','method':_0x23d495(0x160),'payload':''};return _0x38790f;}function BTX_Ticker_Test(){var _0x3815dc=_0x4334;Logger[_0x3815dc(0x124)](BTX_Ticker(_0x3815dc(0x135)));};function BTX_Ticker(_0x15494e){var _0x29c7f2=_0x4334,_0x22a7a2=BTX_Settings();_0x22a7a2['command']=_0x29c7f2(0x13a)+_0x15494e+_0x29c7f2(0x141);var _0x2a4a6d=BTX_PublicFetch(_0x22a7a2);if(_0x2a4a6d!=null)return[[parseFloat(_0x2a4a6d[_0x29c7f2(0x13b)]),parseFloat(_0x2a4a6d[_0x29c7f2(0x14d)]),parseFloat(_0x2a4a6d['lastTradeRate'])]];return[[0x0,0x0,0x0]];}function BTX_GetMarkets(){var _0x527ae5=_0x4334,_0x34873b=BTX_Settings();_0x34873b[_0x527ae5(0x129)]='/markets';var _0x318395=[],_0x4b500c=BTX_PublicFetch(_0x34873b);if(_0x4b500c==null)return null;for(r in _0x4b500c){_0x318395[_0x527ae5(0x159)]([_0x4b500c[r][_0x527ae5(0x140)]+_0x4b500c[r][_0x527ae5(0x127)],_0x4b500c[r][_0x527ae5(0x144)]]);}return _0x318395;}function BTX_PublicRequest(_0x360e8c){var _0x474584=_0x4334;return params={'method':_0x360e8c[_0x474584(0x15b)],'muteHttpExceptions':!![],'headers':{'Content-Type':_0x474584(0x11e),'Accept':_0x474584(0x11e)}},{'uri':_0x360e8c[_0x474584(0x150)]+_0x360e8c[_0x474584(0x12a)]+_0x360e8c['command'],'params':params};}function BTX_PublicFetch(_0x2461fa){var _0x141ca9=_0x4334,_0x4349e3=BTX_PublicRequest(_0x2461fa);try{return JSON[_0x141ca9(0x145)](UrlFetchApp[_0x141ca9(0x14b)](_0x4349e3[_0x141ca9(0x150)],_0x4349e3['params']));}catch(_0x5c6f8e){return DebugLog('BTX_PublicFetch',_0x5c6f8e),null;};}function BTX_GetBalances(){var _0x866cb6=_0x4334,_0x2dc854=BTX_Settings();_0x2dc854[_0x866cb6(0x129)]=_0x866cb6(0x133);var _0x56ce18=[],_0x4bdf82=BTX_PrivateFetch(_0x2dc854);try{ADATTRIB[_0x866cb6(0x168)](_0x866cb6(0x149))>=0x0&&Browser['msgBox'](_0x866cb6(0x147)+JSON[_0x866cb6(0x119)](_0x4bdf82));}catch(_0x2fa633){Logger[_0x866cb6(0x124)]('');}DebugLog('Bittrex:\x20Received\x20from\x20API',_0x4bdf82);for(var _0x56acf0 in _0x4bdf82){parseFloat(_0x4bdf82[_0x56acf0][_0x866cb6(0x169)]*0x2710)>0x0&&_0x56ce18[_0x866cb6(0x159)]({'curcodeEX':_0x4bdf82[_0x56acf0][_0x866cb6(0x15e)],'balance':_0x4bdf82[_0x56acf0][_0x866cb6(0x169)]});}DebugLog(_0x866cb6(0x131),_0x56ce18);try{ADATTRIB[_0x866cb6(0x168)](_0x866cb6(0x149))>=0x0&&Browser['msgBox'](_0x866cb6(0x12e)+JSON['stringify'](_0x56ce18));}catch(_0xfc86fe){Logger[_0x866cb6(0x124)]('');}return _0x56ce18;}function BTX_Getorderhistory(_0x4e3354){var _0x5ba4e0=_0x4334,_0x177276=BTX_Settings();_0x177276[_0x5ba4e0(0x129)]=_0x5ba4e0(0x122);var _0x14ef32=[],_0x4b346f=BTX_PrivateFetch(_0x177276);try{if(_0x4b346f[0x0][_0x5ba4e0(0x15d)]==undefined||_0x4b346f===null)return DebugLog(_0x5ba4e0(0x162),_0x5ba4e0(0x134)),null;else DebugLog(_0x5ba4e0(0x162),_0x4b346f);}catch(_0x24a464){return DebugLog(_0x5ba4e0(0x162),_0x5ba4e0(0x134)),null;}for(r in _0x4b346f){_0x4b346f[r]['direction']==_0x5ba4e0(0x12b)&&(_0x4b346f[r][_0x5ba4e0(0x15d)]=_0x5ba4e0(0x14a)),_0x4b346f[r][_0x5ba4e0(0x15d)]==_0x5ba4e0(0x15a)&&(_0x4b346f[r][_0x5ba4e0(0x15d)]=_0x5ba4e0(0x156)),_0x14ef32[_0x5ba4e0(0x159)]({'date':new Date(_0x4b346f[r][_0x5ba4e0(0x125)][_0x5ba4e0(0x143)](0x0,_0x4b346f[r]['closedAt'][_0x5ba4e0(0x14e)]('.'))),'type':_0x4b346f[r][_0x5ba4e0(0x15d)],'nmarket':_0x4b346f[r][_0x5ba4e0(0x151)]['substring'](_0x4b346f[r][_0x5ba4e0(0x151)][_0x5ba4e0(0x168)]('-')+0x1,_0x4b346f[r][_0x5ba4e0(0x151)][_0x5ba4e0(0x158)]),'ncur':_0x4b346f[r]['marketSymbol'][_0x5ba4e0(0x143)](_0x4b346f[r][_0x5ba4e0(0x151)][_0x5ba4e0(0x168)]('-'),0x0),'quantity':_0x4b346f[r][_0x5ba4e0(0x130)],'unitprice':_0x4b346f[r][_0x5ba4e0(0x13f)],'fee':_0x4b346f[r]['commission'],'nfeecur':_0x5ba4e0(0x12c),'ordernr':''});}return Logger[_0x5ba4e0(0x124)](_0x14ef32),_0x14ef32;}function BTX_Getdeposithistory(_0x111cfb){var _0x190f6a=_0x4334,_0x3c9068=BTX_Settings();_0x3c9068[_0x190f6a(0x129)]=_0x190f6a(0x13d);var _0x232530=[],_0x3bedde=BTX_PrivateFetch(_0x3c9068);try{if(_0x3bedde[0x0][_0x190f6a(0x11d)]==undefined||_0x3bedde===null)return DebugLog('BTX_Getdeposithistory',_0x190f6a(0x134)),null;else DebugLog(_0x190f6a(0x155),_0x3bedde);}catch(_0x5bf36d){return DebugLog(_0x190f6a(0x155),_0x190f6a(0x134)),null;}for(r in _0x3bedde){_0x232530[_0x190f6a(0x159)]([_0x3bedde[r]['LastUpdated'][_0x190f6a(0x137)]('T','\x20'),_0x3bedde[r][_0x190f6a(0x164)],_0x3bedde[r]['Amount'],ToFiat(_0x3bedde[r][_0x190f6a(0x164)],_0x3bedde[r][_0x190f6a(0x157)]),_0x3bedde[r]['TxId'],_0x3bedde[r][_0x190f6a(0x152)]]);}return _0x232530;}function BTX_Getwithdrawhistory(_0x17a543){var _0x44626c=_0x4334,_0x48bf6c=BTX_Settings();_0x48bf6c[_0x44626c(0x129)]=_0x44626c(0x123);var _0x16befa=[],_0x1590d4=BTX_PrivateFetch(_0x48bf6c);try{if(_0x1590d4[0x0][_0x44626c(0x154)]==undefined||_0x1590d4===null)return DebugLog(_0x44626c(0x136),'Empty'),null;else DebugLog(_0x44626c(0x136),_0x1590d4);}catch(_0x1ce6e2){return DebugLog(_0x44626c(0x136),_0x44626c(0x134)),null;}for(r in _0x1590d4){_0x16befa[_0x44626c(0x159)]([_0x1590d4[r][_0x44626c(0x154)][_0x44626c(0x137)]('T','\x20'),_0x1590d4[r][_0x44626c(0x15e)],_0x1590d4[r][_0x44626c(0x13e)],ToFiat(_0x1590d4[r][_0x44626c(0x15e)],_0x1590d4[r][_0x44626c(0x13e)]),_0x1590d4[r][_0x44626c(0x11f)],_0x1590d4[r][_0x44626c(0x165)]]);}return Logger[_0x44626c(0x124)](_0x16befa),_0x16befa;}function BTX_PrivateFetch(_0x56dc66){var _0x5a4b15=_0x4334,_0x51f557=BTX_PrivateRequest(_0x56dc66);try{return JSON['parse'](UrlFetchApp[_0x5a4b15(0x14b)](_0x51f557[_0x5a4b15(0x150)],_0x51f557[_0x5a4b15(0x12d)]));}catch(_0x1591cb){return DebugLog(_0x5a4b15(0x138),_0x1591cb),null;};}function BTX_PrivateRequest(_0x5cb419){var _0x3d0e4b=_0x4334;function _0x5b14ee(_0x59fee4){var _0x77bba=_0x4334;return _0x3bcd54(Utilities[_0x77bba(0x142)](Utilities[_0x77bba(0x12f)][_0x77bba(0x11a)],_0x59fee4))[_0x77bba(0x153)]();}function _0x48533c(_0x29a11e,_0x278668){var _0x58c170=_0x4334;return _0x3bcd54(Utilities[_0x58c170(0x11b)](Utilities[_0x58c170(0x16a)][_0x58c170(0x139)],_0x29a11e,_0x278668))[_0x58c170(0x153)]();}function _0x3bcd54(_0x5a2d7b){var _0x3393bb=_0x4334;return _0x5a2d7b[_0x3393bb(0x15c)](function(_0x2f26d3){var _0x5462d9=_0x3393bb;return('0'+(_0x2f26d3&0xff)['toString'](0x10))[_0x5462d9(0x148)](-0x2);})['join']('');}var _0x512deb=new Date()[_0x3d0e4b(0x146)]()[_0x3d0e4b(0x153)]();if(_0x5cb419[_0x3d0e4b(0x14f)]!=null)JSON['stringify'](_0x5cb419['payload']);return contentHash=_0x5b14ee(_0x5cb419[_0x3d0e4b(0x14f)]),params={'method':_0x5cb419[_0x3d0e4b(0x15b)],'muteHttpExceptions':!![],'headers':{'Api-Key':_0x5cb419[_0x3d0e4b(0x15f)],'Api-Timestamp':_0x512deb,'Api-Content-Hash':contentHash,'Api-Signature':_0x48533c(_0x512deb+_0x5cb419[_0x3d0e4b(0x150)]+_0x5cb419[_0x3d0e4b(0x12a)]+_0x5cb419[_0x3d0e4b(0x129)]+_0x5cb419[_0x3d0e4b(0x15b)]+contentHash,_0x5cb419[_0x3d0e4b(0x14c)]),'Content-Type':_0x3d0e4b(0x11e),'Accept':_0x3d0e4b(0x11e)},'payload':_0x5cb419[_0x3d0e4b(0x14f)]},{'uri':_0x5cb419['uri']+_0x5cb419[_0x3d0e4b(0x12a)]+_0x5cb419[_0x3d0e4b(0x129)],'params':params};}function BTX_Import(_0x1ba744){var _0x4364a2=_0x4334,_0x414593=[],_0x13037f=GetCSVSheet(_0x1ba744);DebugLog(_0x4364a2(0x132),_0x13037f);if(_0x13037f==null)return null;if(_0x13037f[0x1]['CommissionPaid']==null)return Browser['msgBox'](_0x4364a2(0x167)),null;for(r in _0x13037f){_0x13037f[r][_0x4364a2(0x121)][_0x4364a2(0x128)]()=='LIMIT_BUY'&&(_0x13037f[r][_0x4364a2(0x121)]=_0x4364a2(0x14a)),_0x13037f[r]['Type'][_0x4364a2(0x128)]()==_0x4364a2(0x120)&&(_0x13037f[r][_0x4364a2(0x121)]=_0x4364a2(0x156)),_0x414593['push']({'date':_0x13037f[r][_0x4364a2(0x126)],'type':_0x13037f[r][_0x4364a2(0x121)],'ncur':_0x13037f[r][_0x4364a2(0x163)]['substring'](_0x13037f[r][_0x4364a2(0x163)][_0x4364a2(0x168)]('-')+0x1,_0x13037f[r][_0x4364a2(0x163)][_0x4364a2(0x158)]),'nmarket':_0x13037f[r]['Exchange'][_0x4364a2(0x143)](_0x13037f[r][_0x4364a2(0x163)][_0x4364a2(0x168)]('-'),0x0),'quantity':_0x13037f[r][_0x4364a2(0x13c)],'unitprice':_0x13037f[r]['Limit'],'fee':_0x13037f[r][_0x4364a2(0x11c)],'nfeecur':_0x4364a2(0x12c),'ordernr':''});}return _0x414593;}
+// 26 nov 2020 - latest, added version
+
+function BTX_Settings() {  
+  var stn =  {
+  "exchange" :"Bittrex",
+   "apikey"   : EXKEY,
+   "secret"   : EXSECRET,
+   "uri"      :"https://api.bittrex.com",
+   "version"  :"/v3",
+   "method"   :"GET",
+   "payload"  :""
+  };
+  return stn;
+}
+
+
+// ** PUBLIC FUNCTIONS
+
+function BTX_Ticker_Test(){ Logger.log(BTX_Ticker('LTC-BTC'))};
+function BTX_Ticker(market){
+  var stn         =  BTX_Settings();
+      stn.command = "/markets/"+market+"/ticker";
+  var dataAll     = BTX_PublicFetch(stn); 
+  if (dataAll != null) return ([[parseFloat(dataAll.bidRate), parseFloat(dataAll.askRate), parseFloat(dataAll.lastTradeRate)]]); 
+  return ([[0,0,0,]]); 
+}
+
+function BTX_GetMarkets() {
+  var stn         =  BTX_Settings();
+      stn.command = "/markets";
+  var array       = [];
+  var dataAll     = BTX_PublicFetch(stn);
+  if (dataAll == null) return(null);  
+  for (r in dataAll) {array.push([dataAll[r]['baseCurrencySymbol']+dataAll[r]['quoteCurrencySymbol'],dataAll[r]['symbol']]); }
+  //Logger.log(array);  
+  return (array);  
+}
+
+
+function BTX_PublicRequest(btxrequest) {   
+ params       = {
+    'method'            : btxrequest.method,
+    'muteHttpExceptions': true,
+    'headers': {
+      'Content-Type'    :'application/json',
+      'Accept'          :'application/json' 
+    },
+    //'payload' :  btxrequest.payload,
+  }
+  return  { uri: btxrequest.uri + btxrequest.version + btxrequest.command, params: params};
+}
+
+function BTX_PublicFetch(stn) {
+  var response = BTX_PublicRequest(stn);
+  try { return ( JSON.parse(UrlFetchApp.fetch(response.uri,response.params ))); } catch (e) {DebugLog("BTX_PublicFetch", e); return null;}; 
+}
+
+
+
+
+
+
+
+// ** PRIVATE FUNCTIONS
+
+function BTX_GetBalances() {  
+ var stn     =  BTX_Settings();
+ stn.command = "/balances";
+  
+ var array   = [],
+      dataAll = BTX_PrivateFetch(stn); 
+ try { if (ADATTRIB.indexOf('debug') >= 0) { Browser.msgBox("Raw data received from API:\\n\\n"+JSON.stringify(dataAll)); }   } catch(e) {Logger.log("");}
+ DebugLog("Bittrex: Received from API", dataAll); 
+ for (var r in dataAll) { 
+    if(parseFloat(dataAll[r]['total']*10000) > 0){
+      array.push({ curcodeEX: dataAll[r]['currencySymbol'], balance:dataAll[r]['total'] });  } 
+  }
+  DebugLog("Bittrex: Pushed to Sheet", array); 
+  try { if (ADATTRIB.indexOf('debug') >= 0) { Browser.msgBox("Pushed to Sheet:\\n\\n"+JSON.stringify(array)); }   } catch(e) {Logger.log("");}
+  return(array);
+}
+
+
+
+function BTX_Getorderhistory(settings) { 
+  var stn     =  BTX_Settings();
+  stn.command = "/orders/closed";
+
+  var array   = [],
+      dataAll = BTX_PrivateFetch(stn); 
+  
+  
+  try {
+  if(dataAll[0]['direction'] == undefined || dataAll === null) { DebugLog("BTX_Getorderhistory", "Empty"); return(null); } else {DebugLog("BTX_Getorderhistory", dataAll);}
+  } catch (e) { DebugLog("BTX_Getorderhistory", "Empty"); return(null); }
+  
+  for (r in dataAll) { 
+    if (dataAll[r]['direction']=="BUY") {dataAll[r]['direction']="Buy";}
+    if (dataAll[r]['direction']=="SELL") {dataAll[r]['direction']="Sell";}
+    array.push({
+      date:      new Date(dataAll[r]['closedAt'].substring(0, dataAll[r]['closedAt'].lastIndexOf("."))),
+      type:      dataAll[r]['direction'],
+      nmarket:   dataAll[r]['marketSymbol'].substring(dataAll[r]['marketSymbol'].indexOf("-")+1, dataAll[r]['marketSymbol'].length), 
+      ncur:      dataAll[r]['marketSymbol'].substring(dataAll[r]['marketSymbol'].indexOf("-"), 0),
+      quantity:  dataAll[r]['fillQuantity'],
+      unitprice: dataAll[r]['limit'],
+      fee:       dataAll[r]['commission'],
+      nfeecur:   "BTC",
+      ordernr:   ""
+    });
+  }
+  Logger.log(array);
+  return(array);  
+}
+
+
+
+ 
+
+function BTX_Getdeposithistory(settings) { 
+  var stn     =  BTX_Settings();
+  stn.command = "/deposits/closed";
+  
+  var array = [],
+      dataAll = BTX_PrivateFetch(stn); 
+  
+  try {
+  if(dataAll[0]['LastUpdated'] == undefined || dataAll === null) { DebugLog("BTX_Getdeposithistory", "Empty"); return(null); } else {DebugLog("BTX_Getdeposithistory", dataAll);}
+  } catch (e) { DebugLog("BTX_Getdeposithistory", "Empty"); return(null); }
+  for (r in dataAll) {
+  array.push([   
+    dataAll[r]['LastUpdated'].replace("T", " "),
+    dataAll[r]['Currency'], 
+    dataAll[r]['Amount'], 
+    ToFiat(dataAll[r]['Currency'], dataAll[r]['Amount']),
+    dataAll[r]['TxId'], 
+    dataAll[r]['CryptoAddress'],
+  ]); 
+  }
+  return (array);
+}
+
+function BTX_Getwithdrawhistory(settings) { 
+ var stn     =  BTX_Settings();
+  stn.command = "/withdrawals/closed";
+  
+  var array = [],
+      dataAll = BTX_PrivateFetch(stn); 
+//Logger.log(dataAll);
+//return null;
+//  var array = [];
+//  var dataAll = BTX_PrivateFetch("account/getwithdrawalhistory","");
+
+  try {
+    if(dataAll[0]['completedAt'] == undefined || dataAll === null)  { DebugLog("BTX_Getwithdrawhistory", "Empty"); return(null); } else {DebugLog("BTX_Getwithdrawhistory", dataAll);}
+  } catch (e)  { DebugLog("BTX_Getwithdrawhistory", "Empty"); return(null); }
+  
+  for (r in dataAll) {
+  array.push([   
+    dataAll[r]['completedAt'].replace("T", " "),
+    dataAll[r]['currencySymbol'], 
+    dataAll[r]['quantity'], 
+    ToFiat(dataAll[r]['currencySymbol'], dataAll[r]['quantity']),
+    dataAll[r]['txId'], 
+    dataAll[r]['cryptoAddress'],
+  ]); 
+  }
+  Logger.log(array);
+  return (array); 
+}
+
+
+
+function BTX_PrivateFetch(stn) {
+  var response = BTX_PrivateRequest(stn);
+  try { return ( JSON.parse(UrlFetchApp.fetch(response.uri,response.params ))); } catch (e) {DebugLog("BTX_PrivateFetch", e); return null;}; 
+}
+
+
+function BTX_PrivateRequest(stn) {      
+  function SHA512HEX(s)             { return ToHex(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_512, s)).toString(); }  
+  function HMACSHA512HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_512, s, secret)).toString(); }
+  function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
+  var nonce    = new Date().getTime().toString();
+  try { if ( stn.payload != null)  stn.payload=JSON.stringify(stn.payload); } catch (e) {Logger.log('BTX_PrivateRequest: can not stringify'); }
+  contentHash  = SHA512HEX(stn.payload),
+  params       = {
+    'method'            : stn.method,
+    'muteHttpExceptions': true,
+    'headers': {
+      'Api-Key'         : stn.apikey,
+      'Api-Timestamp'   : nonce,
+      'Api-Content-Hash': contentHash,
+      'Api-Signature'   : HMACSHA512HEX(nonce + stn.uri + stn.version + stn.command + stn.method + contentHash, stn.secret),
+      'Content-Type'    :'application/json',
+      'Accept'          :'application/json' 
+    },
+    'payload' :  stn.payload,
+  }
+  return  { uri: stn.uri + stn.version + stn.command, params: params};
+}
+
+
+
+function BTX_Import(settings) { 
+  var array     = [];
+  var dataAll   = GetCSVSheet(settings); 
+  DebugLog("BTX_Import", dataAll);
+  if (dataAll==null) {return(null);}
+  if (dataAll[1]['CommissionPaid'] == null ) {Browser.msgBox("Error: Is this a Bittrex file? Can not find [CommissionPaid]"); return(null);}
+  for (r in dataAll) { 
+    if (dataAll[r]['Type'].toUpperCase()=="LIMIT_BUY")  {dataAll[r]['Type']="Buy";}
+    if (dataAll[r]['Type'].toUpperCase()=="LIMIT_SELL") {dataAll[r]['Type']="Sell";}
+    array.push({
+      date:      dataAll[r]['Closed'],
+      type:      dataAll[r]['Type'],
+      ncur:      dataAll[r]['Exchange'].substring(dataAll[r]['Exchange'].indexOf("-")+1, dataAll[r]['Exchange'].length), 
+      nmarket:   dataAll[r]['Exchange'].substring(dataAll[r]['Exchange'].indexOf("-"), 0),
+      quantity:  dataAll[r]['Quantity'],
+      unitprice: dataAll[r]['Limit'],
+      fee:       dataAll[r]['CommissionPaid'],
+      nfeecur:   "BTC",
+      ordernr:   ""
+    });
+  }
+  return(array);
+}
+
