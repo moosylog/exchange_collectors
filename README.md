@@ -26,7 +26,7 @@ Moosy
 
 # Exchanges
 
-Symbol   | Exchange | Code   | API| Signature      
+Id   | Exchange | Code   | API| Signature      
 ---------| -------- |------- | ---| ---------     
 BBX | Bibox | [See Cointrexer](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/ctrxl)  | [ ]() | HMACMD5
 BIN | Binance | [binance.gs](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX | 
