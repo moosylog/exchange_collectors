@@ -1,6 +1,6 @@
 
 // IDEX.IO v2 | The World’s Most Advanced Cryptocurrency Exchange |‎ API Private Request in Google Apps Script (GAS).
-// By Moosy Research, check our cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
+// By Moosy Research, check our cryptosheets on: https://sites.google.com/view/moosyresearch
 
 function IDX_GetBalances() {  
   var IDXrequest = {
