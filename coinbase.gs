@@ -1,5 +1,5 @@
 // Coinbase API v2 Private Request in Google Apps Script (GAS).
-// By Moosy Research, see more cryptosheets on: https://sites.google.com/site/moosyresearch/projects/cryptos
+// By Moosy Research, see more cryptosheets on: https://sites.google.com/view/moosyresearch
 
 function CNB_GetBalances() {    
   var CNBrequest = {
