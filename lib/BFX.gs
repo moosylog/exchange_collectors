@@ -249,6 +249,9 @@ function BFX_Auth(payload,callback){
 
 
 function BFX_PrivateRequest(bfxrequest){
+  function HMACSHA384HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_384, s, secret)).toString(); }
+  function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
+  
   if (bfxrequest.payload == "") bfxrequest.payload = {};
   var nonce   =  new Date().getTime().toString(),
       payload = '/api'+bfxrequest.apiversion+bfxrequest.command+nonce+ JSON.stringify(bfxrequest.payload),
