@@ -54,6 +54,7 @@ ALL |Coinall | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | 
 CNB |Coinbase | [coinbase.gs](https://github.com/moosylog/exchange_collectors/blob/master/coinbase.gs)    | [v2](https://developers.coinbase.com/) | HMACSHA256HEX 
 GDX |Coinbase Pro | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 DCX |CoinDCX | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
+CNX |CoinEx | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 .   |CoinONE | [Todo](https://doc.coinone.co.kr/)  | [v2](https://doc.coinone.co.kr/#tag/Account-V2) | HMACSHA512HEX | 
 C24 |Crex24 | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACSHA256B64 
 CRA |Crypto APIs | [cryptoapis.gs](https://github.com/moosylog/exchange_collectors/blob/master/cryptoapis.gs)    | [v1](https://docs.cryptoapis.io/) | none 
