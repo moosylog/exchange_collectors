@@ -1,7 +1,6 @@
 function OAN_PublicRequest(request) {   OAN_PrivateRequest(request) }
 
 function OAN_PrivateRequest(request) {    
-  //Browser.msgBox(JSON.stringify(request));
   if (request.version != undefined) request.version = "";
   if (request.payload != undefined && request.payload != null)
     if (request.payload[0] != "?")  request.payload =CreateURIQueryString(request.payload,"?");
