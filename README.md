@@ -83,7 +83,7 @@ LUN |Luno | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]
 MXC |MXC | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 NOM |Nominex | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 OKX |Okex | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs)  | [v3](https://www.okex.com/docs/en/) | HMACSHA256B64 
-OAN |OANDA | [oan.gs](https://github.com/moosylog/exchange_collectors/blob/master/oan.gs)  | [v2](http://developer.oanda.com/rest-live-v20/account-ep/) | Barrier Token
+OAN |OANDA | [oanda.gs](https://github.com/moosylog/exchange_collectors/blob/master/oan.gs)  | [v2](http://developer.oanda.com/rest-live-v20/account-ep/) | Barrier Token
 PAX |Gopax | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 PMX |Phemex | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 POL |Poloniex | [poloniex.gs](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs)  | [v1](https://docs.poloniex.com) | HMACSHA512HEX 
