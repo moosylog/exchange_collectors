@@ -1,4 +1,3 @@
-
 function FTX_GetBalances() {   
   
   var FTXrequest = {
@@ -78,12 +77,15 @@ function FTX_PrivateRequest(FTXrequest) {
   
   if (FTXrequest.hasOwnProperty('payload') === false) FTXrequest.payload = "";
   
+  Browser.msgBox(FTXrequest.payload);
+  Browser.msgBox(JSON.stringify(FTXrequest.payload));
+  
   // ** compatability with older code, no /api in command
   var val=FTXrequest.command;
   if (FTXrequest.command.toLowerCase().indexOf('/api') < 0) val='/api'+FTXrequest.command;
   
   var pld=FTXrequest.payload;
-  if (FTXrequest.payload != "" && FTXrequest.method === "GET") pld = CreateURIQueryString(FTXrequest.payload,"?")  
+  if (FTXrequest.payload != "" && FTXrequest.method === "GET") pld = CreateURIQueryString(JSON.parse(FTXrequest.payload),"?")  
     
   var timestamp = new Date().getTime().toString(),  
 //      payld     = timestamp + FTXrequest.method +val+FTXrequest.payload,    // not sure, needs testing    
@@ -129,4 +131,3 @@ function FTX_PublicRequest(FTXrequest) {
       } // ** end params
  return  { uri: FTXrequest.uri + FTXrequest.command + FTXrequest.payload, params: params};
 }
-
