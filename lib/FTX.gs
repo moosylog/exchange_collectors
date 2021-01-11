@@ -85,7 +85,7 @@ function FTX_PrivateRequest(FTXrequest) {
   if (FTXrequest.command.toLowerCase().indexOf('/api') < 0) val='/api'+FTXrequest.command;
   
   var pld=FTXrequest.payload;
-  if (FTXrequest.payload != "" && FTXrequest.method === "GET") pld = CreateURIQueryString(JSON.parse(FTXrequest.payload),"?")  
+  if (FTXrequest.payload != "" && FTXrequest.method === "GET") pld = CreateURIQueryString(FTXrequest.payload,"?")  
     
   var timestamp = new Date().getTime().toString(),  
 //      payld     = timestamp + FTXrequest.method +val+FTXrequest.payload,    // not sure, needs testing    
