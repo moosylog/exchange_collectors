@@ -13,7 +13,7 @@ function FTX_GetBalances() {
   }; 
 
  
- Logger.log('FTX_GetBalances()');
+ Logger.log('FTX_GetBalances()'); 
  if (typeof ADATTRIB != 'undefined') FTXrequest.thirdattrib = ADATTRIB; 
   
  Logger.log("ATA="+ADATTRIB);
