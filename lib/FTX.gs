@@ -1,1 +1,132 @@
-var _0x1a40=['demo','params','BTC','FTX-SUBACCOUNT','undefined','getTime','3893147sKoToI','/wallet/all_balances','indexOf','HMAC_SHA_256','1cgBygk','\x22];','155583ycDckj','/api','stringify','apikey','no\x20or\x20empty\x20response:','application/json','1056000moetoC','result','join','total','length','POST','USDTBEAR','URL\x20....','676627nSwqlX','https://ftx.com/api','debug','name','511431Ybzytc','5syjCyB','Demo\x20data','FTX\x20Exchange','thirdattrib','map','USD','fetch','parse','GET','msgBox','toString','\x20debug','2471QEZaeg','slice','method','toLowerCase','Fetching\x20from\x20....','FTX','440KUtDUt','var\x20pnt\x20=\x20response.result[\x22','uri','MacAlgorithm','payload','ADATTRIB\x20=\x20','log','replace','command','headers','ATA=','FTX_GetBalances()','coin','main','hasOwnProperty','791374bvxvtL','Err:\x20FTX_PublicRequest\x20-\x20error\x20in\x20FTX\x20payload','Err:\x20FTX_PrivateRequest\x20-\x20thirdattrib\x20missing?'];var _0x1eb3=function(_0x3380ae,_0x4996bb){_0x3380ae=_0x3380ae-0xa1;var _0x1a403c=_0x1a40[_0x3380ae];return _0x1a403c;};(function(_0x2fcc76,_0x3c997c){var _0x47a056=_0x1eb3;while(!![]){try{var _0xd76856=-parseInt(_0x47a056(0xd7))*parseInt(_0x47a056(0xdd))+parseInt(_0x47a056(0xcb))*-parseInt(_0x47a056(0xb8))+-parseInt(_0x47a056(0xbe))+-parseInt(_0x47a056(0xb6))*parseInt(_0x47a056(0xca))+-parseInt(_0x47a056(0xc6))+parseInt(_0x47a056(0xa9))+parseInt(_0x47a056(0xb2));if(_0xd76856===_0x3c997c)break;else _0x2fcc76['push'](_0x2fcc76['shift']());}catch(_0x3f88f9){_0x2fcc76['push'](_0x2fcc76['shift']());}}}(_0x1a40,0x8c74c));function FTX_GetBalances(){var _0x197abb=_0x1eb3,_0x39a400={'id':_0x197abb(0xdc),'name':_0x197abb(0xcd),'apikey':EXKEY,'secret':EXSECRET,'thirdattrib':'','command':_0x197abb(0xb3),'uri':_0x197abb(0xc7),'method':_0x197abb(0xd3),'payload':''};Logger[_0x197abb(0xe3)](_0x197abb(0xa5));if(typeof ADATTRIB!=_0x197abb(0xb0))_0x39a400['thirdattrib']=ADATTRIB;Logger['log'](_0x197abb(0xa4)+ADATTRIB);if(ADATTRIB[_0x197abb(0xda)]()[_0x197abb(0xb4)](_0x197abb(0xac))>=0x0){Logger[_0x197abb(0xe3)](_0x197abb(0xcc));var _0x4a682c={'success':!![],'result':{'main':[{'coin':_0x197abb(0xc4),'free':2320.2,'total':2340.2},{'coin':_0x197abb(0xae),'free':0x2,'total':3.2}],'nino':[{'coin':_0x197abb(0xd0),'free':0x7d0,'total':0x898}]}};}else{DebugLog(_0x197abb(0xdb),_0x39a400[_0x197abb(0xc9)]);var _0x4bf042=FTX_PrivateRequest(_0x39a400);DebugLog(_0x197abb(0xc5),JSON['stringify'](_0x4bf042));var _0x4a682c=JSON['parse'](UrlFetchApp[_0x197abb(0xd1)](_0x4bf042['uri'],_0x4bf042[_0x197abb(0xad)]));DebugLog('Receiving\x20data\x20from\x20'+_0x39a400[_0x197abb(0xc9)],_0x4a682c),ADATTRIB[_0x197abb(0xda)]()[_0x197abb(0xb4)](_0x197abb(0xc8))>=0x0&&(Browser[_0x197abb(0xd4)](_0x39a400[_0x197abb(0xc9)]+'\x20Connector\x20DEBUG\x20Mode:'),Browser['msgBox'](JSON[_0x197abb(0xba)](_0x4a682c)));}try{var _0x168b14=_0x4a682c[_0x197abb(0xbf)][_0x197abb(0xa7)];}catch(_0x563590){return Logger[_0x197abb(0xe3)](_0x4a682c),Logger[_0x197abb(0xe3)](_0x197abb(0xbc)+UrlFetchApp[_0x197abb(0xd1)](_0x4bf042[_0x197abb(0xdf)],_0x4bf042[_0x197abb(0xad)])),null;}if(ADATTRIB==''||ADATTRIB=='demo')var _0x168b14=_0x4a682c[_0x197abb(0xbf)][_0x197abb(0xa7)];else try{ADATTRIB=ADATTRIB[_0x197abb(0xa1)]('\x20demo',''),ADATTRIB=ADATTRIB[_0x197abb(0xa1)]('\x20debug',''),Logger[_0x197abb(0xe3)](_0x197abb(0xe2)+ADATTRIB),eval(_0x197abb(0xde)+ADATTRIB+_0x197abb(0xb7));}catch(_0x4b54e3){Logger[_0x197abb(0xe3)]('');}var _0x34f5a5=[];for(r in _0x168b14){_0x34f5a5['push']({'curcodeEX':_0x168b14[r][_0x197abb(0xa6)],'balance':_0x168b14[r][_0x197abb(0xc1)]});}return Logger[_0x197abb(0xe3)]('=>'),Logger[_0x197abb(0xe3)](_0x34f5a5),_0x34f5a5;}function FTX_PrivateRequest(_0x188ef0){var _0x2edea0=_0x1eb3;function _0xe9f9a0(_0x4b666e,_0x5cf3f7){var _0x746fde=_0x1eb3;return _0x41d040(Utilities['computeHmacSignature'](Utilities[_0x746fde(0xe0)][_0x746fde(0xb5)],_0x4b666e,_0x5cf3f7))[_0x746fde(0xd5)]();}function _0x41d040(_0x1548fe){var _0x549251=_0x1eb3;return _0x1548fe[_0x549251(0xcf)](function(_0x4747ae){var _0x56951e=_0x549251;return('0'+(_0x4747ae&0xff)[_0x56951e(0xd5)](0x10))[_0x56951e(0xd8)](-0x2);})[_0x549251(0xc0)]('');}if(_0x188ef0[_0x2edea0(0xa8)]('payload')===![])_0x188ef0[_0x2edea0(0xe1)]='';var _0x347eaf=_0x188ef0['command'];if(_0x188ef0[_0x2edea0(0xa2)][_0x2edea0(0xda)]()[_0x2edea0(0xb4)]('/api')<0x0)_0x347eaf=_0x2edea0(0xb9)+_0x188ef0[_0x2edea0(0xa2)];var _0xe5b6a0=_0x188ef0['payload'];if(_0x188ef0[_0x2edea0(0xe1)]!=''&&_0x188ef0[_0x2edea0(0xd9)]===_0x2edea0(0xd3))_0xe5b6a0=CreateURIQueryString(JSON[_0x2edea0(0xd2)](_0x188ef0[_0x2edea0(0xe1)]),'?');var _0x9408b6=new Date()[_0x2edea0(0xb1)]()[_0x2edea0(0xd5)](),_0x15b3d5=_0x9408b6+_0x188ef0[_0x2edea0(0xd9)]+_0x347eaf+_0xe5b6a0,_0x5d08a0=_0xe9f9a0(_0x15b3d5,_0x188ef0['secret']),_0xa90cd6={'method':_0x188ef0[_0x2edea0(0xd9)],'muteHttpExceptions':!![],'headers':{'content-type':'application/json','Accept':_0x2edea0(0xbd),'FTX-TS':_0x9408b6,'FTX-KEY':_0x188ef0[_0x2edea0(0xbb)],'FTX-SIGN':_0x5d08a0}};try{_0x188ef0[_0x2edea0(0xce)]=_0x188ef0[_0x2edea0(0xce)]['replace'](_0x2edea0(0xd6),'');_0x188ef0[_0x2edea0(0xe1)]!=''&&_0x188ef0[_0x2edea0(0xd9)]===_0x2edea0(0xc3)&&(_0xa90cd6['payload']=_0x188ef0[_0x2edea0(0xe1)],_0xe5b6a0='');if(_0x188ef0[_0x2edea0(0xce)]!=''&&_0x188ef0['thirdattrib'][_0x2edea0(0xc2)]>0x1)_0xa90cd6[_0x2edea0(0xa3)][_0x2edea0(0xaf)]=encodeURIComponent(_0x188ef0[_0x2edea0(0xce)]);}catch(_0x252e86){Logger[_0x2edea0(0xe3)](_0x2edea0(0xab));}return{'uri':_0x188ef0[_0x2edea0(0xdf)]+_0x188ef0['command']+_0xe5b6a0,'params':_0xa90cd6};}function FTX_PublicRequest(_0x436b46){var _0x4a55b3=_0x1eb3;if(_0x436b46[_0x4a55b3(0xa8)]('payload')===![])_0x436b46['payload']='';try{if(_0x436b46['payload']!='')_0x436b46[_0x4a55b3(0xe1)]=CreateURIQueryString(JSON[_0x4a55b3(0xd2)](_0x436b46[_0x4a55b3(0xe1)]),'?');}catch(_0x50da0d){Logger['log'](_0x4a55b3(0xaa));}var _0x3653e7={'method':_0x436b46[_0x4a55b3(0xd9)],'muteHttpExceptions':!![],'headers':{'content-type':'application/json','Accept':_0x4a55b3(0xbd)}};return{'uri':_0x436b46[_0x4a55b3(0xdf)]+_0x436b46[_0x4a55b3(0xa2)]+_0x436b46['payload'],'params':_0x3653e7};}
+
+function FTX_GetBalances() {   
+  
+  var FTXrequest = {
+   "id"         : "FTX",
+   "name"       : "FTX Exchange",
+   "apikey"     : EXKEY,
+   "secret"     : EXSECRET,
+   "thirdattrib": "",
+   "command"    : "/wallet/all_balances",    // ** show all 
+   "uri"        : "https://ftx.com/api",
+   "method"     : "GET",
+   "payload"    : ""
+  }; 
+
+ 
+ Logger.log('FTX_GetBalances()');
+ if (typeof ADATTRIB != 'undefined') FTXrequest.thirdattrib = ADATTRIB; 
+  
+ Logger.log("ATA="+ADATTRIB);
+ if (ADATTRIB.toLowerCase().indexOf('demo') >= 0) {
+   Logger.log("Demo data");
+   var response = 
+   {
+     "success": true,
+     "result": {
+       "main": [
+        {"coin": "USDTBEAR","free": 2320.2,"total": 2340.2 },
+        {"coin": "BTC","free": 2.0,"total": 3.2}],
+    "nino": [
+      {
+        "coin": "USD",
+        "free": 2000.0,
+        "total": 2200.0 }]
+    }
+  } 
+  } else 
+    
+  {  
+    DebugLog("Fetching from ....",FTXrequest.name);
+    var request  = FTX_PrivateRequest(FTXrequest);
+    DebugLog("URL ....",JSON.stringify(request));
+    var response = JSON.parse(UrlFetchApp.fetch(request.uri,request.params));
+    DebugLog("Receiving data from "+FTXrequest.name, response);
+    if (ADATTRIB.toLowerCase().indexOf('debug') >= 0)  { Browser.msgBox(FTXrequest.name+" Connector DEBUG Mode:"); Browser.msgBox(JSON.stringify(response)); }   
+  }
+  
+  
+  try {  var pnt =response.result.main; } catch(e) {Logger.log(response); Logger.log("no or empty response:"+UrlFetchApp.fetch(request.uri,request.params)); return null;}
+  
+  if (ADATTRIB == '' || ADATTRIB == 'demo') var pnt = response.result.main; 
+  else {
+    try { 
+      ADATTRIB = ADATTRIB.replace(" demo", ""); 
+      ADATTRIB = ADATTRIB.replace(" debug", ""); 
+      Logger.log("ADATTRIB = "+ADATTRIB);
+      eval('var pnt = response.result["'+ADATTRIB+'"];');  } catch(e) { Logger.log(""); }
+  }  
+   
+  
+  var array = [];
+  for (r in pnt) { 
+    array.push({
+      curcodeEX: pnt[r].coin, 
+      balance: pnt[r].total
+    });   
+  }
+  Logger.log("=>");
+  Logger.log(array);
+  return (array);
+}
+
+
+
+function FTX_PrivateRequest(FTXrequest) {      
+  function HMACSHA256HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret)).toString(); }
+  function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
+  
+  if (FTXrequest.hasOwnProperty('payload') === false) FTXrequest.payload = "";
+  
+  // ** compatability with older code, no /api in command
+  var val=FTXrequest.command;
+  if (FTXrequest.command.toLowerCase().indexOf('/api') < 0) val='/api'+FTXrequest.command;
+  
+  var pld=FTXrequest.payload;
+  if (FTXrequest.payload != "" && FTXrequest.method === "GET") pld = CreateURIQueryString(FTXrequest.payload,"?")  
+    
+  var timestamp = new Date().getTime().toString(),  
+//      payld     = timestamp + FTXrequest.method +val+FTXrequest.payload,    // not sure, needs testing    
+      payld     = timestamp + FTXrequest.method + val + pld,    // not sure, needs testing    
+      
+      sign      = HMACSHA256HEX(payld, FTXrequest.secret ),
+      params    = {
+       'method'            : FTXrequest.method,  
+       'muteHttpExceptions': true,
+       'headers': {
+         'content-type'    : 'application/json',
+         'Accept'          : 'application/json',
+         'FTX-TS'          : timestamp, 
+         'FTX-KEY'         : FTXrequest.apikey,
+         'FTX-SIGN'        : sign
+        }, // ** end headers
+      }; // ** end params
+   try {
+     FTXrequest.thirdattrib = FTXrequest.thirdattrib.replace(" debug", ""); 
+     if (FTXrequest.payload != "" && FTXrequest.method === "POST") { params.payload = FTXrequest.payload; pld = ""; }
+     if (FTXrequest.thirdattrib != "" && FTXrequest.thirdattrib.length > 1) params.headers['FTX-SUBACCOUNT']=encodeURIComponent(FTXrequest.thirdattrib);
+   } catch (e) { Logger.log("Err: FTX_PrivateRequest - thirdattrib missing?")}
+       
+  
+  return  { uri: FTXrequest.uri + FTXrequest.command + pld, params: params};
+  
+}
+
+
+function FTX_PublicRequest(FTXrequest) {  
+  if (FTXrequest.hasOwnProperty('payload') === false) FTXrequest.payload = "";
+  try {
+     if (FTXrequest.payload != "") FTXrequest.payload = CreateURIQueryString(JSON.parse(FTXrequest.payload),"?")
+   } catch (e) { Logger.log("Err: FTX_PublicRequest - error in FTX payload")}
+
+  var params    = {
+       'method'            : FTXrequest.method,  
+       'muteHttpExceptions': true,
+       'headers': {
+         'content-type'    : 'application/json',
+         'Accept'          : 'application/json',
+        }, // ** end headers
+      } // ** end params
+ return  { uri: FTXrequest.uri + FTXrequest.command + FTXrequest.payload, params: params};
+}
+
