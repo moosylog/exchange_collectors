@@ -5,7 +5,7 @@ function GEM_GetBalance() {
   var gemrequest =  {
   'apikey'   : '•••••••••',
   'secret'   : '•••••••••',
-  'uri'      : 'https://api.gemini.com', 
+  'uri'      : 'https://api.gemini.com',  // or use sandbox uri
   'version'  : '/v1/',
   'command'  : 'balances',
   'method'   : 'post',
