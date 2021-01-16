@@ -30,10 +30,10 @@ Moosy
 
 Id   | Exchange | Code   | API| Signature      
 ---------| -------- |------- | ---| ---------     
-BBX | Bibox | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACMD5
-BIN | Binance | [binance.gs](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX | 
-B2C | Bit2C | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACSHA512B64
-BGO | BitGo | [todo](https://app.bitgo.com/docs/#operation/v2.wallet.get) | [v2](https://app.bitgo.com/docs/#operation/v2.wallet.get) | Barrier Token
+BBX |Bibox | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACMD5
+BIN |Binance | [binance.gs](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX | 
+B2C |Bit2C | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACSHA512B64
+BGO |BitGo | [todo](https://app.bitgo.com/docs/#operation/v2.wallet.get) | [v2](https://app.bitgo.com/docs/#operation/v2.wallet.get) | Barrier Token
 BFX |Bitfinex | [bitfinex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitfinex.gs)   | [v2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
 FLY |Bitflyer | [bitflyer.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitflyer.gs)   | [v1](https://lightning.bitflyer.com/docs?lang=en) | HMACSHA256HEX 
 .   |Bitget | [todo](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature)   | [v1](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature) | HMACSHA256B64 
@@ -95,7 +95,7 @@ SMP |SimpleFX | [See Cointrexer](https://sites.google.com/view/moosyresearch)  |
 UPB |Upbit | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 VNX |Vinex Network | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 YBT |Yobit | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
-ZHS | BitGo | [todo](https://zerohash.com/api/web/) | [v2](https://zerohash.com/api/web/) | HMACSHA256??? | 
+ZHS |Zerohash | [todo](https://zerohash.com/api/web/) | [v2](https://zerohash.com/api/web/) | HMACSHA256??? | 
 ***
 feedback or requests: moosylog@gmail.com
 
