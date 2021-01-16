@@ -95,7 +95,7 @@ SMP |SimpleFX | [See Cointrexer](https://sites.google.com/view/moosyresearch)  |
 UPB |Upbit | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 VNX |Vinex Network | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 YBT |Yobit | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
-. |Zerohash | [todo](https://zerohash.com/api/web/) | [v2](https://zerohash.com/api/web/) | HMACSHA256??? | 
+. |Zerohash | [todo](https://zerohash.com/api/web/) | [v1](https://zerohash.com/api/web/) | HMACSHA256??? | 
 ***
 feedback or requests: moosylog@gmail.com
 
