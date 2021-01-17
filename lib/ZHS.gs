@@ -51,7 +51,7 @@ function ZHS_GetBalance() {
 function ZHS_PrivateRequest(stn) {
   function HMACSHA256B64B(s, secret) { return (Utilities.base64Encode(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256,Utilities.base64Decode(Utilities.base64Encode(s)),Utilities.base64Decode(secret )))); }
   
-  if (stn.payload == "" || stn.payload == null) stn.payload == {};  
+  if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
   if (typeof stn.payload  === 'object') var pld = JSON.stringify(stn.payload); else var pld = stn.payload;
   
   var timestamp = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
