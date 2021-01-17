@@ -53,6 +53,7 @@ function ZHS_PrivateRequest(stn) {
   
   if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
   if (typeof stn.payload  === 'object') var pld = JSON.stringify(stn.payload); else var pld = stn.payload;
+  if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
   
   var timestamp = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
       payld     = timestamp + stn.method + stn.command + pld, // payload = timestamp + 'GET' + '/accounts' + '{}'
@@ -71,9 +72,12 @@ function ZHS_PrivateRequest(stn) {
    
    Logger.log("");
    Logger.log(" signature = "+signature);
-   Logger.log(" stn.payload = "+stn.payload+"  type="+typeof stn.payload);
+   Logger.log(" stn.payload = "+stn.payload);
    Logger.log(" payld = "+payld);
    Logger.log(" pld = "+stn.payload);
+   Logger.log(" apikey = "+stn.apikey);
+   Logger.log(" secret = "+stn.secret);
+   Logger.log(" secret = "+stn.thirdattrib);
    Logger.log("");
   
    
