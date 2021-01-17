@@ -51,11 +51,13 @@ function ZHS_GetBalance() {
 function ZHS_PrivateRequest(stn) {
   function HMACSHA256B64B(s, secret) { return (Utilities.base64Encode(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256,Utilities.base64Decode(Utilities.base64Encode(s)),Utilities.base64Decode(secret )))); }
   
-  if (stn.hasOwnProperty('payload') === false) stn.payload = '{}';
-  if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
+  var pld="";
+  if (stn.hasOwnProperty('payload') === false) stn.payload = "";
+  if (stn.payload == "" || stn.payload == null) pld = '{}';  
   try {var pld = JSON.stringify(stn.payload);} catch(e) {var pld = stn.payload;}
-  if (stn.payload.length < 3) { stn.payload == '{}'; pld = '{}' }
+  if (pld.length < 3) pld = '{}' 
       Browser.msgBox(stn.payload +"\\n\\n"+stn.payload.length);
+  Browser.msgBox(pld +"\\n\\n"+pld);
   
   var timestamp = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
       payld     = timestamp + stn.method + stn.command + pld, // payload = timestamp + 'GET' + '/accounts' + '{}'
@@ -84,8 +86,8 @@ function ZHS_PrivateRequest(stn) {
   
    
    pld = "";
-   if (stn.payload != "{}" && stn.method === "GET") pld = CreateURIQueryString(stn.payload,"?")     
-   if (stn.payload != "{}" && stn.method === "POST") { params.payload = stn.payload; pld = ""; }
+   if (stn.payload != "" && stn.method === "GET") pld = CreateURIQueryString(stn.payload,"?")     
+   if (stn.payload != "" && stn.method === "POST") { params.payload = stn.payload; pld = ""; }
    return  { uri: stn.uri + stn.command + pld, params: params};
 }
 
