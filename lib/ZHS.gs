@@ -51,9 +51,10 @@ function ZHS_GetBalance() {
 function ZHS_PrivateRequest(stn) {
   function HMACSHA256B64B(s, secret) { return (Utilities.base64Encode(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256,Utilities.base64Decode(Utilities.base64Encode(s)),Utilities.base64Decode(secret )))); }
   
+  if (stn.hasOwnProperty('payload') === false) stn.payload = '{}';
   if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
   if (typeof stn.payload  === 'object') var pld = JSON.stringify(stn.payload); else var pld = stn.payload;
-  if (stn.payload == "" || stn.payload == null || stn.payload == 'undefined)  { stn.payload == '{}'; pld = '{}' }
+  //if (stn.payload == "" || stn.payload == null || stn.payload == 'undefined)  { stn.payload == '{}'; pld = '{}' }
       Browser.msgBox(stn.payload +"\\n\\n"+stn.payload.length);
   
   var timestamp = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
