@@ -71,7 +71,7 @@ function ZHS_PrivateRequest(stn) {
    
    Logger.log("");
    Logger.log(" signature = "+signature);
-   Logger.log(" stn.payload = "+stn.payload);
+   Logger.log(" stn.payload = "+stn.payload+"  type="+typeof stn.payload);
    Logger.log(" payld = "+payld);
    Logger.log(" pld = "+stn.payload);
    Logger.log("");
