@@ -1,3 +1,4 @@
+// Oanda - quick and dirty connector for Jarno
 function OAN_PublicRequest(request) {   OAN_PrivateRequest(request) }
 
 function OAN_PrivateRequest(request) {    
