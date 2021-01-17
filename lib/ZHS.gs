@@ -1,1 +1,93 @@
-var _0x4bd0=['1802687nBTxFV','object','uri','floor','toString','no\x20or\x20empty\x20response','MacAlgorithm','19GLrjcM','indexOf','Validating\x20datatype\x20','1FnamgZ','base64Decode','stringify','push','msgBox','HMAC_SHA_256','https://api.zerohash.com','ZHS','method','parse','1696650Ssbaat','414569ScSDQt','log','/accounts','POST','406123wXTfIx','980233EnpHKz','base64Encode','command','text/plain','15463RqSnzO','thirdattrib','payload','computeHmacSignature','getTime','GET','debug','params','fetch','substring','ZeroHash','1ZWlyuA','message','balance','\x20Connector\x20DEBUG\x20Mode:','2tFONvt','\x20GetBalance','4179805YZwnQE'];var _0x45d3=function(_0x2fc2fe,_0xdd210a){_0x2fc2fe=_0x2fc2fe-0x1ca;var _0x4bd070=_0x4bd0[_0x2fc2fe];return _0x4bd070;};(function(_0x19f6f9,_0x3d0566){var _0x2feb4f=_0x45d3;while(!![]){try{var _0x34683b=-parseInt(_0x2feb4f(0x1eb))+-parseInt(_0x2feb4f(0x1d0))*parseInt(_0x2feb4f(0x1e8))+parseInt(_0x2feb4f(0x1d5))+-parseInt(_0x2feb4f(0x1d9))*parseInt(_0x2feb4f(0x1f2))+-parseInt(_0x2feb4f(0x1d4))*-parseInt(_0x2feb4f(0x1e4))+-parseInt(_0x2feb4f(0x1f5))*parseInt(_0x2feb4f(0x1cf))+parseInt(_0x2feb4f(0x1ea));if(_0x34683b===_0x3d0566)break;else _0x19f6f9['push'](_0x19f6f9['shift']());}catch(_0x33f197){_0x19f6f9['push'](_0x19f6f9['shift']());}}}(_0x4bd0,0xe6711));function ZHS_Settings(){var _0x421448=_0x45d3,_0x557fe7={'id':_0x421448(0x1cc),'name':_0x421448(0x1e3),'apikey':EXKEY,'secret':EXSECRET,'thirdattrib':ADATTRIB,'method':'GET','uri':_0x421448(0x1cb),'version':'','command':_0x421448(0x1d2),'payload':''};if(typeof ADATTRIB!='undefined')_0x557fe7[_0x421448(0x1da)]=ADATTRIB;return _0x557fe7;}function ZHS_GetBalance(){var _0x518870=_0x45d3,_0x39f5db=ZHS_Settings(),_0x27ec78={'data':null,'status':!![],'message':''},_0x2819ee=[],_0x2b6539=0x0,_0x5a2f9e=ZHS_PrivateRequest(_0x39f5db);DebugLog('URL\x20....',JSON[_0x518870(0x1f7)](_0x5a2f9e));var _0x27ec78=UrlFetchApp[_0x518870(0x1e1)](_0x5a2f9e[_0x518870(0x1ed)],_0x5a2f9e[_0x518870(0x1e0)]);DebugLog('Receiving\x20data\x20from\x20'+_0x39f5db['name'],_0x27ec78);try{var _0x27ec78=JSON[_0x518870(0x1ce)](_0x27ec78);}catch(_0x311945){return Logger['log']('No\x20valid\x20JSON\x20data\x20received'),![];}_0x39f5db[_0x518870(0x1da)]['toLowerCase']()[_0x518870(0x1f3)](_0x518870(0x1df))>=0x0&&(Browser[_0x518870(0x1f9)](_0x39f5db['name']+_0x518870(0x1e7)),Browser[_0x518870(0x1f9)](JSON['stringify'](_0x27ec78)));try{Logger['log'](_0x518870(0x1f4)+_0x27ec78[_0x518870(0x1e5)][0x0]['asset']);}catch(_0x14d0db){return Logger[_0x518870(0x1d1)](_0x27ec78),Logger[_0x518870(0x1d1)](_0x518870(0x1f0)),null;}for(_0x2b6539 in _0x27ec78[_0x518870(0x1e5)]){Number(_0x27ec78[_0x518870(0x1e5)][_0x2b6539][_0x518870(0x1e6)])*0x186a0>0x0&&_0x2819ee[_0x518870(0x1f8)]({'curcodeEX':_0x27ec78['message'][_0x2b6539][_0x518870(0x1e6)],'balance':_0x27ec78[_0x518870(0x1e5)][_0x2b6539]['asset']});}return DebugLog(_0x39f5db['name']+_0x518870(0x1e9),JSON['stringify'](_0x2819ee)),_0x2819ee;}function ZHS_PrivateRequest(_0x5d86f6){var _0x331356=_0x45d3;function _0x1f69d5(_0x545cf9,_0x4303ee){var _0x65624e=_0x45d3;return Utilities[_0x65624e(0x1d6)](Utilities[_0x65624e(0x1dc)](Utilities[_0x65624e(0x1f1)][_0x65624e(0x1ca)],Utilities[_0x65624e(0x1f6)](Utilities[_0x65624e(0x1d6)](_0x545cf9)),Utilities['base64Decode'](_0x4303ee)));}if(_0x5d86f6[_0x331356(0x1db)]==''||_0x5d86f6[_0x331356(0x1db)]==null)_0x5d86f6[_0x331356(0x1db)]=={};if(typeof _0x5d86f6[_0x331356(0x1db)]===_0x331356(0x1ec))var _0x3c0ce9=JSON[_0x331356(0x1f7)](_0x5d86f6['payload']);else var _0x3c0ce9=_0x5d86f6[_0x331356(0x1db)];var _0x152074=Math[_0x331356(0x1ee)](new Date()[_0x331356(0x1dd)]()/0x3e8)[_0x331356(0x1ef)]()[_0x331356(0x1e2)](0x0,0xa),_0x3861b9=_0x152074+_0x5d86f6[_0x331356(0x1cd)]+_0x5d86f6['command']+_0x3c0ce9;params={'method':_0x5d86f6[_0x331356(0x1cd)],'muteHttpExceptions':!![],'Content-Type':_0x331356(0x1d8),'headers':{'X-SCX-API-KEY':_0x5d86f6['apikey'],'X-SCX-SIGNED':_0x1f69d5(_0x3861b9,_0x5d86f6['secret']),'X-SCX-TIMESTAMP':_0x152074,'X-SCX-PASSPHRASE':_0x5d86f6[_0x331356(0x1da)]}},_0x3c0ce9='';if(_0x5d86f6[_0x331356(0x1db)]!=''&&_0x5d86f6['method']===_0x331356(0x1de))_0x3c0ce9=CreateURIQueryString(_0x5d86f6[_0x331356(0x1db)],'?');return _0x5d86f6[_0x331356(0x1db)]!=''&&_0x5d86f6[_0x331356(0x1cd)]===_0x331356(0x1d3)&&(params[_0x331356(0x1db)]=_0x5d86f6[_0x331356(0x1db)],_0x3c0ce9=''),{'uri':_0x5d86f6[_0x331356(0x1ed)]+_0x5d86f6[_0x331356(0x1d7)]+_0x3c0ce9,'params':params};}function ZHS_PublicRequest(_0x204532){var _0xde7dc2=_0x45d3;try{var _0x29cedf=CreateURIQueryString(_0x204532[_0xde7dc2(0x1db)],'?');}catch(_0x1c2e22){var _0x29cedf='';}var _0x59dd7e={'method':_0x204532[_0xde7dc2(0x1cd)],'muteHttpExceptions':!![],'Content-Type':_0xde7dc2(0x1d8),'headers':{}};return{'uri':_0x204532[_0xde7dc2(0x1ed)]+_0x204532[_0xde7dc2(0x1d7)]+_0x29cedf,'params':_0x59dd7e};}
+
+// ** Code 
+function ZHS_Settings() {  
+  var stn = {
+   'id'         : 'ZHS',
+   'name'       : 'ZeroHash',
+   'apikey'     : EXKEY, 
+   'secret'     : EXSECRET,
+   'thirdattrib': ADATTRIB,
+   'method'     : 'GET',
+   'uri'        : 'https://api.zerohash.com', // sandbox is https://api.cert.zerohash.com
+   'version'    : '',                         // not used
+   'command'    : "/accounts",                // Doc https://zerohash.com/api/web/#accounts
+   'payload'    : ""                          // Payload not used for /accounts
+  };
+  if (typeof ADATTRIB != 'undefined') stn.thirdattrib = ADATTRIB; 
+  return stn;
+}
+
+
+function ZHS_GetBalance() {
+  var stn       = ZHS_Settings(),                               // ** Get API settings
+      response  = { data: null, status: true, message:   ""  }, // ** API response
+      array     = [],                                           // ** Result array
+      r         = 0;                                            // ** Counter for loops
+    
+  var request = ZHS_PrivateRequest(stn) ;
+  DebugLog("URL ....",JSON.stringify(request));
+  
+  var response = UrlFetchApp.fetch(request.uri,request.params);
+  DebugLog("Receiving data from "+stn.name, response);
+  
+  try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
+  if (stn.thirdattrib.toLowerCase().indexOf('debug') >= 0)  { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); Browser.msgBox(JSON.stringify(response)); }   
+  try {  Logger.log("Validating datatype "+response.message[0].asset); } catch(e) {Logger.log(response); Logger.log("no or empty response"); return null;}
+  
+  for (r in response.message) {    
+    if (Number(response.message[r].balance) * 100000  > 0 ) {
+     array.push({
+       curcodeEX: response.message[r].balance, 
+       balance: response.message[r].asset
+     });   
+   }
+  }
+  DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
+  return array;
+}
+
+
+
+function ZHS_PrivateRequest(stn) {
+  function HMACSHA256B64B(s, secret) { return (Utilities.base64Encode(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256,Utilities.base64Decode(Utilities.base64Encode(s)),Utilities.base64Decode(secret )))); }
+  
+  if (stn.payload == "" || stn.payload == null) stn.payload == {};  
+  if (typeof stn.payload  === 'object') var pld = JSON.stringify(stn.payload); else var pld = stn.payload;
+  
+  var timestamp = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
+      payld     = timestamp + stn.method + stn.command + pld, // payload = timestamp + 'GET' + '/accounts' + '{}'
+      signature = HMACSHA256B64B(payld, stn.secret),   
+      params    = {
+        'method'               : stn.method,
+        'muteHttpExceptions'   : true,
+        'Content-Type'         : "text/plain",
+        'headers': {
+          "X-SCX-API-KEY"      : stn.apikey,
+          "X-SCX-SIGNED"       : signature,
+          "X-SCX-TIMESTAMP"    : timestamp,
+          "X-SCX-PASSPHRASE"   : stn.thirdattrib,
+        }
+   }
+   Logger.log(stn.name+" signature = "+signature);
+   pld = "";
+   if (stn.payload != "" && stn.method === "GET") pld = CreateURIQueryString(stn.payload,"?")     
+   if (stn.payload != "" && stn.method === "POST") { params.payload = stn.payload; pld = ""; }
+   return  { uri: stn.uri + stn.command + pld, params: params};
+}
+
+
+
+
+
+function ZHS_PublicRequest(stn) {
+  try {var para=CreateURIQueryString(stn.payload,'?'); } catch (e) {var para = ""; }   
+  var params = {
+        'method'               : stn.method,
+        'muteHttpExceptions'   : true,
+        'Content-Type'         : "text/plain",
+        'headers': {
+        }
+   }
+   return  { uri: stn.uri + stn.command + para  , params: params};
+}
+
