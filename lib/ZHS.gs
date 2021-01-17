@@ -52,9 +52,9 @@ function ZHS_PrivateRequest(stn) {
   function HMACSHA256B64B(s, secret) { return (Utilities.base64Encode(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256,Utilities.base64Decode(Utilities.base64Encode(s)),Utilities.base64Decode(secret )))); }
   
   var pld="";
-  if (stn.hasOwnProperty('payload') === false) stn.payload = "";
-  if (stn.payload == "" || stn.payload == null) pld = '{}';  
+  if (stn.hasOwnProperty('payload') === false) stn.payload = '{}';
   try {var pld = JSON.stringify(stn.payload);} catch(e) {var pld = stn.payload;}
+  if (stn.payload == "" || stn.payload == null) pld = '{}';  
   if (pld.length < 3) pld = '{}' 
       Browser.msgBox(stn.payload +"\\n\\n"+stn.payload.length);
   Browser.msgBox(pld +"\\n\\n"+pld);
