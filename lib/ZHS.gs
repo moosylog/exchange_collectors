@@ -68,7 +68,15 @@ function ZHS_PrivateRequest(stn) {
           "X-SCX-PASSPHRASE"   : stn.thirdattrib,
         }
    }
-   Logger.log(stn.name+" signature = "+signature);
+   
+   Logger.log("");
+   Logger.log(" signature = "+signature);
+   Logger.log(" stn.payload = "+stn.payload);
+   Logger.log(" payld = "+payld);
+   Logger.log(" pld = "+stn.payload);
+   Logger.log("");
+  
+   
    pld = "";
    if (stn.payload != "" && stn.method === "GET") pld = CreateURIQueryString(stn.payload,"?")     
    if (stn.payload != "" && stn.method === "POST") { params.payload = stn.payload; pld = ""; }
