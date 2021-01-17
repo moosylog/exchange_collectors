@@ -84,7 +84,7 @@ LUN |Luno | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]
 MXC |MXC | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 NOM |Nominex | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 OKX |Okex | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs)  | [v3](https://www.okex.com/docs/en/) | HMACSHA256B64 
-.   |OkCoin | [Todo](https://www.okcoin.com/docs/en/)  | [v3](https://www.okcoin.com/docs/en/) | HMACSHA256B64 
+OKC |OkCoin | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [v3](https://www.okcoin.com/docs/en/) | HMACSHA256B64 
 OAN |OANDA | [oanda.gs](https://github.com/moosylog/exchange_collectors/blob/master/oanda.gs)  | [v2](http://developer.oanda.com/rest-live-v20/account-ep/) | Barrier Token
 PAX |Gopax | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
 PMX |Phemex | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() [See CtrXL] 
