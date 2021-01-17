@@ -53,7 +53,8 @@ function ZHS_PrivateRequest(stn) {
   
   if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
   if (typeof stn.payload  === 'object') var pld = JSON.stringify(stn.payload); else var pld = stn.payload;
-  if (stn.payload == "" || stn.payload == null || stn.payload == 'undefined)  { stn.payload == '{}'; pld = '{}'' }
+  if (stn.payload == "" || stn.payload == null || stn.payload == 'undefined)  { stn.payload == '{}'; pld = '{}' }
+      Browser.msgBox(stn.payload +"\\n\\n"+stn.payload.length);
   
   var timestamp = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
       payld     = timestamp + stn.method + stn.command + pld, // payload = timestamp + 'GET' + '/accounts' + '{}'
