@@ -54,7 +54,7 @@ function ZHS_PrivateRequest(stn) {
   if (stn.hasOwnProperty('payload') === false) stn.payload = '{}';
   if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
   try {var pld = JSON.stringify(stn.payload);} catch(e) {var pld = stn.payload;}
-  //if (stn.payload == "" || stn.payload == null || stn.payload == 'undefined)  { stn.payload == '{}'; pld = '{}' }
+  if (stn.payload.length < 3) { stn.payload == '{}'; pld = '{}' }
       Browser.msgBox(stn.payload +"\\n\\n"+stn.payload.length);
   
   var timestamp = Math.floor(new Date().getTime() / 1000).toString().substring(0, 10),
@@ -84,8 +84,8 @@ function ZHS_PrivateRequest(stn) {
   
    
    pld = "";
-   if (stn.payload != "" && stn.method === "GET") pld = CreateURIQueryString(stn.payload,"?")     
-   if (stn.payload != "" && stn.method === "POST") { params.payload = stn.payload; pld = ""; }
+   if (stn.payload != "{}" && stn.method === "GET") pld = CreateURIQueryString(stn.payload,"?")     
+   if (stn.payload != "{}" && stn.method === "POST") { params.payload = stn.payload; pld = ""; }
    return  { uri: stn.uri + stn.command + pld, params: params};
 }
 
