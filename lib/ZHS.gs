@@ -53,7 +53,7 @@ function ZHS_PrivateRequest(stn) {
   
   if (stn.hasOwnProperty('payload') === false) stn.payload = '{}';
   if (stn.payload == "" || stn.payload == null) stn.payload == '{}';  
-  if (typeof stn.payload  === 'object') var pld = JSON.stringify(stn.payload); else var pld = stn.payload;
+  try {var pld = JSON.stringify(stn.payload);} catch(e) {var pld = stn.payload;}
   //if (stn.payload == "" || stn.payload == null || stn.payload == 'undefined)  { stn.payload == '{}'; pld = '{}' }
       Browser.msgBox(stn.payload +"\\n\\n"+stn.payload.length);
   
@@ -76,10 +76,10 @@ function ZHS_PrivateRequest(stn) {
    Logger.log(" signature = "+signature);
    Logger.log(" stn.payload = "+stn.payload);
    Logger.log(" payld = "+payld);
-   Logger.log(" pld = "+stn.payload);
+   Logger.log(" pld = "+pld);
    Logger.log(" apikey = "+stn.apikey);
    Logger.log(" secret = "+stn.secret);
-   Logger.log(" secret = "+stn.thirdattrib);
+   Logger.log(" thirdattrib = "+stn.thirdattrib);
    Logger.log("");
   
    
