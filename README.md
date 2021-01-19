@@ -12,6 +12,7 @@ Many APIs require a signature during authentication that is calculated based on 
 On this page, you find a collection of Google App Script (GAS) functions for Signed / Private Requests to several exchanges.
 
 These sample code snippets authenticate to the API and will list your balance in the built-in Logger.
+**Disable V8** if you have any issues with this code !!!
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
