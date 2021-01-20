@@ -35,7 +35,7 @@ Id   | Exchange | Code   | API| Signature
 BBX |Bibox | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACMD5
 BIN |Binance | [binance.gs](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)    | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX | 
 B2C |Bit2C | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACSHA512B64
-xxx |BitGo | not possible - BitGo requires static IP address | [v2](https://app.bitgo.com/docs/#operation/v2.wallet.get) | Barrier Token
+xxx |BitGo | not possible - BitGo validates static IP address | [v2](https://app.bitgo.com/docs/#operation/v2.wallet.get) | 
 BFX |Bitfinex | [bitfinex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitfinex.gs)   | [v2](https://docs.bitfinex.com/docs/introduction) | HMACSHA384HEX 
 FLY |Bitflyer | [bitflyer.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitflyer.gs)   | [v1](https://lightning.bitflyer.com/docs?lang=en) | HMACSHA256HEX 
 .   |Bitget | [todo](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature)   | [v1](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature) | HMACSHA256B64 
