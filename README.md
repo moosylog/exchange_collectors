@@ -31,12 +31,84 @@ Moosy
 # Exchanges
 
 
-Name     | ID    | OSS  | API | Cointrexer | ReX | Signature      
----------| ----- | ---- | ----| ---------  | --- | ---     
-Bibox    | BBX   |      |     |     ✓      |     |HMACMD5
-Binance  | BIN   |  [✓](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)  |  [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md)   |     ✓      |     |HMACSHA256HEX
+| Name    | ID   | OSS                                                          | API                                                          | Cointrexer | ReX  | Signature     |
+| ------- | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- | ---- | ------------- |
+| Bibox   | BBX  |                                                              |                                                              | ✓          |      | HMACMD5       |
+| Binance | BIN  | [✓](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs) | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | ✓          |      | HMACSHA256HEX |
+
+dfsfd
 
 
+
+| Exchange | Id   | OSS                                                          | CtrXL | ReX | API                                                          | Signature                                |
+| ------ | ---- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | ---------------------------------------- | ---------------------------------------- |
+| Bibox          | BBX  |  | ✓ |  | [ ]()                                                        | HMACMD5                                  |
+| Binance        | BIN  | [binance.gs](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs) | ✓ | ✓ | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX                            |
+| Bit2C          | B2C  |  | ✓ |  | [ ]()                                                        | HMACSHA512B64                            |
+| BitGo          | xxx  |  |      |      | [v2](https://app.bitgo.com/docs/#operation/v2.wallet.get)    | impossible / IP chk |
+| Bitfinex       | BFX  | [bitfinex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitfinex.gs) | ✓ | ✓ | [v2](https://docs.bitfinex.com/docs/introduction)            | HMACSHA384HEX                            |
+| Bitflyer       | FLY  | [bitflyer.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitflyer.gs) | ✓ |  | [v1](https://lightning.bitflyer.com/docs?lang=en)            | HMACSHA256HEX                            |
+| Bitget         |     |                                                              |      |      | [v1](https://bitgetlimited.github.io/apidoc/en/swap/#the-signature) | HMACSHA256B64                            |
+| Bitmart        | MRT  | [bitmart.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmart.gs) | ✓ |  | [v1](https://developer-pro.bitmart.com/en/part1/start/overview.html) | HMACSHA256HEX                            |
+| Bitmex         | BMX  | [bitmex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bitmex.gs) | ✓ | ✓ | [v1](https://www.bitmex.com/app/apiOverview)                 | HMACSHA256HEX                            |
+| Bitpanda       | PAN  |  | ✓ |  |                                             |                                          |
+| Bitpanda GE    | PGE  |  | ✓ |  |                                             |                                          |
+| Bitsane        | BSN  |  | ✓ |  |                                                         | HMACSHA384HEX                            |
+| Bittrex        | BTX  | [bittrex.gs](https://github.com/moosylog/exchange_collectors/blob/master/bittrex.gs) | ✓ | ✓ | [v3](https://bittrex.github.io/api)                          | HMACSHA512HEX                            |
+| Bitso          | BSO  |  | ✓ |  | [ ]()                                                        | HMACSHA256HEX                            |
+| ByteTrade      |     |      |      |      | [v2](https://docs.byte-trade.com)                            | HMACSHA256HEX                            |
+| BKex           | KEX  |  | ✓ |  | [ ]()                                                        | HMACSHA256HEX                            |
+| Bitstamp       | BTS  |  | ✓ |  | [ ]()                                                        | HMACSHA256HEX                            |
+| Bitvavo        | VAV  |  | ✓ |  | [ ]()                                                        | HMACSHA256HEX                            |
+| Bitz           |     |  |      |      | [v2](https://apidocv2.bitz.ai/en/#signature-authentication) | HMACSHA256B64                            |
+| BtcTurk        | BTK  |  | ✓ |  | [ ]()                                                        | HMACSHA256B64enc                         |
+| BTSE           |     | [todo](https://www.btse.com/apiexplorer/spot/#generating-api-key) |      |      | [v3](https://github.com/btsecom/api-sample/blob/master/python/spot/btseauth_spot.py) | HMACSHA384HEX                            |
+| Bybit          | BYB  | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs) | ✓ | ✓ | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX                            |
+| Cex.io         |      |                                                              | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| Coinall        | ALL  |                                                              | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| Coinbase       | CNB  | [coinbase.gs](https://github.com/moosylog/exchange_collectors/blob/master/coinbase.gs) | ✓ |  | [v2](https://developers.coinbase.com/)                       | HMACSHA256HEX                            |
+| Coinbase Pro   | GD   |                                                              | ✓ | ✓ | [ ]() [See CtrXL]                                            |                                          |
+| CoinDCX        | DCX  |                                                              | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| CoinEx         | CNX  |  | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| CoinONE        | .    | [Todo](https://doc.coinone.co.kr/)                           |      |      | [v2](https://doc.coinone.co.kr/#tag/Account-V2)              | HMACSHA512HEX                            |
+| Crex24         | C24  |  | ✓ |  | [ ]()                                                        | HMACSHA256B64                            |
+| Crypto APIs    | CRA  | [cryptoapis.gs](https://github.com/moosylog/exchange_collectors/blob/master/cryptoapis.gs) | ✓ |  | [v1](https://docs.cryptoapis.io/)                            | none                                     |
+| Currency       | CUR  |                                                              | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| DCX            | DCX  |                                                              | ✓ |  | [ ]()                                                        | HMACSHA256HEX                            |
+| Delta-Exchange | DEL  | [delta_exchange.gs](https://github.com/moosylog/exchange_collectors/blob/master/delta_exchange.gs) | ✓ |  | [v2](https://docs.delta.exchange/)                           | HMACSHA256HEX                            |
+| Deribit        | DRB  |  | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| DeversiFi      |     | [Todo](https://github.com/DeversiFi/api-documentation/blob/master/trading/js/GetBalance.js) | .    |     | [v1](https://docs.deversifi.com/docs#postV1TradingRGetbalance) | ?                                        |
+| eToro          |     | [Todo](https://doc.coinone.co.kr/)                           | .    |     | [?]()                                                        | none                                     |
+| eToroX         |     | [ReX works](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/exchanges#TOC-eToroX) | .    |     | [v2](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/exchanges#TOC-eToroX) | RSA                                      |
+| Forex          | FOR  |                                                              | .    |     | [ ]() [See CtrXL]                                            |                                          |
+| FTX            | FTX  |                                                              | ✓ | ✓ | [ ]() [See CtrXL]                                            |                                          |
+| Gate.io        | GAT  |  | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| Gemini         | GEM  | [gemini.gs](https://github.com/moosylog/exchange_collectors/blob/master/gemini.gs) | ✓ |  | [v1](https://docs.gemini.com/rest-api/)                      | HMACSHA384HEX                            |
+| Globitex       | .    | [todo](https://globitex.com/api/#restAuthentication)         |      |      | [v?](https://globitex.com/api/#restAuthentication)           | HMACSHA512HEX                            |
+| BitBTC         | HIT  |                                                              | ✓ |  | [ ]() [See CtrXL]                                            |                                          |
+| Huobi Pro      | HUB  | [huobi.gs](https://github.com/moosylog/exchange_collectors/blob/master/huobi.gs) |      |      | [v1](https://github.com/huobiapi/API_Docs_en)                | HMACSHA256B64                            |
+| Idex           | IDX  | [idex.gs](https://github.com/moosylog/exchange_collectors/blob/master/idex.gs) | ✓ |  | [v2](https://docs.idex.io)                                   | HMACSHA256HEX                            |
+| Indodax        | IND  |                                                              | ✓ |  |                                             |                                          |
+| Kraken         | KRK  | [kraken.gs](https://github.com/moosylog/exchange_collectors/blob/master/kraken.gs) | ✓ | ✓ | [v1](https://www.kraken.com/features/api#private-user-data)  | HMACSHA512++                             |
+| Kucoin         | KUC  |                                                              | ✓ |  |                                             |                                          |
+| Liquid         | Liq  |  | ✓ |  |                                             |                                          |
+| Luno           | LUN  |                                                              | ✓ |  |                                                         | none                                     |
+| MXC            | MXC  |  | ✓ |  |                                             |                                          |
+| Nominex        |      |                                                              | ✓ |  |                                             |                                          |
+| Okex           | OKX  | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs) | ✓     | ✓     | [v3](https://www.okex.com/docs/en/)                          | HMACSHA256B64                            |
+| OkCoin         | OKC  |                                                              | ✓ | ✓ | [v3](https://www.okcoin.com/docs/en/)                        | HMACSHA256B64                            |
+| OANDA          | OAN  | [oanda.gs](https://github.com/moosylog/exchange_collectors/blob/master/oanda.gs) | ✓ | ✓ (-) | [v2](http://developer.oanda.com/rest-live-v20/account-ep/)   | Barrier Token                            |
+| Gopax          | PAX  |                                                              | ✓ |  |                                             |                                          |
+| Phemex         | PMX  |  | ✓ |  |                                             |                                          |
+| Poloniex       | POL  | [poloniex.gs](https://github.com/moosylog/exchange_collectors/blob/master/poloniex.gs) | ✓ |  | [v1](https://docs.poloniex.com)                              | HMACSHA512HEX                            |
+| Probit         | PRB  |  | ✓ |  |                                             |                                          |
+| SimpleFX       | SMP  |  | ✓ |  |                                             |                                          |
+| Redot          |     |                                                              |      |      | [v1](https://docs.redot.com/?shell#message-structure)        | [Fin FIX API](https://globitex.com/api/) |
+| Ukex           |     |            |      |      | [v?](https://www.ukex.com/en-us/article/api)                 | HMACSHA512???                            |
+| Upbit          | UPB  |  | ✓ |  |                                             |                                          |
+| Vinex Network  | VNX  |  | ✓ |  |                                             |                                          |
+| Yobit          | YBT  |  | ✓ |  |                                             |                                          |
+| Zerohash       | ZHS  |  | ✓ | ✓ | [v1](https://zerohash.com/api/web/)                          | HMACSHA256B64                            |
 
 
 
