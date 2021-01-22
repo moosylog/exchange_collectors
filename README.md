@@ -32,7 +32,7 @@ Moosy
 
 
 
-| Exchange | Id   | OSS                                                          | CtrXL | ReX | API                                                          | Signature                                |
+| Exchange | Id   | OSS                                                          | CtrXL | ReXB | API                                                          | Signature                                |
 | ------ | ---- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | ---------------------------------------- | ------ |
 | Bibox          | BBX  |  | ✓ |  | [ ]()                                                        | HMACMD5                                  |
 | Binance        | BIN  | [binance.gs](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs) | ✓ | ✓ | [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | HMACSHA256HEX                            |
