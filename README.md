@@ -30,6 +30,15 @@ Moosy
 
 # Exchanges
 
+
+Name     | ID    | Source  | API | Cointrexer | ReX | Signature      
+---------| ----- | ------- | ----| ---------  | --- | ---     
+Bibox    | BBX   | X       |     |     ✓      |     |HMACMD5
+
+
+
+
+
 Id   | Exchange | Code   | API| Signature      
 ---------| -------- |------- | ---| ---------     
 BBX |Bibox | [See Cointrexer](https://sites.google.com/view/moosyresearch)  | [ ]() | HMACMD5
