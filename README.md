@@ -31,9 +31,10 @@ Moosy
 # Exchanges
 
 
-Name     | ID    | Source  | API | Cointrexer | ReX | Signature      
----------| ----- | ------- | ----| ---------  | --- | ---     
-Bibox    | BBX   | X       |     |     ✓      |     |HMACMD5
+Name     | ID    | OSS  | API | Cointrexer | ReX | Signature      
+---------| ----- | ---- | ----| ---------  | --- | ---     
+Bibox    | BBX   |      |     |     ✓      |     |HMACMD5
+Binance  | BIN   |  [✓](https://github.com/moosylog/exchange_collectors/blob/master/binance.gs)  |  [v3](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md)   |     ✓      |     |HMACSHA256HEX
 
 
 
