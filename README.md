@@ -103,6 +103,7 @@ Moosy
 | Ukex           |     | todo |      |      | [v?](https://www.ukex.com/en-us/article/api)                 | HMACSHA512???                            |
 | Upbit          | UPB  | cointrexer | ✓ |  |                                             |                                          |
 | Vinex Network  | VNX  | cointrexer | ✓ |  |                                             |                                          |
+| VccExchange |  | todo |  | | [v3](https://vcc.exchange/api/#authentication) | HMACSHA256HEX |
 | Yobit          | YBT  | cointrexer | ✓ |  |                                             |                                          |
 | Zerohash       | ZHS  | cointrexer & rex | ✓ | ✓ | [v1](https://zerohash.com/api/web/)                          | HMACSHA256B64                            |
 
