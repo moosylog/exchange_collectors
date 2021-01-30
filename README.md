@@ -17,7 +17,7 @@ These sample code snippets authenticate to the API and will list your balance in
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
-To explore some of these APIs from Google Apps Script (GAS), you can try [ReX Explorer](https://sites.google.com/view/moosyresearch). It's an interactive API explorer in Sheets that allows you to see the request and the response data. **ReX** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs  
+To explore these lovely APIs from Google Apps Script (GAS), you can use [ReX Explorer](https://sites.google.com/view/moosyresearch). It's an interactive API explorer in Sheets that allows you to see the request and the response data. **ReX** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs  
 
 [ReX Builder](https://sites.google.com/view/moosyresearch/documentation/rex-builder) is a tool that helps you create your own Google Sheet with Exchange API integrations without writing any Apps Script code.
 
