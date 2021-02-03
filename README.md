@@ -1,19 +1,20 @@
-# Exchange Collectors
+# Exchange Connectors
 
 
 ![Moosy Research](https://sites.google.com/site/moosyresearch/_/rsrc/1511269486745/projects/cryptos/doc/logo.png)
 
 Moosy Research is recognized for it's high quality, excel like cryptocurrency sheets, [Cointrexer, BotMon and ReX](https://sites.google.com/view/moosyresearch).
 
-Most cryptocurrency Exchanges provide powerful API consisting of REST endpoints for transactional operations.
-In order to authenticate to an Exchange API requires a valid API Key and a secret are required to access the private endpoints.
+To access a users private data on an exchange, API authentication is required.
+Most exchanges require API authentication based on a public/private key pair and a cryptographic signature using hash algorithms such as SHA and HMAC SHA.
+Moosy Research created a large list of exchange connectors todo these signed, private request.
 
-Many APIs require a signature during authentication that is calculated based on an algorithm like SHA.
-On this page, you find a collection of Google App Script (GAS) functions for Signed / Private Requests to several exchanges.
 
-These sample code snippets authenticate to the API and will list your balance in the built-in Logger.
+**Howto use the code snippets:**
 
-**Disable the V8 runtime** if you have any issues with this code !!!
+authenticate to the API and will list your balance in the built-in Logger.
+
+Disable the V8 runtime if you have any issues with this code !!!
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
