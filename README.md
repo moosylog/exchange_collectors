@@ -12,9 +12,11 @@ Moosy Research created a large list of exchange connectors todo these signed, pr
 
 **Howto use the code snippets:**
 
-authenticate to the API and will list your balance in the built-in Logger.
+copy one of the .gs files into your Google Apps Script 
 
 Disable the V8 runtime if you have any issues with this code !!!
+
+Pop-in your keys, run and use the built-in Logger to look at the response.
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
