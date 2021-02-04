@@ -91,7 +91,7 @@ Moosy
 | Liquid         | Liq  | cointrexer | ✓ |  |                                             |                                          |
 | Luno           | LUN  | cointrexer | ✓ |  |                                                         | none                                     |
 | MXC            | MXC  | cointrexer & rex | ✓ | ✓ |                                             | HMACSHA256HEX |
-| Namebase       | NMB  | cointrexer | ✓ |  |                                             |                                          |
+| Namebase       | NMB  | cointrexer | ✓ | ✓ |                                             |                                          |
 | Nominex        |      | cointrexer | ✓ |  |                                             |                                          |
 | Okex           | OKX  | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs) | ✓     | ✓     | [v3](https://www.okex.com/docs/en/)                          | HMACSHA256B64                            |
 | OkCoin         | OKC  | cointrexer & rex | ✓ | ✓ | [v3](https://www.okcoin.com/docs/en/)                        | HMACSHA256B64                            |
