@@ -11,13 +11,15 @@ Most exchanges require API authentication based on a public/private key pair and
 Moosy Research created a large list of exchange connectors todo these signed, private request.
 
 
-**Howto use the code snippets:**
+**Howto use these code examples:**
 
-- Copy one of the .gs files into your Google Apps Script 
+- Scroll down and copy one of the .gs files into your Google Apps Script ide
 
 - Disable the V8 runtime if you have any issues with this code !!!
 
-- Pop-in your keys, run and use the built-in Logger to look at the response.
+- Pop-in your API keys and select run from the menu.
+
+- The result can be viewed from the Apps Script built-in Logger 
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
