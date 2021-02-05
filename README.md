@@ -9,7 +9,7 @@ If you are looking for a cool sheet, have a look at [Cointrexer, BotMon and ReX]
 
 To access a users private data on an exchange, API authentication is required.
 Most exchanges require API authentication based on a public/private key pair and a cryptographic signature using hash algorithms such as SHA and HMAC SHA.
-Moosy Research created a large list of exchange connectors todo these signed, private request.
+Moosy Research created a large list of exchange connectors todo these signed, private request. A selection of our connectors is open source and published below.
 
 
 **Howto use these code examples:**
