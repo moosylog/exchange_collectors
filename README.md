@@ -1,9 +1,10 @@
-# Exchange Connectors
+# CryptoCurrency Exchange Connectors
 
 
 ![Moosy Research](https://sites.google.com/site/moosyresearch/_/rsrc/1511269486745/projects/cryptos/doc/logo.png)
 
-Moosy Research is recognized for it's high quality, excel like cryptocurrency sheets, [Cointrexer, BotMon and ReX](https://sites.google.com/view/moosyresearch).
+
+Moosy Research is the leader in Google Sheets based cryptocurrency sheets. Our mission is to build cool crypto sheets like [Cointrexer, BotMon and ReX](https://sites.google.com/view/moosyresearch).
 
 To access a users private data on an exchange, API authentication is required.
 Most exchanges require API authentication based on a public/private key pair and a cryptographic signature using hash algorithms such as SHA and HMAC SHA.
@@ -12,11 +13,11 @@ Moosy Research created a large list of exchange connectors todo these signed, pr
 
 **Howto use the code snippets:**
 
-copy one of the .gs files into your Google Apps Script 
+- Copy one of the .gs files into your Google Apps Script 
 
-Disable the V8 runtime if you have any issues with this code !!!
+- Disable the V8 runtime if you have any issues with this code !!!
 
-Pop-in your keys, run and use the built-in Logger to look at the response.
+- Pop-in your keys, run and use the built-in Logger to look at the response.
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
