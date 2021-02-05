@@ -62,7 +62,7 @@ Moosy
 | BtcTurk        | BTK  | cointrexer | ✓ |  | [ ]()                                                        | HMACSHA256B64enc                         |
 | BTSE           |     | [todo](https://www.btse.com/apiexplorer/spot/#generating-api-key) |      |      | [v3](https://github.com/btsecom/api-sample/blob/master/python/spot/btseauth_spot.py) | HMACSHA384HEX                            |
 | Bybit          | BYB  | [bybit.gs](https://github.com/moosylog/exchange_collectors/blob/master/bybit.gs) | ✓ | ✓ | [v1](https://github.com/bybit-exchange/bybit-official-api-docs) | HMACSHA256HEX                            |
-| Cex.io         |      | cointrexer | ✓ |  | [ ]()                                            |                                          |
+| Cex.io         | CEX  | cointrexer | ✓ |  | [ ]()                                            |                                          |
 | Coinall        | ALL  | cointrexer | ✓ |  | [ ]()                                            |                                          |
 | Coinbase       | CNB  | [coinbase.gs](https://github.com/moosylog/exchange_collectors/blob/master/coinbase.gs) | ✓ |  | [v2](https://developers.coinbase.com/)                       | HMACSHA256HEX                            |
 | Coinbase Pro   | GD   | cointrexer & rex | ✓ | ✓ | [ ]()                                            |                                          |
@@ -80,7 +80,7 @@ Moosy
 | DeversiFi      |     | [Todo](https://github.com/DeversiFi/api-documentation/blob/master/trading/js/GetBalance.js) |     |     | [v1](https://docs.deversifi.com/docs#postV1TradingRGetbalance) | ?                                        |
 | eToro          | TOR | rex |     | ✓   | [?]()                                                        | not sure latest version          |
 | eToroX         | TOX | rex |     | ✓   | [v2](https://sites.google.com/site/moosyresearch/projects/cryptos/doc/exchanges#TOC-eToroX) | not sure latest version               |
-| Forex          |   | bitforex?                                                    | .    |     |                                             |                                          |
+| Forex          |   | bitforex?  is it the same                                           | .    |     |                                             |                                          |
 | FTX            | FTX  | cointrexer & rex | ✓ | ✓ | [ ]()                                            |                                          |
 | Gate.io        | GAT  | cointrexer | ✓ |  | [ ]()                                            |                                          |
 | Gemini         | GEM  | [gemini.gs](https://github.com/moosylog/exchange_collectors/blob/master/gemini.gs) | ✓ | ✓ | [v1](https://docs.gemini.com/rest-api/)                      | HMACSHA384HEX                            |
@@ -96,7 +96,7 @@ Moosy
 | Luno           | LUN  | cointrexer | ✓ |  |                                                         | none                                     |
 | MXC            | MXC  | cointrexer & rex | ✓ | ✓ |                                             | HMACSHA256HEX |
 | Namebase       | NMB  | cointrexer | ✓ | ✓ |                                             |                                          |
-| Nominex        |      | cointrexer | ✓ |  |                                             |                                          |
+| Nominex        | NOM  | cointrexer | ✓ |  |                                             |                                          |
 | Okex           | OKX  | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs) | ✓     | ✓     | [v3](https://www.okex.com/docs/en/)                          | HMACSHA256B64                            |
 | OkCoin         | OKC  | cointrexer & rex | ✓ | ✓ | [v3](https://www.okcoin.com/docs/en/)                        | HMACSHA256B64                            |
 | OANDA          | OAN  | [oanda.gs](https://github.com/moosylog/exchange_collectors/blob/master/oanda.gs) | ✓ | ✓ (-) | [v2](http://developer.oanda.com/rest-live-v20/account-ep/)   | Barrier Token                            |
