@@ -14,7 +14,7 @@ Moosy Research created a large list of exchange connectors todo these signed, pr
 
 **Howto use these code examples:**
 
-- Scroll down and copy one of the .gs files into your Google Apps Script ide. 
+- Scroll down and copy one of the .gs files into your [Google Apps Script ide](https://script.google.com/intro) 
 
 - Disable the V8 runtime if you have any issues with this code !!!
 
