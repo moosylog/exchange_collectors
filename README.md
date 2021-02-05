@@ -24,7 +24,7 @@ Moosy Research created a large list of exchange connectors todo these signed, pr
 
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
-To explore these lovely APIs from you can use our [ReX Explorer](https://sites.google.com/view/moosyresearch). It's an interactive API explorer in Sheets that allows you to see the request and the response data. **ReX** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs  
+To explore these lovely APIs from Google Sheets you can use our [ReX Tools](https://sites.google.com/view/moosyresearch). ReX Explorer is a Sheet and Script that allows you to see the request and the response data. **ReX Explorer** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs. **ReX Builder** is tool for you to create your own cryptosheet. 
 
 
 Enjoy,
