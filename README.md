@@ -1,4 +1,4 @@
-# CryptoCurrency Exchange Connectors
+# Cryptocurrency Exchange Connectors
 
 
 ![Moosy Research](https://sites.google.com/site/moosyresearch/_/rsrc/1511269486745/projects/cryptos/doc/logo.png)
