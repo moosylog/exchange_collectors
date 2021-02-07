@@ -14,15 +14,15 @@ Moosy Research created 50+ exchange specific collectors to authenticate and todo
 
 - Scroll down and copy one of the .gs files into your [Google Apps Script ide](https://script.google.com/intro) 
 
-- Disable the V8 runtime if you have any issues with this code !!!
-
 - Pop-in your API keys and select run from the menu.
 
 - The result can be viewed from the Apps Script built-in Logger 
 
+- Disable the V8 runtime if you have any issues with this code !!!
+
 Please **★ Star** on the top of this page if you like this page and you want to motivate me to publish more.
 
-To explore these lovely APIs from Google Sheets you can use our [ReX Tools](https://sites.google.com/view/moosyresearch). ReX Explorer is a Sheet and Script that allows you to see the request and the response data. **ReX Explorer** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs. **ReX Builder** is tool for you to create your own cryptosheet. 
+To explore these lovely APIs from Google Sheets you can use our [ReX Tools](https://sites.google.com/view/moosyresearch). ReX Explorer is a Sheet and Script that allows you to see the request and the response data. **ReX Explorer** is great for **educational purposes**; the script log will show details on complete HTTP/REST request and response. To view the log from Google Sheets select: Tools, Script Editor, View, Logs. **ReX Builder** is tool for you to **create your own cryptosheet**. 
 
 
 Enjoy,
