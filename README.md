@@ -5,8 +5,8 @@
 
 Moosy Research is the leader in Google Sheets based cryptocurrency sheets. Our mission is to build and support the best cryptocurrency spreadsheets that help investors to manage their assets. If you are looking for a cool sheet, have a look at [Cointrexer, BotMon and ReX](https://sites.google.com/view/moosyresearch).
 
-To access a users private data on an exchange, API authentication is required.
-Most exchanges require API authentication based on a public/private key pair and a cryptographic signature such as Secure Hash Algorithms (SHA) combined with hash-based message authentication code (HMAC). The challenge however is that all exchanges do their authentication slidely different and use different attributes in the http header for the authentication and/or signing of the request.
+To access your private data on an exchange, API authentication is required.
+Allmost all exchanges provide API authentication based on a public/private key pair and a cryptographic signature such as Secure Hash Algorithms (SHA) combined with hash-based message authentication code (HMAC) to gain access to private data. The challenge however is that all exchanges do their authentication slidely different and use different attributes in the http header for the authentication and/or signing of the request.
 Moosy Research created 50+ exchange specific collectors to authenticate and todo these private requests for [our own cyptosheets](https://sites.google.com/view/moosyresearch). A selection of our collectors is open source and published below.
 
 
