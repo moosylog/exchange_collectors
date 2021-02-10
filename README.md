@@ -121,7 +121,7 @@ If you don't tell me, how can I know?
 
 ###### hmac sha cryptos cryptocurrency cryptocurrencies exchange sign sigature signing private request authentication authenticate google sheets google script javascript gas Google Sheets automatic creation with Google Apps Script (GAS) for managing a cryptocurrency tracking spreadsheet Google Sheets script editor code for managing a cryptocurrency tracking spreadsheet
 
-*** Moosy Research: Cool Cryptocurrency Sheets ***
+***Moosy Research: Cool Cryptocurrency Sheets***
 Because nothing is as flexible and easy to work with as a spreadsheet!
 
 
