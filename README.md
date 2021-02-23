@@ -92,6 +92,7 @@ Moosy
 | Kucoin         | KUC  | cointrexer | ✓ |  |                                             |                                          |
 | Liquid         | Liq  | cointrexer | ✓ |  |                                             |                                          |
 | Luno           | LUN  | cointrexer | ✓ |  |                                                         | none                                     |
+| Mercadobitcoin | MCD  | cointrexer | ✓ |  |                                             | HMACSHA512HEX |
 | MXC            | MXC  | cointrexer & rex | ✓ | ✓ |                                             | HMACSHA256HEX |
 | Namebase       | NMB  | cointrexer | ✓ | ✓ |                                             |                                          |
 | Nominex        | NOM  | cointrexer | ✓ |  |                                             |                                          |
