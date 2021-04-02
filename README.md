@@ -14,7 +14,7 @@ Moosy Research created 50+ exchange specific collectors to authenticate and todo
 
 - Scroll down and copy one of the .gs files into your [Google Apps Script ide](https://script.google.com/intro) 
 
-- Pop-in your API keys and select run from the menu.
+- Pop-in your API keys and select run from the menu
 
 - The result can be viewed from the Apps Script built-in Logger 
 
