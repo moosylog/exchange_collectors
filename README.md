@@ -70,6 +70,7 @@ Moosy
 | Coinsbit |  | todo | | | [v1](https://www.notion.so/API-COINSBIT-WS-API-COINSBIT-cf1044cff30646d49a0bab0e28f27a87) | HMACSHA512 |
 | CoinTiger |  | todo | | | [v2](https://github.com/cointiger/api-docs-en/wiki/Trading-API-Sign-Rules) | HMACSHA512HEX |
 | Crex24         | C24  | cointrexer | ✓ |  | [ ]()                                                        | HMACSHA256B64                            |
+| Crypto_com     |     | todo |      |      | [v2](https://exchange-docs.crypto.com/spot/index.html#request-format) | HMACSHA256HEX                            |
 | Crypto APIs    | CRA  | [cryptoapis.gs](https://github.com/moosylog/exchange_collectors/blob/master/cryptoapis.gs) | ✓ |  | [v1](https://docs.cryptoapis.io/)                            | none                                     |
 | Currency com   | CUR  | cointrexer & rex | ✓ | ✓ | [ ]()                                            |                                          |
 | DCX            | DCX  | cointrexer | ✓ |  | [ ]()                                                        | HMACSHA256HEX                            |
