@@ -96,7 +96,7 @@ Moosy
 | Mercadobitcoin | MCD  | cointrexer | ✓ |  |                                             | HMACSHA512HEX |
 | MXC            | MXC  | cointrexer & rex | ✓ | ✓ |                                             | HMACSHA256HEX |
 | Namebase       | NMB  | cointrexer | ✓ | ✓ |                                             |                                          |
-| Nicehash       | NCH  | cointrexer |   |   |                                             | HMACSHA256HEX |
+| Nicehash       | NCH  | [nicehash.gs](https://github.com/moosylog/exchange_collectors/blob/master/nicehash.gs) |   |   |                                             | HMACSHA256HEX |
 | Nominex        | NOM  | cointrexer | ✓ |  |                                             |                                          |
 | Okex           | OKX  | [okex.gs](https://github.com/moosylog/exchange_collectors/blob/master/okex.gs) | ✓     | ✓     | [v3](https://www.okex.com/docs/en/)                          | HMACSHA256B64                            |
 | OkCoin         | OKC  | cointrexer & rex | ✓ | ✓ | [v3](https://www.okcoin.com/docs/en/)                        | HMACSHA256B64                            |
