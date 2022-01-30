@@ -38,9 +38,11 @@ function NicehashSign(my) {
   // OPTION 2 - HMACSHA256HEX
   signature = ToHex ( Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, payload, my.secret), Utilities.Charset.UTF8 );
   if (signature === wanted_result) Logger.log("OPTION 2 = OK" );
-    
   
-  // OPTION 6 - CryptoJS
+  // ** If you remove the zero byte '\0' from the payload, above OPTION 1 and OPTION 2 will work 
+  
+  
+  // OPTION 3 - CryptoJS
   var hmac = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA256, my.secret); 
   temp = hmac.update(payload);
   signature = hmac.finalize().toString(CryptoJS.enc.Hex);
