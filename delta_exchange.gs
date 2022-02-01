@@ -34,7 +34,6 @@ function DEL_PrivateRequest(DELrequest) {
                                'User-Agent'            : 'rest-client',
                                'Content-Type'          : 'application/json'
                              },
-      
       };
 
   return  { uri: DELrequest.uri + DELrequest.command  , params: params};
