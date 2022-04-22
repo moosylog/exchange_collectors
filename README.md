@@ -95,6 +95,7 @@ Moosy
 | Luno           | LUN  | cointrexer | ✓ |  |                                                         | none                                     |
 | Mercadobitcoin | MCD  | cointrexer | ✓ |  |                                             | HMACSHA512HEX |
 | MXC            | MXC  | cointrexer & rex | ✓ | ✓ |                                             | HMACSHA256HEX |
+| MEXC Global    | MEX  | [mex.gs](https://github.com/moosylog/exchange_collectors/blob/master/mex.gs) | ✓ |  |                                             | HMACSHA256HEX |
 | Namebase       | NMB  | cointrexer | ✓ | ✓ |                                             |                                          |
 | Nicehash       | NCH  | [nicehash.gs](https://github.com/moosylog/exchange_collectors/blob/master/nicehash.gs) |   |   |                                             | HMACSHA256HEX |
 | Nominex        | NOM  | cointrexer | ✓ |  |                                             |                                          |
