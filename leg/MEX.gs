@@ -40,13 +40,13 @@ function MEX_GetBalances() {
     "updateTime": null,
     "accountType": "SPOT",
     "balances": [{
-        "asset": "NBNTEST",
-        "free": "1111078",
-        "locked": "33"
+        "asset": "ETH",
+        "free": "0.11",
+        "locked": "0.02"
     }, {
-        "asset": "MAIN",
-        "free": "1020000",
-        "locked": "0"
+        "asset": "BAT",
+        "free": "1",
+        "locked": "2"
     }],
     "permissions": ["SPOT"]
 }
