@@ -44,7 +44,7 @@ function MEX_GetBalances() {
         "free": "0.11",
         "locked": "0.02"
     }, {
-        "asset": "BAT",
+        "asset": "XRP",
         "free": "1",
         "locked": "2"
     }],
