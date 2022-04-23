@@ -94,7 +94,7 @@ function MEX_PrivateRequest(stn) {
   var timestamp = new Date().getTime().toString(),  
       payld     = 'recvWindow=5000&timestamp='+timestamp,
       sign      = HMACSHA256HEX(payld,stn.secret),
-      payld     = payld + "&signature="+sign
+   //   payld     = payld + "&signature="+sign
       params    = {
        'method'            : stn.method,  
        'muteHttpExceptions': true,
