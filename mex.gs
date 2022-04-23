@@ -96,7 +96,7 @@ function MEX_PrivateRequest(stn) {
   function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
   
   var timestamp = new Date().getTime().toString(),  
-      payld     = 'recvWindow=5000&timestamp=&'+timestamp,
+      payld     = 'recvWindow=5000&timestamp='+timestamp,
       sign      = HMACSHA256HEX(payld,stn.secret),
       payld     = payld + "&signature="+sign
       params    = {
@@ -110,6 +110,6 @@ function MEX_PrivateRequest(stn) {
        },
        //'payload'         : bybrequest.command
    } 
-   payld = stn.command+"?"+payld+"&sign="+sign;
+   payld = stn.command+"?"+payld+"&signature="+sign;
    return  { uri: stn.uri + payld,   params: params};
 }
