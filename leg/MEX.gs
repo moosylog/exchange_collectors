@@ -42,8 +42,14 @@ function MEX_GetBalances() {
     "balances": [{
         "asset": "ETH",
         "free": "0.11",
-        "locked": "0.02"
-    }, {
+        "locked": "0.01"
+    }, 
+    {
+        "asset": "BTC",
+        "free": "0.01",
+        "locked": "0.001"
+    },
+    {
         "asset": "XRP",
         "free": "1",
         "locked": "2"
