@@ -1,14 +1,14 @@
 {
   "_HEADER":{
-            "modified":"Februari 15, 2021",
+            "modified":"April 23, 2022",
             "dc:author": "Moosy"
     },
 	"Name":"CTRXL",
-	"Version":"1.5",
-	"Date":"Februari 15, 2021",
+	"Version":"1.6",
+	"Date":"April 23, 2022",
 	"Force2Update":"No",
 	"Notification":"Yes",
 	"Message":"See the Changelog on the mainpage to see what's new",
-	"URL":"https://sites.google.com/view/moosyresearch"
+	"URL":"https://sites.google.com/view/moosyresearch/changelog/cointrexer"
 }
 
