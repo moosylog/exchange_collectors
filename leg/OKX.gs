@@ -130,7 +130,7 @@ function OKX_GetBalances() {
 
 
 function OKX_PrivateRequest(stn) {      
-  function HMACSHA256HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret)).toString(); }
+  function HMACSHA256B64(s, secret) { return (Utilities.base64Encode(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret))); }
   function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
  
   var timestamp = Utilities.formatDate(new Date(), "UTC", 'yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'');
