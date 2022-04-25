@@ -122,7 +122,7 @@ function OKX_GetBalances() {
     //Logger.log(r+" "+response.response_data.balance[r].total);
   }
   DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
-  if (stn.thirdattrib.toLowerCase().indexOf('debug') >= 0)  {  Browser.msgBox(JSON.stringify(array)); }   
+  if (debug = true)  {  Browser.msgBox(JSON.stringify(array)); }   
   DebugLog(array);
   return array;
 }
