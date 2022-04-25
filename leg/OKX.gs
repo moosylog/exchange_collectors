@@ -1,1 +1,152 @@
-var _0x2c9a=['\x2f\x61\x70\x69\x2f\x61\x63\x63\x6f\x75\x6e\x74\x2f\x76\x33\x2f\x77\x61\x6c\x6c\x65\x74','\x62\x61\x6c\x61\x6e\x63\x65','\x66\x72\x6f\x7a\x65\x6e','\x70\x75\x73\x68','\x63\x75\x72\x72\x65\x6e\x63\x79','\x6c\x6f\x67','\x77\x77\x77\x2e\x6f\x6b\x65\x78\x2e\x63\x6f\x6d','\x79\x79\x79\x79\x2d\x4d\x4d\x2d\x64\x64\x27\x54\x27\x48\x48\x3a\x6d\x6d\x3a\x73\x73\x2e\x53\x53\x53\x27\x5a\x27','\x47\x45\x54','\x63\x6f\x6d\x70\x75\x74\x65\x48\x6d\x61\x63\x53\x69\x67\x6e\x61\x74\x75\x72\x65','\x4d\x61\x63\x41\x6c\x67\x6f\x72\x69\x74\x68\x6d','\x48\x4d\x41\x43\x5f\x53\x48\x41\x5f\x32\x35\x36','\x62\x61\x73\x65\x36\x34\x45\x6e\x63\x6f\x64\x65','\x68\x74\x74\x70\x73\x3a\x2f\x2f','\x67\x65\x74','\x61\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2f\x6a\x73\x6f\x6e','\x70\x61\x72\x73\x65','\x67\x65\x74\x43\x6f\x6e\x74\x65\x6e\x74\x54\x65\x78\x74'];var _0xa2c9=function(_0x56b5c3,_0x318fd5){_0x56b5c3=_0x56b5c3-0x0;var _0x281ff1=_0x2c9a[_0x56b5c3];return _0x281ff1;};function OKX_GetBalances(_0x391f5f){var _0x2bbb36=[],_0x2f1246=OKX_auth(_0xa2c9('0x0'),EXKEY);if(_0x2f1246==null)return![];try{var _0x4fa072=_0x2f1246[0x1][_0xa2c9('0x1')];}catch(_0x3b6604){Logger['\x6c\x6f\x67'](_0x2f1246);return![];}for(var _0x3d3854 in _0x2f1246){if(_0x2f1246[_0x3d3854]['\x74\x79\x70\x65']!=_0xa2c9('0x2')&&_0x2f1246[_0x3d3854][_0xa2c9('0x1')]*0x2710>0x0){_0x2bbb36[_0xa2c9('0x3')]({'\x63\x75\x72\x63\x6f\x64\x65\x45\x58':_0x2f1246[_0x3d3854][_0xa2c9('0x4')],'\x62\x61\x6c\x61\x6e\x63\x65':_0x2f1246[_0x3d3854][_0xa2c9('0x1')]});}}Logger[_0xa2c9('0x5')](_0x2bbb36);return _0x2bbb36;}function OKX_GetMarkets(){return null;}function OKX_auth(_0x45c620,_0x32d562,_0x12cc9e,_0x2fbafb){var _0x2f4703=_0xa2c9('0x6'),_0x3a59df=Utilities['\x66\x6f\x72\x6d\x61\x74\x44\x61\x74\x65'](new Date(),'\x47\x4d\x54\x20\x2d\x31',_0xa2c9('0x7'));payload='',_0x30cbc2='',request='';_0x45c620=_0x45c620['\x72\x65\x70\x6c\x61\x63\x65'](/.*\/\/[^\/]*/,'');payload=_0x3a59df+_0xa2c9('0x8')+_0x45c620;signature=Utilities[_0xa2c9('0x9')](Utilities[_0xa2c9('0xa')][_0xa2c9('0xb')],payload,EXSECRET);signature=Utilities[_0xa2c9('0xc')](signature);request=_0xa2c9('0xd')+_0x2f4703+_0x45c620;var _0x30cbc2={'\x6d\x65\x74\x68\x6f\x64':_0xa2c9('0xe'),'\x68\x65\x61\x64\x65\x72\x73':{'\x4f\x4b\x2d\x41\x43\x43\x45\x53\x53\x2d\x4b\x45\x59':EXKEY,'\x4f\x4b\x2d\x41\x43\x43\x45\x53\x53\x2d\x53\x49\x47\x4e':signature,'\x4f\x4b\x2d\x41\x43\x43\x45\x53\x53\x2d\x54\x49\x4d\x45\x53\x54\x41\x4d\x50':_0x3a59df,'\x4f\x4b\x2d\x41\x43\x43\x45\x53\x53\x2d\x50\x41\x53\x53\x50\x48\x52\x41\x53\x45':ADATTRIB,'\x41\x63\x63\x65\x70\x74':_0xa2c9('0xf'),'\x43\x6f\x6e\x74\x65\x6e\x74\x2d\x54\x79\x70\x65':_0xa2c9('0xf')}};return JSON[_0xa2c9('0x10')](UrlFetchApp['\x66\x65\x74\x63\x68'](request,_0x30cbc2)[_0xa2c9('0x11')]());}
+// OKX API
+// april 25, 2022
+// https://www.okx.com/docs-v5/en/#rest-api-authentication
+
+
+function OKX_Settings() {  
+ var stn =  {
+  'id'         : 'OKX',
+  'name'       : 'OKXC',
+  'apikey'     : EXKEY,                               
+  'secret'     : EXSECRET,                            
+  'thirdattrib': ADATTRIB,
+  'uri'        : 'https://okx.com',              
+  'command'    : '/api/v5/account/balance',                    // https://OKXdevelop.github.io/apidocs/#all-orders
+  'method'     : 'GET',
+  'payload'    : '',
+  'body'      : '' 
+  };
+  if (typeof ADATTRIB != 'undefined') stn.thirdattrib = ADATTRIB.split(" "); 
+  return stn;
+}
+
+
+
+function OKX_GetBalances() {  
+  var stn     = OKX_Settings();
+  var debug = false;
+  if (stn.thirdattrib[1] == 'debug' || stn.thirdattrib[2] == 'debug') debug = true;
+  if (stn.thirdattrib[0] == 'demo' || stn.thirdattrib[1] == 'demo'){
+  response = {
+    "code": "0",
+    "data": [
+        {
+            "adjEq": "10679688.0460531643092577",
+            "details": [
+                {
+                    "availBal": "",
+                    "availEq": "9930359.9998",
+                    "cashBal": "9930359.9998",
+                    "ccy": "USDT",
+                    "crossLiab": "0",
+                    "disEq": "9439737.0772999514",
+                    "eq": "9930359.9998",
+                    "eqUsd": "9933041.196999946",
+                    "frozenBal": "0",
+                    "interest": "0",
+                    "isoEq": "0",
+                    "isoLiab": "0",
+                    "isoUpl":"0",
+                    "liab": "0",
+                    "maxLoan": "10000",
+                    "mgnRatio": "",
+                    "notionalLever": "",
+                    "ordFrozen": "0",
+                    "twap": "0",
+                    "uTime": "1620722938250",
+                    "upl": "0",
+                    "uplLiab": "0",
+                    "stgyEq":"0"
+                },
+                {
+                    "availBal": "",
+                    "availEq": "33.6799714158199414",
+                    "cashBal": "33.2009985",
+                    "ccy": "BTC",
+                    "crossLiab": "0",
+                    "disEq": "1239950.9687532129092577",
+                    "eq": "33.771820625136023",
+                    "eqUsd": "1239950.9687532129092577",
+                    "frozenBal": "0.0918492093160816",
+                    "interest": "0",
+                    "isoEq": "0",
+                    "isoLiab": "0",
+                    "isoUpl":"0",
+                    "liab": "0",
+                    "maxLoan": "1453.92289531493594",
+                    "mgnRatio": "",
+                    "notionalLever": "",
+                    "ordFrozen": "0",
+                    "twap": "0",
+                    "uTime": "1620722938250",
+                    "upl": "0.570822125136023",
+                    "uplLiab": "0",
+                    "stgyEq":"0"
+                }
+            ],
+            "imr": "3372.2942371050594217",
+            "isoEq": "0",
+            "mgnRatio": "70375.35408747017",
+            "mmr": "134.8917694842024",
+            "notionalUsd": "33722.9423710505978888",
+            "ordFroz": "0",
+            "totalEq": "11172992.1657531589092577",
+            "uTime": "1623392334718"
+        }
+    ],
+    "msg": ""
+}
+  } else {
+      var request = OKX_PrivateRequest(stn);
+      DebugLog("URL ....",JSON.stringify(request));
+      var response = UrlFetchApp.fetch(request.uri,request.params);
+      Logger.log(JSON.parse(response));
+      DebugLog("Receiving data from "+stn.name, response);
+      try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
+  }
+  
+    
+  if (debug == true) { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); Browser.msgBox(JSON.stringify(response)); }   
+  try {  Logger.log("Validating datatype "+response.data.details); } catch(e) { Logger.log(response); Logger.log("no or empty response"); return null;}
+  var array = [];
+  var num = 0;
+  Logger.log(response.data[0].details);
+  Logger.log("******************************");  
+  for (r in response.data[0].details){
+    if (response.data[0].details[r].cashBal * 100000 > 0)  {
+      Logger.log("push "+num);
+      array.push({
+         curcodeEX: response.data[0].details[r].ccy,
+         balance:   response.data[0].details[r].cashBal
+      });   }
+    //Logger.log(r+" "+response.response_data.balance[r].total);
+  }
+  DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
+  if (stn.thirdattrib.toLowerCase().indexOf('debug') >= 0)  {  Browser.msgBox(JSON.stringify(array)); }   
+  DebugLog(array);
+  return array;
+}
+
+
+
+function OKX_PrivateRequest(stn) {      
+  function HMACSHA256HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret)).toString(); }
+  function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
+ 
+  var timestamp = Utilities.formatDate(new Date(), "UTC", 'yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'');
+      payld     = timestamp + stn.method + stn.command,
+      sign      = HMACSHA256B64(payld,stn.secret),
+      params    = {
+       'method'                : stn.method,  
+       'muteHttpExceptions'    : true,
+       'headers': {
+         'OK-ACCESS-KEY'       : stn.apikey,     
+         'OK-ACCESS-SIGN'      : sign,
+         'OK-ACCESS-TIMESTAMP' : timestamp,
+         'OK-ACCESS-PASSPHRASE': stn.thirdattrib,
+         'Content-Type'    :'application/json',
+       },
+       //'payload'         : bybrequest.command
+   } 
+   return  { uri: stn.uri + stn.command,   params: params};
+}
