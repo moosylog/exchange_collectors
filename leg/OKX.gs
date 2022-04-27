@@ -143,7 +143,7 @@ function OKX_PrivateRequest(stn) {
          'OK-ACCESS-KEY'       : stn.apikey,     
          'OK-ACCESS-SIGN'      : sign,
          'OK-ACCESS-TIMESTAMP' : timestamp,
-         'OK-ACCESS-PASSPHRASE': stn.thirdattrib,
+         'OK-ACCESS-PASSPHRASE': stn.thirdattrib[0],
          'Content-Type'        :'application/json',
        },
        //'payload'         : bybrequest.command
