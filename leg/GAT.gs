@@ -111,7 +111,7 @@ function GAT_PrivateRequest(stn) {
       sign      = HMACSHA512HEX(payld,stn.secret),   
       params    = {
        'method'                : stn.method,  
-       'muteHttpExceptions'    : false,
+       'muteHttpExceptions'    : true,
        'headers': {
          'TIMESTAMP'       : timestamp,
          'KEY'             : stn.apikey,
