@@ -23,7 +23,7 @@ function GAT_GetBalances() {
       debug   = false;
    
   if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) { stn.thirdattrib[0] = 'spot'; }
-  if (JSON.stringify(stn.thirdattrib).toLowerCase().indexOf('debug') >= 0) Browser.msgBox("1. Test thirdattrib="+stn.thirdattrib); 
+  if (JSON.stringify(stn.thirdattrib).toLowerCase().indexOf('debug') >= 0) debug = true;
  
   if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
@@ -38,9 +38,10 @@ function GAT_GetBalances() {
 
   DebugLog("Receiving data from "+stn.name, response);
   try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
-  if (stn.thirdattrib[0].toLowerCase().indexOf('debug') >= 0  || stn.thirdattrib[1].toLowerCase().indexOf('debug') )  
+  if (debug == true )  
      { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); 
        Browser.msgBox(JSON.stringify(response)); 
+       DebugLog("DEBUG MODE ON");
      }   
   try {  
      Logger.log("Validating datatype "+response.response_data.balance.btc.total); } catch(e) 
@@ -126,4 +127,3 @@ function GAT_PrivateRequest(stn) {
 
 
  
-
