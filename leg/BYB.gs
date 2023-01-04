@@ -39,7 +39,7 @@ function BYB_GetBalances() {
   } else 
   {
     for (r in response.result.balances) {   
-      if (Number(Math.abs( response.result.balances[r].total )) * 100000  > 0) array.push({ curcodeEX: [r][0], balance: response.result.balances[r].coinId});                       
+      if (Number(Math.abs( response.result.balances[r].total )) * 100000  > 0) array.push({ curcodeEX: response.result.balances[r].coinid, balance: response.result.balances[r].total});                       
     }
   }
   
