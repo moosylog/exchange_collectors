@@ -12,7 +12,7 @@ function BYB_GetBalances() {
    'name'       : 'Bybit',
    'apikey'     : EXKEY,
    'secret'     : EXSECRET,
-   'command'    : '/v2/private/wallet/balance',
+   'command'    : '/spot/v3/private/account',
    'uri'        : 'https://api.bybit.com',  
    'method'     : 'GET',
    'payload'    : '' 
@@ -35,11 +35,11 @@ function BYB_GetBalances() {
   
   
   if (curpara === true)  {
-    array.push({ curcodeEX: cur, balance: response.result[cur].equity});   
+    array.push({ curcodeEX: cur, balance: response.result[cur].balances});   
   } else 
   {
-    for (r in response.result) {   
-      if (Number(Math.abs( response.result[r].equity )) * 100000  > 0) array.push({ curcodeEX: [r][0], balance: response.result[r].equity});                       
+    for (r in response.result.balances) {   
+      if (Number(Math.abs( response.result.balances[r].total )) * 100000  > 0) array.push({ curcodeEX: [r][0], balance: response.result.balances[r].coinId});                       
     }
   }
   
