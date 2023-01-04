@@ -22,7 +22,7 @@ function GAT_GetBalances() {
   var stn     = GAT_Settings();
   
   
-  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) stn.thirdattrib = 'spot'
+  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) stn.thirdattrib[0] = 'spot'
 
   if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
@@ -37,7 +37,7 @@ function GAT_GetBalances() {
 
   DebugLog("Receiving data from "+stn.name, response);
   try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
-  if (stn.thirdattrib.toLowerCase().indexOf('debug') >= 0)  
+  if (stn.thirdattrib[0].toLowerCase().indexOf('debug') >= 0  || stn.thirdattrib[1].toLowerCase().indexOf('debug') )  
      { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); 
        Browser.msgBox(JSON.stringify(response)); 
      }   
