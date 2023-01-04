@@ -32,10 +32,9 @@ function GAT_Settings() {
 }
 
 function GAT_GetBalances() {  
-  Browser.msgBox("test");
   var stn     = GAT_Settings();
-  Browser.msgBox(stn.thirdattrib); 
-  RETURN 0;
+  Browser.msgBox("Test thirdattrib="+stn.thirdattrib); 
+  
   if (stn.thirdattrib == 'undefined') stn.thirdattrib = 'spot';
   if (stn.thirdattrib == null) stn.thirdattrib = 'spot';
   if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
