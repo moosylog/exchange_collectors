@@ -22,7 +22,7 @@ function GAT_GetBalances() {
   var stn     = GAT_Settings();
   
   
-  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) stn.thirdattrib[0] = 'spot'
+  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) { stn.thirdattrib[0] = 'spot'; stn.thirdattrib[1] = '';}
 
   if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
@@ -48,7 +48,7 @@ function GAT_GetBalances() {
          return null;
        }
 
-  if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)  
+  if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)  
   {
     var total = 0;
     for (r in response) {    
@@ -62,7 +62,7 @@ function GAT_GetBalances() {
     }
   }
   
-  if (stn.thirdattrib.toLowerCase().indexOf('margin') >= 0)  
+  if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0)  
   {
     var total = 0;
     Browser.msgBox("WHAT TO PULL FROM THIS?\\n\\n"+ response);
