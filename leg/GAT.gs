@@ -31,14 +31,13 @@ function GAT_Settings() {
   return stn;
 }
 
-GAT_GetBalances();
-
 function GAT_GetBalances() {  
   Browser.msgBox("test");
   var stn     = GAT_Settings();
-  Browser.msgBox(stn.thirdattrib);
+  Browser.msgBox(stn.thirdattrib); 
   RETURN 0;
- 
+  if (stn.thirdattrib == 'undefined') stn.thirdattrib = 'spot';
+  if (stn.thirdattrib == null) stn.thirdattrib = 'spot';
   if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
