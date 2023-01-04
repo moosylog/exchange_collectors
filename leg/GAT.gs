@@ -33,6 +33,7 @@ function GAT_Settings() {
 
 
 function GAT_GetBalances() {  
+  Browser.msgBox("test");
   var stn     = GAT_Settings();
   Browser.msgBox(stn.thirdattrib);
   if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
