@@ -33,7 +33,7 @@ function GAT_Settings() {
 
 function GAT_GetBalances() {  
   var stn     = GAT_Settings();
-  Browser.msgBox("Test thirdattrib="+stn.thirdattrib); 
+  
   
   if (stn.thirdattrib == 'undefined') stn.thirdattrib = 'spot';
   if (stn.thirdattrib == null) stn.thirdattrib = 'spot';
@@ -41,7 +41,7 @@ function GAT_GetBalances() {
   if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
-  
+  Browser.msgBox("Test thirdattrib="+stn.thirdattrib); 
   
   var request = GAT_PrivateRequest(stn);
       console.log("API Request object: ",JSON.stringify(request));
