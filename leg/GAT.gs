@@ -22,14 +22,13 @@ function GAT_GetBalances() {
   var stn     = GAT_Settings();
   
   
-  if (stn.thirdattrib == 'undefined') stn.thirdattrib = 'spot';
-  if (stn.thirdattrib == null) stn.thirdattrib = 'spot';
-  if (stn.thirdattrib == "") stn.thirdattrib = 'spot';
-  if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
-  if (stn.thirdattrib.toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
-  if (stn.thirdattrib.toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
+  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) stn.thirdattrib = 'spot'
 
- stn.thirdattrib = 'spot';
+  if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
+  if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
+  if (stn.thirdattrib[0].toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
+
+
  Browser.msgBox("1. Test thirdattrib="+stn.thirdattrib); 
   
   var request = GAT_PrivateRequest(stn);
