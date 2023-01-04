@@ -31,7 +31,7 @@ function BYB_GetBalances() {
   response = JSON.parse(response);
   
   if (ADATTRIB.toLowerCase().indexOf('debug') >= 0)  { Browser.msgBox(BYBrequest.name+" Connector DEBUG Mode:"); Browser.msgBox("Received (Raw balance)\\n\\n"+JSON.stringify(response)); }   
-  try {  Logger.log(BYBrequest.name+": Validating received data "+response.result[0]); } catch(e) {Logger.log(response); Logger.log(BYBrequest.name+" : no or empty response"); return null;}
+  try {  Logger.log(BYBrequest.name+": Validating received data "+response.result.balances[0]); } catch(e) {Logger.log(response); Logger.log(BYBrequest.name+" : no or empty response"); return null;}
   
   
   if (curpara === true)  {
