@@ -19,11 +19,12 @@ function GAT_Settings() {
 }
 
 function GAT_GetBalances() {  
-  var stn     = GAT_Settings();
-  
-  
-  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) { stn.thirdattrib[0] = 'spot'; stn.thirdattrib[1] = '';}
-
+  var stn     = GAT_Settings(),
+      debug   = false;
+   
+  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) { stn.thirdattrib[0] = 'spot'; }
+  if (JSON.stringify(stn.thirdattrib).toLowerCase().indexOf('debug') >= 0) Browser.msgBox("1. Test thirdattrib="+stn.thirdattrib); 
+ 
   if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
   if (stn.thirdattrib[0].toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
