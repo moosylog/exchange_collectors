@@ -31,6 +31,7 @@ function GAT_Settings() {
   return stn;
 }
 
+GAT_GetBalances();
 
 function GAT_GetBalances() {  
   Browser.msgBox("test");
