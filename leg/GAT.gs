@@ -34,7 +34,7 @@ function GAT_Settings() {
 
 function GAT_GetBalances() {  
   var stn     = GAT_Settings();
-  
+  Browser.msgBox(stn.thirdattrib);
   if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
