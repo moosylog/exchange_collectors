@@ -29,7 +29,7 @@ function GAT_GetBalances() {
   if (stn.thirdattrib[0].toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
 
 
- Browser.msgBox("1. Test thirdattrib="+stn.thirdattrib); 
+ //Browser.msgBox("1. Test thirdattrib="+stn.thirdattrib); 
   
   var request = GAT_PrivateRequest(stn);
       console.log("API Request object: ",JSON.stringify(request));
