@@ -112,6 +112,7 @@ function GAT_GetServerTime(uri){
 
 function GAT_PrivateRequest(stn) {      
   function HMACSHA512HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_512, s, secret)).toString(); }
+  function SHA512HEX(s)             { return ToHex(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_512, s)).toString(); }
   function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
   
   var timestamp = (Date.now() / 1000).toString(),
