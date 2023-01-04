@@ -84,7 +84,7 @@ function GAT_GetBalances() {
   console.log("OUTPUT TEST SCRIPT:")
   console.log(JSON.parse(response));
   return 0;
-}
+} 
 
 
 
