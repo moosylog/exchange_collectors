@@ -42,6 +42,8 @@ function GAT_GetBalances() {
   if (stn.thirdattrib.toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
   Browser.msgBox("Test thirdattrib="+stn.thirdattrib); 
+ stn.thirdattrib = 'spot';
+ Browser.msgBox("Test thirdattrib="+stn.thirdattrib); 
   
   var request = GAT_PrivateRequest(stn);
       console.log("API Request object: ",JSON.stringify(request));
