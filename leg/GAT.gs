@@ -1,18 +1,5 @@
 // Gate.io API v4
 // jan 3, 2023
-// https://www.gate.io/docs/developers/apiv4/en/#api-signature-string-generation
-// Live trading: https://api.gateio.ws/api/v4
-// Futures TestNet trading: https://fx-api-testnet.gateio.ws/api/v4
-// Futures live trading alternative (futures only): https://fx-api.gateio.ws/api/v4
-
-// all balances in USD
-// https://www.gate.io/docs/developers/apiv4/en/#retrieve-user-s-total-balances
-
-// subaccount balances
-// https://www.gate.io/docs/developers/apiv4/en/#retrieve-sub-account-balances
-
-
-
 
 function GAT_Settings() {  
  var stn =  {
@@ -41,9 +28,9 @@ function GAT_GetBalances() {
   if (stn.thirdattrib.toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
   if (stn.thirdattrib.toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
-  Browser.msgBox("Test thirdattrib="+stn.thirdattrib); 
+
  stn.thirdattrib = 'spot';
- Browser.msgBox("Test thirdattrib="+stn.thirdattrib); 
+ Browser.msgBox("1. Test thirdattrib="+stn.thirdattrib); 
   
   var request = GAT_PrivateRequest(stn);
       console.log("API Request object: ",JSON.stringify(request));
