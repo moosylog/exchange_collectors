@@ -7,29 +7,39 @@ function GAT_Settings() {
   'name'       : 'Gate.IO',
   'apikey'     : EXKEY,                               
   'secret'     : EXSECRET,                            
-  'thirdattrib': ADATTRIB,
+  'thirdattrib': '',
+  'third'      : false,
   'uri'        : 'https://api.gateio.ws',              
   'command'    : '/api/v4/spot/accounts',                  
   'method'     : 'GET',
   'payload'    : '',
   'body'       : '' // need todo JSON.stringify
  };
-  if (typeof ADATTRIB != 'undefined') stn.thirdattrib = ADATTRIB.split(" "); 
-  return stn;
+ if (typeof ADATTRIB != 'undefined') { 
+   stn.thirdobj = ADATTRIB.split(" "); 
+   stn.third = true; 
+   stn.thirdattrib = ADATTRIB.toLowerCase()  
+ }
+ return stn;
 }
 
 function GAT_GetBalances() {  
   var stn     = GAT_Settings(),
       debug   = false;
-   
-  if (stn.thirdattrib[0] == 'undefined' || stn.thirdattrib[0] == null ) { stn.thirdattrib[0] = 'spot'; }
-  if (JSON.stringify(stn.thirdattrib).toLowerCase().indexOf('debug') >= 0) debug = true;
+  
  
-  if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)   stn.command = "/api/v4/spot/accounts";
-  if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0) stn.command = "/margin/accounts";
-  if (stn.thirdattrib[0].toLowerCase().indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
+  if (stn.third == false) stn.thirdattrib = 'spot';  // ** third attribute is empty we set default value
+ 
+  if (stn.thirdattrib.indexOf('debug') >= 0) debug = true;
+ 
+  if (stn.thirdattrib.indexOf('spot') >= 0)    stn.command = "/api/v4/spot/accounts";
+  if (stn.thirdattrib.indexOf('margin') >= 0)  stn.command = "/margin/accounts";
+  if (stn.thirdattrib.indexOf('futures') >= 0) stn.command = "/futures/{settle}/accounts";
+ 
+ 
 
-  if (stn.thirdattrib[1].toLowerCase().indexOf('demo') >= 0)   {
+
+  if (stn.thirdattrib.indexOf('demo') >= 0)   {
     var response = 	[{"currency":"RARI","available":"0.9363116","locked":"0"},{"currency":"ERN","available":"0.096","locked":"0"},{"currency":"MATIC","available":"3.147","locked":"0"},{"currency":"ALPA","available":"1.441","locked":"0"},{"currency":"VRA","available":"133.351","locked":"0"},{"currency":"IOTX","available":"25.641","locked":"0"},{"currency":"TFUEL","available":"5.141","locked":"0"},{"currency":"CHR","available":"3.926","locked":"0"},{"currency":"DASH","available":"0.005","locked":"0"},{"currency":"MTV","available":"1810.06","locked":"0"},{"currency":"CHZ","available":"3.101","locked":"0"},{"currency":"BLANKV2","available":"3.227","locked":"0"},{"currency":"MBL","available":"193.986","locked":"0"},{"currency":"BKC","available":"4555.808","locked":"0"},{"currency":"AERGO","available":"3.703","locked":"0"},{"currency":"OMI","available":"1112.236","locked":"0"},{"currency":"CONV","available":"29.918","locked":"0"},{"currency":"CNNS","available":"237.079","locked":"0"},{"currency":"BLANK","available":"3.227","locked":"0"},{"currency":"DAO","available":"6.0587648","locked":"0"},{"currency":"SKL","available":"2.699","locked":"0"},{"currency":"ANC","available":"0.556","locked":"0"},{"currency":"DEGO","available":"0.1341","locked":"0"},{"currency":"BNB","available":"0.00047795","locked":"0"},{"currency":"ETH","available":"0.000000280828","locked":"0"},{"currency":"POINT","available":"1.02889717447","locked":"0"},{"currency":"ICX","available":"1.001","locked":"0"}];
    else
    {
