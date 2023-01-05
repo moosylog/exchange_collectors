@@ -16,7 +16,9 @@ function GAT_Settings() {
   'body'       : '' // need todo JSON.stringify
  };
  if (typeof ADATTRIB != 'undefined') { 
+   Browser.msgBox(stn.thirdattrib); 
    stn.thirdattrib = ADATTRIB.toLowerCase();
+  Browser.msgBox(stn.thirdattrib); 
    stn.thirdobj = ADATTRIB.split(" "); 
    stn.third = true; 
  }
