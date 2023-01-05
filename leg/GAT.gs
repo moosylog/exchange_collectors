@@ -54,7 +54,7 @@ function GAT_GetBalances() {
     if (debug == true )  
      { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); 
        Browser.msgBox(JSON.stringify(response)); 
-       Browser.msgBox("First element: "+ response[0].currency + " " + Number(response[0].available) + Number(response[0].locked));
+       // Browser.msgBox("First element: "+ response[0].currency + " " + Number(response[0].available) + Number(response[0].locked));
        DebugLog("DEBUG MODE ON");
      }   
   try {  
@@ -94,7 +94,8 @@ function GAT_GetBalances() {
       }
     }
   }
-
+  
+  Browser.Msg(array);
   DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
   return array;
 
