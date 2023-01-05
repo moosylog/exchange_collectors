@@ -72,7 +72,7 @@ function GAT_GetBalances() {
    // Browser.msgBox("SPOT LOOP?\\n\\n");
     for (r in response) {    
       total = Number(response[r].available) + Number(response[r].locked);
-      if (total * 100000  > 0 ) {
+      if (total * 100000  > 0 ) { 
         array.push({
         curcodeEX: response[r].currency, 
         balance: total
