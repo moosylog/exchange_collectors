@@ -34,14 +34,19 @@ function BYB_GetBalances() {
   try {  Logger.log(BYBrequest.name+": Validating received data "+response.result.balances[0]); } catch(e) {Logger.log(response); Logger.log(BYBrequest.name+" : no or empty response"); return null;}
   
   
-  if (curpara === true)  {
-    array.push({ curcodeEX: cur, balance: response.result[cur].balances});   
-  } else 
-  {
+ // if (curpara === true)  {
+ //   array.push({ curcodeEX: cur, balance: response.result[cur].balances});   
+ // } else 
+ 
+  
+  
     for (r in response.result.balances) {   
-      if (Number(Math.abs( response.result.balances[r].total )) * 100000  > 0) array.push({ curcodeEX: response.result.balances[r].coinid, balance: response.result.balances[r].total});                       
+      // *** https://bybit-exchange.github.io/docs/spot/v3/#t-wallet
+      if (Number(Math.abs( response.result.balances[r].total )) * 100000  > 0) 
+        array.push({ curcodeEX: response.result.balances[r].coinid, 
+                     balance:   response.result.balances[r].total});                       
     }
-  }
+  
   
   try { if (ADATTRIB.indexOf('debug') >= 0) { Browser.msgBox("To Sheet: \\n\\n"+JSON.stringify(array)); }   } catch(e) {Logger.log("");}
   DebugLog("To Sheet", array);
