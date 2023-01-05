@@ -95,7 +95,8 @@ function GAT_GetBalances() {
     }
   }
   
-  Browser.Msg(array);
+  Browser.msgBox(array);
+ Browser.msgBox(JSON.stringify(array));
   DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
   return array;
 
