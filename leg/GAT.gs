@@ -68,6 +68,7 @@ function GAT_GetBalances() {
   if (stn.thirdattrib.indexOf('spot') >= 0)  
   {
     var total = 0;
+   Browser.msgBox("POT LOOP?\\n\\n"+ response);
     for (r in response) {    
       total = Number(response[r].available) + Number(response[r].locked);
       if (total * 100000  > 0 ) {
@@ -95,7 +96,7 @@ function GAT_GetBalances() {
     }
   }
   
-  Browser.msgBox(array);
+ 
  Browser.msgBox(JSON.stringify(array));
   DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
   return array;
