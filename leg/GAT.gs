@@ -61,7 +61,8 @@ function GAT_GetBalances() {
      Logger.log("Validating datatype "+response[0].currency); } catch(e) 
        { Logger.log(response[0].currency); 
          Logger.log("no or empty response"); 
-         return null;
+        Browser.msgBox("EMPTY");
+        return null;
        } 
  // Browser.msgBox(stn.command);
   var array = [];
