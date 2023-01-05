@@ -15,11 +15,10 @@ function GAT_Settings() {
   'payload'    : '',
   'body'       : '' // need todo JSON.stringify
  };
- if (typeof ADATTRIB != 'undefined') { 
-   Browser.msgBox(stn.thirdattrib); 
+ if (typeof ADATTRIB != 'undefined') {  
    stn.thirdattrib = ADATTRIB.toLowerCase();
-  Browser.msgBox(stn.thirdattrib); 
-   stn.thirdobj = ADATTRIB.split(" "); 
+  //Browser.msgBox(stn.thirdattrib); 
+  stn.thirdobj = ADATTRIB.split(" "); 
    stn.third = true; 
  }
  return stn;
@@ -49,10 +48,11 @@ function GAT_GetBalances() {
      var request = GAT_PrivateRequest(stn);
         console.log("API Request object: ",JSON.stringify(request));
      var response = UrlFetchApp.fetch(request.uri,request.params);
-
-     DebugLog("Receiving data from "+stn.name, response);
-     try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
    }
+   //Browser.msgBox(stn.thirdattrib); 
+   DebugLog("Receiving data from "+stn.name, response);
+   try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
+   
     if (debug == true )  
      { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); 
        Browser.msgBox(JSON.stringify(response)); 
