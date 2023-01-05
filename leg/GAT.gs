@@ -83,7 +83,7 @@ function GAT_GetBalances() {
   if (stn.thirdattrib.indexOf('margin') >= 0)  
   {
     var total = 0;
-    Browser.msgBox("WHAT TO PULL FROM THIS?\\n\\n"+ response);
+    // Browser.msgBox("WHAT TO PULL FROM THIS?\\n\\n"+ response);
     return 0;
     for (r in response) {    
       total = Number(response[r].available) + Number(response[r].locked);
@@ -97,7 +97,7 @@ function GAT_GetBalances() {
   }
   
  
- Browser.msgBox(JSON.stringify(array));
+ // Browser.msgBox(JSON.stringify(array));
   DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
   return array;
 
