@@ -77,7 +77,7 @@ function GAT_GetBalances() {
       }
     }
   }
-  
+ /* 
   if (stn.thirdattrib.indexOf('margin') >= 0)  
   {
     var total = 0;
@@ -93,7 +93,7 @@ function GAT_GetBalances() {
       }
     }
   }
-
+*/
   DebugLog(stn.name+" GetBalance", JSON.stringify(array)); 
   return array;
 
