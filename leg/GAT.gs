@@ -65,7 +65,7 @@ function GAT_GetBalances() {
        }
 
   var array = [];
-  if (stn.thirdattrib.indexOf('spot') >= 0)  
+ if (stn.command.indexOf("/api/v4/spot/accounts") >= 0)   
   {
     var total = 0;
    Browser.msgBox("SPOT LOOP?\\n\\n");
