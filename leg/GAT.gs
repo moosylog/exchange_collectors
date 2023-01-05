@@ -49,7 +49,7 @@ function GAT_GetBalances() {
      var response = UrlFetchApp.fetch(request.uri,request.params);
    }
    DebugLog("Receiving data from "+stn.name, response);
-   try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
+   try { var response = JSON.parse(response); } catch(e) {Logger.log("JSON.parse error: No valid JSON data received"); }
    
     if (debug == true )  
      { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); 
