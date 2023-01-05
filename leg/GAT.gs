@@ -63,12 +63,12 @@ function GAT_GetBalances() {
          Logger.log("no or empty response"); 
          return null;
        }
- Browser.msgBox(stn.command);
+ // Browser.msgBox(stn.command);
   var array = [];
  if (stn.command.indexOf("/api/v4/spot/accounts") >= 0)   
   {
     var total = 0;
-   Browser.msgBox("SPOT LOOP?\\n\\n");
+   // Browser.msgBox("SPOT LOOP?\\n\\n");
     for (r in response) {    
       total = Number(response[r].available) + Number(response[r].locked);
       if (total * 100000  > 0 ) {
