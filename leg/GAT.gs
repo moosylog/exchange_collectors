@@ -53,7 +53,7 @@ function GAT_GetBalances() {
    
     if (debug == true )  
      { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); 
-       Browser.msgBox("First element: "+ response[0].currency); 
+       DebugLog("First element: "+ response[0].currency);
        Browser.msgBox(JSON.stringify(response)); 
        DebugLog("DEBUG MODE ON");
      }   
