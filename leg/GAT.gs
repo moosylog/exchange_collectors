@@ -62,7 +62,7 @@ function GAT_GetBalances() {
        { Logger.log(response[0].currency); 
          Logger.log("no or empty response"); 
          return null;
-       }
+       } 
  // Browser.msgBox(stn.command);
   var array = [];
  if (stn.command.indexOf("/api/v4/spot/accounts") >= 0)   
