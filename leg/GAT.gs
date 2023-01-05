@@ -57,11 +57,11 @@ function GAT_GetBalances() {
        // Browser.msgBox("First element: "+ response[0].currency + " " + Number(response[0].available) + Number(response[0].locked));
        DebugLog("DEBUG MODE ON");
      }   
-  try {  
+  try {  Browser.msgBox("EMPTY");
      Logger.log("Validating datatype "+response[0].currency); } catch(e) 
        { Logger.log(response[0].currency); 
          Logger.log("no or empty response"); 
-        Browser.msgBox("EMPTY");
+        
         return null;
        } 
  // Browser.msgBox(stn.command);
