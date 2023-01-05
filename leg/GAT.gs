@@ -17,8 +17,7 @@ function GAT_Settings() {
  };
  if (typeof ADATTRIB != 'undefined') {  
    stn.thirdattrib = ADATTRIB.toLowerCase();
-  //Browser.msgBox(stn.thirdattrib); 
-  stn.thirdobj = ADATTRIB.split(" "); 
+   stn.thirdobj = ADATTRIB.split(" "); 
    stn.third = true; 
  }
  return stn;
@@ -49,17 +48,17 @@ function GAT_GetBalances() {
         console.log("API Request object: ",JSON.stringify(request));
      var response = UrlFetchApp.fetch(request.uri,request.params);
    }
-   //Browser.msgBox(stn.thirdattrib); 
    DebugLog("Receiving data from "+stn.name, response);
    try { var response = JSON.parse(response); } catch(e) {Logger.log("No valid JSON data received"); return false;}
    
     if (debug == true )  
      { Browser.msgBox(stn.name+" Connector DEBUG Mode:"); 
+       Browser.msgBox("First element: "+ response[0].currency); 
        Browser.msgBox(JSON.stringify(response)); 
        DebugLog("DEBUG MODE ON");
      }   
   try {  
-     Logger.log("Validating datatype "+response.response_data.balance.btc.total); } catch(e) 
+     Logger.log("Validating datatype "+response[r].currency); } catch(e) 
        { Logger.log(response); 
          Logger.log("no or empty response"); 
          return null;
