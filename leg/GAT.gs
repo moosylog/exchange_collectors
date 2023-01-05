@@ -48,7 +48,7 @@ function GAT_GetBalances() {
         console.log("API Request object: ",JSON.stringify(request));
      var response = UrlFetchApp.fetch(request.uri,request.params);
    }
-   DebugLog("Receiving data from "+stn.name, response);
+   // DebugLog("Receiving data from "+stn.name, response);
    try { var response = JSON.parse(response); } catch(e) {Logger.log("JSON.parse error: No valid JSON data received"); }
    
     if (debug == true )  
