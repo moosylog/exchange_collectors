@@ -17,7 +17,7 @@ function GAT_Settings() {
  };
  if (typeof ADATTRIB != 'undefined') { 
    Browser.msgBox(stn.thirdattrib); 
-   stn.thirdattrib = ADATTRIB.toLowerCase();
+ //  stn.thirdattrib = ADATTRIB.toLowerCase();
   Browser.msgBox(stn.thirdattrib); 
    stn.thirdobj = ADATTRIB.split(" "); 
    stn.third = true; 
