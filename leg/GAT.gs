@@ -62,7 +62,7 @@ function GAT_GetBalances() {
          return null;
        }
 
-  if (stn.thirdattrib[0].toLowerCase().indexOf('spot') >= 0)  
+  if (stn.thirdattrib.indexOf('spot') >= 0)  
   {
     var total = 0;
     for (r in response) {    
@@ -76,7 +76,7 @@ function GAT_GetBalances() {
     }
   }
   
-  if (stn.thirdattrib[0].toLowerCase().indexOf('margin') >= 0)  
+  if (stn.thirdattrib.indexOf('margin') >= 0)  
   {
     var total = 0;
     Browser.msgBox("WHAT TO PULL FROM THIS?\\n\\n"+ response);
