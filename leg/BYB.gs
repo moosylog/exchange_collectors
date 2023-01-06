@@ -36,15 +36,15 @@ function BYB_GetBalances() {
                 "locked": "0"
             },
             {
-                "coin": "BTC3L",
-                "coinId": "BTC3L",
-                "total": "743.03560386",
-                "free": "743.03560386",
+                "coin": "ETH",
+                "coinId": "ETH",
+                "total": "0.03560386",
+                "free": "0.03560386",
                 "locked": "0"
             },
             {
-                "coin": "BTC3S",
-                "coinId": "BTC3S",
+                "coin": "LTC",
+                "coinId": "LTC",
                 "total": "0.999",
                 "free": "0.999",
                 "locked": "0"
@@ -79,7 +79,7 @@ function BYB_GetBalances() {
     for (r in response.result.balances) {   
       // *** https://bybit-exchange.github.io/docs/spot/v3/#t-wallet
       if (Number(Math.abs( response.result.balances[r].total )) * 100000  > 0) 
-        array.push({ curcodeEX: response.result.balances[r].coinid, 
+        array.push({ curcodeEX: response.result.balances[r].coinId, 
                      balance:   response.result.balances[r].total});                       
     }
   
