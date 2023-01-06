@@ -21,15 +21,51 @@ function BYB_GetBalances() {
   if (ADATTRIB.toLowerCase().indexOf('testnet') >= 0)  BYBrequest.uri = 'api-testnet.bybit.com';
   
   var request = '', response = '', array = [];
-  DebugLog("Fetching from ....",BYBrequest.name);
-  request  = BYB_PrivateRequest(BYBrequest);
-  DebugLog("URL:",request.uri);
-  response = UrlFetchApp.fetch(request.uri,request.params);
   
+  if (ADATTRIB.toLowerCase().indexOf('demo') >= 0) { response = 
+  {
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "balances": [
+            {
+                "coin": "BTC",
+                "coinId": "BTC",
+                "total": "0.20378018343",
+                "free": "0.20378018343",
+                "locked": "0"
+            },
+            {
+                "coin": "BTC3L",
+                "coinId": "BTC3L",
+                "total": "743.03560386",
+                "free": "743.03560386",
+                "locked": "0"
+            },
+            {
+                "coin": "BTC3S",
+                "coinId": "BTC3S",
+                "total": "0.999",
+                "free": "0.999",
+                "locked": "0"
+            }
+        ]
+    },
+    "retExtMap": {},
+    "retExtInfo": {},
+    "time": 1659346887407
+}
+ } else 
+ { 
+   DebugLog("Fetching from ....",BYBrequest.name);
+   request  = BYB_PrivateRequest(BYBrequest);
+   DebugLog("URL:",request.uri);
+   response = UrlFetchApp.fetch(request.uri,request.params);
+ 
   DebugLog("Receiving data from "+BYBrequest.name, response);
   if (response == "") { DebugLog("No data",BYBrequest.name); return null; }
   response = JSON.parse(response);
-  
+ } 
   if (ADATTRIB.toLowerCase().indexOf('debug') >= 0)  { Browser.msgBox(BYBrequest.name+" Connector DEBUG Mode:"); Browser.msgBox("Received (Raw balance)\\n\\n"+JSON.stringify(response)); }   
   try {  Logger.log(BYBrequest.name+": Validating received data "+response.result.balances[0]); } catch(e) {Logger.log(response); Logger.log(BYBrequest.name+" : no or empty response"); return null;}
   
