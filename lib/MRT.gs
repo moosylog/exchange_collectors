@@ -1,1 +1,120 @@
-var _0x4dff=['getContentText','1533889gDXaSd','join','99286FjMkfw','uri','Bitmart','0.01','MacAlgorithm','debug','command','354817TjlqyS','available','886fb6ae-456b-4654-b4e0-d681ac05cea1','10DgxBDz','1qpEkKZ','1.1','log','application/json','746366hQDwrS','map','server_time','stringify','GET','0.1','https://openapi.bitmart.com/v2/time','0.0','computeHmacSignature','demo','fetch','https://api-cloud.bitmart.com/spot','wallet','0.5','apikey','parse','data','Err:\x2012\x20MRT','1ewqWTu','push','payload','192736WXsYhH','387700bjxoBs','Bitmart\x20test\x20valid\x20data\x20=\x20','MRT','Ether','slice','HMAC_SHA_256','method','toString','1250630fOPpCa','params'];var _0x4c60=function(_0x3ed2a5,_0x871f9a){_0x3ed2a5=_0x3ed2a5-0xcc;var _0x4dff97=_0x4dff[_0x3ed2a5];return _0x4dff97;};(function(_0x5e8318,_0x21f48d){var _0x228840=_0x4c60;while(!![]){try{var _0x30c1c3=-parseInt(_0x228840(0xef))+parseInt(_0x228840(0xdb))+-parseInt(_0x228840(0xd2))+-parseInt(_0x228840(0xde))*-parseInt(_0x228840(0xcf))+parseInt(_0x228840(0xeb))*-parseInt(_0x228840(0xe7))+parseInt(_0x228840(0xd3))+parseInt(_0x228840(0xea))*-parseInt(_0x228840(0xe0));if(_0x30c1c3===_0x21f48d)break;else _0x5e8318['push'](_0x5e8318['shift']());}catch(_0x46adf2){_0x5e8318['push'](_0x5e8318['shift']());}}}(_0x4dff,0xd82c0));function MRT_GetBalances(){var _0x5f288b=_0x4c60;const _0x83859a={'id':_0x5f288b(0xd5),'name':_0x5f288b(0xd5),'apikey':EXKEY,'secret':EXSECRET,'thirdattrib':ADATTRIB,'command':'/v1/wallet','uri':_0x5f288b(0xfa),'method':_0x5f288b(0xf3),'payload':''};if(ADATTRIB!=_0x5f288b(0xf8)){var _0xb8f341=MRT_PrivateRequest(_0x83859a),_0x324c88=JSON[_0x5f288b(0xcc)](UrlFetchApp[_0x5f288b(0xf9)](_0xb8f341[_0x5f288b(0xe1)],_0xb8f341[_0x5f288b(0xdc)])[_0x5f288b(0xdd)]());Logger[_0x5f288b(0xed)](_0x324c88);}else var _0x324c88={'code':0x3e8,'trace':_0x5f288b(0xe9),'message':'OK','data':{'wallet':[{'id':'BTC','available':_0x5f288b(0xe3),'name':'Bitcoin','frozen':'0.000000'},{'id':'ETH','available':_0x5f288b(0xec),'name':'Ether','frozen':_0x5f288b(0xf4)},{'id':'LTC','available':_0x5f288b(0xfc),'name':_0x5f288b(0xd6),'frozen':_0x5f288b(0xf6)}]}};var _0xda2f98=[];try{Logger[_0x5f288b(0xed)](_0x5f288b(0xd4)+_0x324c88[_0x5f288b(0xcd)][_0x5f288b(0xfb)]);}catch(_0x49d520){return Logger[_0x5f288b(0xed)]('no\x20or\x20empty\x20response\x20from\x20Bitmart'),Logger[_0x5f288b(0xed)](_0x324c88),null;}for(r in _0x324c88[_0x5f288b(0xcd)][_0x5f288b(0xfb)]){try{Number(_0x324c88['data'][_0x5f288b(0xfb)][r]['available'])*0x2710>0x0&&_0xda2f98[_0x5f288b(0xd0)]({'curcodeEX':_0x324c88[_0x5f288b(0xcd)][_0x5f288b(0xfb)][r]['id'],'balance':Number(_0x324c88[_0x5f288b(0xcd)][_0x5f288b(0xfb)][r][_0x5f288b(0xe8)])});}catch(_0x21989c){Logger[_0x5f288b(0xed)](_0x5f288b(0xce)),Logger[_0x5f288b(0xed)](_0x324c88);}}DebugLog(_0x5f288b(0xe2),_0xda2f98);if(ADATTRIB==_0x5f288b(0xe5))Browser['msgBox'](JSON[_0x5f288b(0xf2)](_0xda2f98));return _0xda2f98;}function MRT_PublicRequest(_0x2fae73){var _0x133fcd=_0x4c60;return params={'method':_0x2fae73[_0x133fcd(0xd9)],'muteHttpExceptions':!![],'headers':{'Content-Type':'application/json'}},{'uri':_0x2fae73['uri']+_0x2fae73[_0x133fcd(0xe6)],'params':params};}function MRT_PrivateRequest(_0x3085f9){var _0x4dc01f=_0x4c60;function _0x1389de(_0x22d55c,_0x2cf5ce){var _0x20a513=_0x4c60;return _0x133143(Utilities[_0x20a513(0xf7)](Utilities[_0x20a513(0xe4)][_0x20a513(0xd8)],_0x22d55c,_0x2cf5ce))[_0x20a513(0xda)]();}function _0x133143(_0x4e8904){var _0x1d9b32=_0x4c60;return _0x4e8904[_0x1d9b32(0xf0)](function(_0x4aa49f){var _0x27e585=_0x1d9b32;return('0'+(_0x4aa49f&0xff)[_0x27e585(0xda)](0x10))[_0x27e585(0xd7)](-0x2);})[_0x1d9b32(0xdf)]('');}const _0xf416da=JSON[_0x4dc01f(0xcc)](UrlFetchApp[_0x4dc01f(0xf9)](_0x4dc01f(0xf5))[_0x4dc01f(0xdd)]())[_0x4dc01f(0xf1)],_0xb90ff7={'method':_0x3085f9[_0x4dc01f(0xd9)],'muteHttpExceptions':!![],'headers':{'Content-Type':_0x4dc01f(0xee),'X-BM-KEY':_0x3085f9[_0x4dc01f(0xfd)],'X-BM-SIGN':_0x1389de(_0xf416da+'#'+_0x3085f9['thirdattrib']+'#'+_0x3085f9[_0x4dc01f(0xd1)],_0x3085f9['secret']),'X-BM-TIMESTAMP':_0xf416da}};return{'uri':_0x3085f9[_0x4dc01f(0xe1)]+_0x3085f9[_0x4dc01f(0xe6)],'params':_0xb90ff7};}
+
+function MRT_GetBalances() {
+  // Replace these with your actual API credentials
+  const API_KEY = 'YOUR_API_KEY';
+  const API_SECRET = 'YOUR_API_SECRET';
+  const MEMO = 'YOUR_MEMO'; // Optional, can be empty string
+
+  // API endpoint
+  const endpoint = '/account/v1/wallet';
+  const baseUrl = 'https://api-cloud.bitmart.com';
+  const url = baseUrl + endpoint;
+
+  // Timestamp for signature
+  const timestamp = Date.now().toString();
+
+  // Create signature string
+  const signString = timestamp + '#' + MEMO + '#' + API_KEY;
+
+  // Create HMAC-SHA256 signature
+  const signature = Utilities.computeHmacSha256Signature(signString, API_SECRET);
+  const signatureHex = signature.map(byte => ('0' + (byte & 0xFF).toString(16)).slice(-2)).join('');
+
+  // Set up headers
+  const headers = {
+    'X-BM-KEY': API_KEY,
+    'X-BM-SIGN': signatureHex,
+    'X-BM-TIMESTAMP': timestamp,
+    'X-BM-MEMO': MEMO,
+    'Content-Type': 'application/json'
+  };
+
+  // Make request
+  try {
+    const options = {
+      'method': 'get',
+      'headers': headers,
+      'muteHttpExceptions': true
+    };
+
+    const response = UrlFetchApp.fetch(url, options);
+    const responseData = JSON.parse(response.getContentText());
+
+    // Log the response for debugging
+    Logger.log('API Response:', responseData);
+
+    // Improved error handling
+    if (response.getResponseCode() !== 200) {
+      throw new Error(`HTTP Error: ${response.getResponseCode()} - ${responseData.message || 'Unknown error'}`);
+    }
+
+    if (responseData.code !== 1000) {
+      throw new Error(`API Error: ${responseData.message} (Code: ${responseData.code})`);
+    }
+
+    // Parse and format wallet data
+    const walletData = responseData.data.wallet || [];
+    const nonZeroBalances = walletData.filter(item =>
+      parseFloat(item.available) > 0 || parseFloat(item.frozen) > 0
+    );
+
+    if (nonZeroBalances.length === 0) {
+      Logger.log('No non-zero balances found');
+      return [];
+    }
+
+    // Format the data into the desired structure
+    const balanceArray = nonZeroBalances.map(item => ({
+      curcodeEX: item.currency,
+      balance: parseFloat(item.available)
+    }));
+
+    Logger.log('Formatted Balance Data:', balanceArray);
+    return balanceArray;
+
+  } catch (error) {
+    Logger.log('Error: ' + error.toString());
+    throw error;
+  }
+}
+
+function MRT_PublicRequest(MRTrequest) {
+  return {
+    uri: MRTrequest.uri + MRTrequest.command,
+    params: {
+      method: MRTrequest.method,
+      muteHttpExceptions: true,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
+  };
+}
+
+function MRT_PrivateRequest(MRTrequest) {
+  function HMACSHA256HEX(s, secret) {
+    return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret)).toString();
+  }
+
+  function ToHex(s) {
+    return s.map(byte => ('0' + (byte & 0xFF).toString(16)).slice(-2)).join('');
+  }
+
+  const timestamp = Date.now().toString();
+  const signString = timestamp + '#' + MRTrequest.thirdattrib + '#' + MRTrequest.payload;
+
+  return {
+    uri: MRTrequest.uri + MRTrequest.command,
+    params: {
+      method: MRTrequest.method,
+      muteHttpExceptions: true,
+      headers: {
+        'Content-Type': 'application/json',
+        'X-BM-KEY': MRTrequest.apikey,
+        'X-BM-SIGN': HMACSHA256HEX(signString, MRTrequest.secret),
+        'X-BM-TIMESTAMP': timestamp,
+        'X-BM-MEMO': MRTrequest.thirdattrib
+      }
+    }
+  };
+}
