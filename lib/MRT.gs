@@ -1,108 +1,60 @@
-
-function MRT_GetBalances() {
-  // Replace these with your actual API credentials
-  const API_KEY = 'YOUR_API_KEY';
-  const API_SECRET = 'YOUR_API_SECRET';
-  const MEMO = 'YOUR_MEMO'; // Optional, can be empty string
-
-  // API endpoint
-  const endpoint = '/account/v1/wallet';
-  const baseUrl = 'https://api-cloud.bitmart.com';
-  const url = baseUrl + endpoint;
-
-  // Timestamp for signature
-  const timestamp = Date.now().toString();
-
-  // Create signature string
-  const signString = timestamp + '#' + MEMO + '#' + API_KEY;
-
-  // Create HMAC-SHA256 signature
-  const signature = Utilities.computeHmacSha256Signature(signString, API_SECRET);
-  const signatureHex = signature.map(byte => ('0' + (byte & 0xFF).toString(16)).slice(-2)).join('');
-
-  // Set up headers
-  const headers = {
-    'X-BM-KEY': API_KEY,
-    'X-BM-SIGN': signatureHex,
-    'X-BM-TIMESTAMP': timestamp,
-    'X-BM-MEMO': MEMO,
-    'Content-Type': 'application/json'
+function MRT_Settings() {
+  return {
+    id: 'MRT',
+    name: 'BitMart',
+    apikey: EXKEY,
+    secret: EXSECRET,
+    command: '/spot/v1/wallet',
+    uri: 'https://api-cloud.bitmart.com',
+    method: 'GET',
+    payload: '',
+    thirdattrib: ADATTRIB
   };
-
-  // Make request
-  try {
-    const options = {
-      'method': 'get',
-      'headers': headers,
-      'muteHttpExceptions': true
-    };
-
-    const response = UrlFetchApp.fetch(url, options);
-    const responseData = JSON.parse(response.getContentText());
-
-    // Log the response for debugging
-    Logger.log('API Response:', responseData);
-
-    // Improved error handling
-    if (response.getResponseCode() !== 200) {
-      throw new Error(`HTTP Error: ${response.getResponseCode()} - ${responseData.message || 'Unknown error'}`);
-    }
-
-    if (responseData.code !== 1000) {
-      throw new Error(`API Error: ${responseData.message} (Code: ${responseData.code})`);
-    }
-
-    // Parse and format wallet data
-    const walletData = responseData.data.wallet || [];
-    const nonZeroBalances = walletData.filter(item =>
-      parseFloat(item.available) > 0 || parseFloat(item.frozen) > 0
-    );
-
-    if (nonZeroBalances.length === 0) {
-      Logger.log('No non-zero balances found');
-      return [];
-    }
-
-    // Format the data into the desired structure
-    const balanceArray = nonZeroBalances.map(item => ({
-      curcodeEX: item.currency,
-      balance: parseFloat(item.available)
-    }));
-
-    Logger.log('Formatted Balance Data:', balanceArray);
-    return balanceArray;
-
-  } catch (error) {
-    Logger.log('Error: ' + error.toString());
-    throw error;
-  }
 }
 
-function MRT_PublicRequest(MRTrequest) {
-  return {
-    uri: MRTrequest.uri + MRTrequest.command,
-    params: {
-      method: MRTrequest.method,
-      muteHttpExceptions: true,
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }
-  };
+function MRT_GetBalance() {
+  const stn = MRT_Settings();
+  const response = { data: null, status: true, message: "" };
+  const array = [];
+
+  Logger.log("Starting ");
+  const request = MRT_PrivateRequest(stn);
+  Logger.log("URL ....", JSON.stringify(request));
+
+  const responseObj = UrlFetchApp.fetch(request.uri, request.params);
+
+  try {
+    const response1 = JSON.parse(responseObj.getContentText());
+   // if (stn.thirdattrib.toLowerCase().indexOf('debug') >= 0) {
+      Browser.msgBox(stn.name + " Connector DEBUG Mode:");
+      Browser.msgBox(JSON.stringify(response1));
+   // }
+  } catch (e) {
+    Logger.log("No valid JSON data received");
+    return false;
+  }
+
+
+    Logger.log(response1);
+    Logger.log("no or empty response");
+    return null;
+
+
+  Logger.log(stn.name + " GetBalance", JSON.stringify(array));
+  return array;
 }
 
 function MRT_PrivateRequest(MRTrequest) {
-  function HMACSHA256HEX(s, secret) {
-    return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret)).toString();
-  }
-
-  function ToHex(s) {
-    return s.map(byte => ('0' + (byte & 0xFF).toString(16)).slice(-2)).join('');
+  function HMACSHA256BASE64(s, secret) {
+    const signatureBytes = Utilities.computeHmacSha256Signature(s, secret);
+    return Utilities.base64Encode(signatureBytes); // Convert to Base64
   }
 
   const timestamp = Date.now().toString();
-  const signString = timestamp + '#' + MRTrequest.thirdattrib + '#' + MRTrequest.payload;
+  // Build the message string without template literals
+  const message = timestamp + "#" + MRTrequest.thirdattrib + "#" + MRTrequest.apikey;
 
+  // Build request parameters
   return {
     uri: MRTrequest.uri + MRTrequest.command,
     params: {
@@ -111,9 +63,9 @@ function MRT_PrivateRequest(MRTrequest) {
       headers: {
         'Content-Type': 'application/json',
         'X-BM-KEY': MRTrequest.apikey,
-        'X-BM-SIGN': HMACSHA256HEX(signString, MRTrequest.secret),
+        'X-BM-SIGN': HMACSHA256BASE64(message, MRTrequest.secret),
         'X-BM-TIMESTAMP': timestamp,
-        'X-BM-MEMO': MRTrequest.thirdattrib
+        'X-BM-MEMO': MRTrequest.thirdattrib // Include memo if provided
       }
     }
   };
