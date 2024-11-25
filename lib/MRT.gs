@@ -31,7 +31,7 @@ function MRT_GetBalance() {
    // }
   } catch (e) {
     Logger.log("No valid JSON data received");
-    return false;
+    return null;
   }
 
 
@@ -41,7 +41,7 @@ function MRT_GetBalance() {
 
 
   Logger.log(stn.name + " GetBalance", JSON.stringify(array));
-  return array;
+  return null;
 }
 
 function MRT_PrivateRequest(MRTrequest) {
