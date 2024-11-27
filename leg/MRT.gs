@@ -79,7 +79,8 @@ function MRT_PrivateRequest(MRTrequest) {
   function HMACSHA256HEX(s, secret) { return ToHex(Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_256, s, secret)).toString(); }
   function ToHex(s) { return s.map(function(byte) { return ('0' + (byte & 0xFF).toString(16)).slice(-2);}).join('');  }
 
-  const timestamp = (JSON.parse(UrlFetchApp.fetch('https://openapi.bitmart.com/v2/time').getContentText())).server_time,
+  // https://developer-pro.bitmart.com/en/spot/#get-system-time
+  const timestamp = (JSON.parse(UrlFetchApp.fetch('https://api-cloud.bitmart.com/system/time').getContentText())).data.server_time,
         params    = {
           'method'              : MRTrequest.method,  
           'muteHttpExceptions'  : true,
